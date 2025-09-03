@@ -56,7 +56,8 @@ export function HeroSection() {
           <div className="space-y-8 max-w-4xl">
             <div className="space-y-4">
               <h1 className="text-4xl lg:text-6xl font-bold text-white leading-tight text-balance">
-                Your IT Partner for <span className="text-primary">Seamless Operations</span>
+                We seamlessly integrate <span className="text-primary">advanced technology</span> into the organic
+                fabric of your brand
               </h1>
               <p className="text-xl text-gray-200 leading-relaxed text-pretty">
                 79Ratio delivers comprehensive IT solutions tailored for law firms, healthcare providers, nonprofits,
@@ -120,6 +121,10 @@ export function HeroSection() {
                   <div className="text-sm text-gray-300">Approach</div>
                 </div>
               </div>
+            </div>
+
+            <div className="pt-6 border-t border-white/10">
+              <p className="text-lg text-gray-300 font-medium">Your IT Partner for Seamless Operations</p>
             </div>
           </div>
         </div>

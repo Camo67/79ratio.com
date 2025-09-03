@@ -26,22 +26,26 @@ export function Navigation() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link href="/about" className="text-foreground hover:text-primary transition-colors">
+            <Link href="/about" className="text-white hover:text-primary transition-colors">
               About
             </Link>
-            <Link href="/services" className="text-foreground hover:text-primary transition-colors">
+            <Link href="/services" className="text-white hover:text-primary transition-colors">
               Services
             </Link>
-            <Link href="/industries" className="text-foreground hover:text-primary transition-colors">
+            <Link href="/industries" className="text-white hover:text-primary transition-colors">
               Industries
             </Link>
-            <Link href="/blog" className="text-foreground hover:text-primary transition-colors">
+            <Link href="/blog" className="text-white hover:text-primary transition-colors">
               Blog
             </Link>
-            <Link href="/contact" className="text-foreground hover:text-primary transition-colors">
+            <Link href="/contact" className="text-white hover:text-primary transition-colors">
               Contact
             </Link>
-            <Button variant="outline" asChild>
+            <Button
+              variant="outline"
+              asChild
+              className="text-white border-white hover:bg-white hover:text-black bg-transparent"
+            >
               <a href="https://79ratio.deskdirector.com/auth/v1/" target="_blank" rel="noopener noreferrer">
                 Client Login
               </a>
@@ -53,7 +57,12 @@ export function Navigation() {
 
           {/* Mobile menu button */}
           <div className="md:hidden">
-            <Button variant="ghost" size="sm" onClick={() => setIsOpen(!isOpen)}>
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={() => setIsOpen(!isOpen)}
+              className="text-white hover:text-primary"
+            >
               {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </Button>
           </div>
@@ -65,48 +74,52 @@ export function Navigation() {
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-card border-t border-border">
               <Link
                 href="/about"
-                className="block px-3 py-2 text-foreground hover:text-primary transition-colors"
+                className="block px-3 py-2 text-white hover:text-primary transition-colors"
                 onClick={() => setIsOpen(false)}
               >
                 About
               </Link>
               <Link
                 href="/services"
-                className="block px-3 py-2 text-foreground hover:text-primary transition-colors"
+                className="block px-3 py-2 text-white hover:text-primary transition-colors"
                 onClick={() => setIsOpen(false)}
               >
                 Services
               </Link>
               <Link
                 href="/industries"
-                className="block px-3 py-2 text-foreground hover:text-primary transition-colors"
+                className="block px-3 py-2 text-white hover:text-primary transition-colors"
                 onClick={() => setIsOpen(false)}
               >
                 Industries
               </Link>
               <Link
                 href="/blog"
-                className="block px-3 py-2 text-foreground hover:text-primary transition-colors"
+                className="block px-3 py-2 text-white hover:text-primary transition-colors"
                 onClick={() => setIsOpen(false)}
               >
                 Blog
               </Link>
               <Link
                 href="/contact"
-                className="block px-3 py-2 text-foreground hover:text-primary transition-colors"
+                className="block px-3 py-2 text-white hover:text-primary transition-colors"
                 onClick={() => setIsOpen(false)}
               >
                 Contact
               </Link>
               <div className="px-3 py-2">
-                <Button variant="outline" asChild className="w-full mb-2 bg-transparent">
+                <Button
+                  variant="outline"
+                  asChild
+                  className="w-full mb-2 bg-transparent text-white border-white hover:bg-white hover:text-black"
+                >
                   <a href="https://79ratio.deskdirector.com/auth/v1/" target="_blank" rel="noopener noreferrer">
                     Client Login
                   </a>
                 </Button>
               </div>
               <div className="px-3 py-2">
-                <Button asChild className="w-full">
+                <Button asChild className="w-full text-white hover:text-primary">
                   <Link href="/contact">Get Started</Link>
                 </Button>
               </div>
