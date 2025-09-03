@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Phone, Mail, MapPin } from "lucide-react"
+import Image from "next/image"
 
 export function Footer() {
   return (
@@ -9,11 +10,15 @@ export function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="space-y-4">
-            <Link href="/" className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-lg">79</span>
-              </div>
-              <span className="font-bold text-xl text-card-foreground">79Ratio</span>
+            <Link href="/" className="flex items-center">
+              <Image
+                src="/79ratio-footer-logo-new.png"
+                alt="79Ratio Logo"
+                width={120}
+                height={40}
+                className="h-8 w-auto"
+                priority
+              />
             </Link>
             <p className="text-muted-foreground text-pretty">
               Your trusted IT partner delivering comprehensive technology solutions for law firms, healthcare,
