@@ -11,6 +11,11 @@ export const metadata: Metadata = {
   description:
     "Comprehensive IT solutions for law firms, healthcare, nonprofits, and manufacturing. 24/7 monitoring, cybersecurity, cloud management, and expert support.",
   generator: "v0.app",
+  icons: {
+    icon: "/favicon.webp",
+    shortcut: "/favicon.webp",
+    apple: "/favicon.webp",
+  },
 }
 
 export default function RootLayout({

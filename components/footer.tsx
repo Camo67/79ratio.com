@@ -35,7 +35,7 @@ export function Footer() {
               </div>
               <div className="flex items-center space-x-2 text-sm text-muted-foreground">
                 <MapPin className="w-4 h-4" />
-                <span>Your City, State</span>
+                <span>{"25 S Grove Ave Ste 501\nElgin, Illinois 60120"}</span>
               </div>
             </div>
           </div>
