@@ -1,0 +1,280 @@
+import { Navigation } from "@/components/navigation"
+import { Footer } from "@/components/footer"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { Button } from "@/components/ui/button"
+import { Scale, Heart, HandHeart, Factory, ArrowRight } from "lucide-react"
+import Link from "next/link"
+
+const industries = [
+  {
+    icon: Scale,
+    title: "Law Firms",
+    slug: "law-firms",
+    description:
+      "Specialized IT solutions for legal practices with focus on security, compliance, and client confidentiality.",
+    challenges: [
+      "Client data confidentiality requirements",
+      "Regulatory compliance (Bar Association rules)",
+      "Document security and version control",
+      "Remote access for court appearances",
+    ],
+    solutions: [
+      "Secure document management systems",
+      "Encrypted communication platforms",
+      "Compliance monitoring and reporting",
+      "24/7 security monitoring",
+    ],
+    testimonial: {
+      quote:
+        "79Ratio understands the unique security needs of our law firm. Their proactive approach keeps our client data secure and our systems running smoothly.",
+      author: "Sarah Johnson, Managing Partner",
+      firm: "Johnson & Associates Law Firm",
+    },
+  },
+  {
+    icon: Heart,
+    title: "Healthcare",
+    slug: "healthcare",
+    description: "HIPAA-compliant technology solutions designed for medical practices and healthcare organizations.",
+    challenges: [
+      "HIPAA compliance requirements",
+      "Patient data security and privacy",
+      "EHR system integration and support",
+      "Telehealth technology needs",
+    ],
+    solutions: [
+      "HIPAA-compliant infrastructure",
+      "Secure patient data management",
+      "EHR system optimization",
+      "Telehealth platform support",
+    ],
+    testimonial: {
+      quote:
+        "Our practice relies on 79Ratio for HIPAA compliance and secure patient data management. They've been instrumental in our digital transformation.",
+      author: "Dr. Michael Chen",
+      firm: "Riverside Medical Group",
+    },
+  },
+  {
+    icon: HandHeart,
+    title: "Nonprofits",
+    slug: "nonprofits",
+    description: "Cost-effective IT solutions that maximize your technology budget while supporting your mission.",
+    challenges: [
+      "Limited IT budgets and resources",
+      "Donor data security and privacy",
+      "Volunteer coordination systems",
+      "Grant reporting and compliance",
+    ],
+    solutions: [
+      "Budget-optimized IT solutions",
+      "Secure donor management systems",
+      "Cloud-based collaboration tools",
+      "Compliance reporting assistance",
+    ],
+    testimonial: {
+      quote:
+        "79Ratio helps us do more with less. Their cost-effective solutions allow us to focus our resources on our mission while keeping our technology secure.",
+      author: "Lisa Martinez, Executive Director",
+      firm: "Community Hope Foundation",
+    },
+  },
+  {
+    icon: Factory,
+    title: "Manufacturing",
+    slug: "manufacturing",
+    description:
+      "Robust IT infrastructure supporting production systems, inventory management, and operational efficiency.",
+    challenges: [
+      "Production system reliability",
+      "Inventory and supply chain management",
+      "Quality control and compliance",
+      "Operational technology (OT) security",
+    ],
+    solutions: [
+      "Industrial network security",
+      "Production system monitoring",
+      "Inventory management integration",
+      "Quality control system support",
+    ],
+    testimonial: {
+      quote:
+        "79Ratio keeps our production systems running 24/7. Their understanding of manufacturing IT needs has been crucial to our operational success.",
+      author: "David Thompson, IT Director",
+      firm: "Precision Manufacturing Inc.",
+    },
+  },
+]
+
+export default function IndustriesPage() {
+  return (
+    <main className="min-h-screen">
+      <Navigation />
+
+      {/* Hero Section */}
+      <section className="bg-gradient-to-br from-background to-muted py-20 lg:py-32">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="space-y-6">
+            <h1 className="text-4xl lg:text-6xl font-bold text-foreground leading-tight text-balance">
+              Industry-Specific <span className="text-primary">IT Expertise</span>
+            </h1>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed text-pretty">
+              We understand the unique technology challenges and compliance requirements of your industry. Our
+              specialized solutions are tailored to help your business thrive while meeting regulatory standards.
+            </p>
+            <Button asChild size="lg" className="text-lg px-8">
+              <Link href="/contact">Discuss Your Industry Needs</Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Industries Overview */}
+      <section className="py-20 bg-background">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center space-y-4 mb-16">
+            <h2 className="text-3xl lg:text-4xl font-bold text-foreground text-balance">
+              Specialized Solutions for Every Industry
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-pretty">
+              Our deep industry knowledge allows us to deliver solutions that address your specific challenges and
+              opportunities.
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-12">
+            {industries.map((industry, index) => {
+              const IconComponent = industry.icon
+              return (
+                <Card key={index} className="group hover:shadow-lg transition-all duration-300 border-border bg-card">
+                  <CardHeader className="space-y-4">
+                    <div className="flex items-center space-x-4">
+                      <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                        <IconComponent className="w-6 h-6 text-primary" />
+                      </div>
+                      <div>
+                        <CardTitle className="text-2xl text-card-foreground">{industry.title}</CardTitle>
+                        <CardDescription className="text-muted-foreground">{industry.description}</CardDescription>
+                      </div>
+                    </div>
+                  </CardHeader>
+
+                  <CardContent className="space-y-6">
+                    <div className="grid md:grid-cols-2 gap-6">
+                      <div>
+                        <h4 className="font-semibold text-card-foreground mb-3">Key Challenges:</h4>
+                        <ul className="space-y-2">
+                          {industry.challenges.slice(0, 3).map((challenge, challengeIndex) => (
+                            <li key={challengeIndex} className="text-sm text-muted-foreground flex items-start">
+                              <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3 mt-2 flex-shrink-0" />
+                              {challenge}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+
+                      <div>
+                        <h4 className="font-semibold text-card-foreground mb-3">Our Solutions:</h4>
+                        <ul className="space-y-2">
+                          {industry.solutions.slice(0, 3).map((solution, solutionIndex) => (
+                            <li key={solutionIndex} className="text-sm text-muted-foreground flex items-start">
+                              <div className="w-1.5 h-1.5 bg-accent rounded-full mr-3 mt-2 flex-shrink-0" />
+                              {solution}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div className="bg-muted/50 p-4 rounded-lg">
+                      <blockquote className="text-sm text-muted-foreground italic mb-2">
+                        "{industry.testimonial.quote}"
+                      </blockquote>
+                      <div className="text-xs text-card-foreground font-medium">
+                        {industry.testimonial.author}, {industry.testimonial.firm}
+                      </div>
+                    </div>
+
+                    <Button asChild className="w-full">
+                      <Link href={`/industries/${industry.slug}`} className="inline-flex items-center gap-2">
+                        Learn More About {industry.title}
+                        <ArrowRight className="w-4 h-4" />
+                      </Link>
+                    </Button>
+                  </CardContent>
+                </Card>
+              )
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* Why Industry Expertise Matters */}
+      <section className="py-20 bg-muted/50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="space-y-6">
+              <h2 className="text-3xl lg:text-4xl font-bold text-foreground text-balance">
+                Why Industry Expertise Matters
+              </h2>
+              <div className="space-y-4 text-muted-foreground leading-relaxed">
+                <p>
+                  Generic IT solutions often fall short when it comes to meeting the specific needs of different
+                  industries. Each sector has unique compliance requirements, security challenges, and operational
+                  demands that require specialized knowledge and experience.
+                </p>
+                <p>
+                  Our team has deep expertise in the industries we serve, allowing us to anticipate challenges,
+                  recommend best practices, and implement solutions that truly fit your business model and regulatory
+                  environment.
+                </p>
+                <p>
+                  When you partner with 79Ratio, you're not just getting an IT provider – you're getting a team that
+                  understands your industry and is committed to helping you succeed within its unique landscape.
+                </p>
+              </div>
+            </div>
+
+            <div className="relative">
+              <img
+                src="/diverse-industries-collage-showing-law-healthcare.jpg"
+                alt="Diverse industries including law, healthcare, nonprofits, and manufacturing"
+                className="w-full h-auto rounded-2xl shadow-lg"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-20 bg-gradient-to-r from-primary to-accent">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="space-y-6">
+            <h2 className="text-3xl lg:text-4xl font-bold text-primary-foreground text-balance">
+              Ready to Experience Industry-Focused IT?
+            </h2>
+            <p className="text-xl text-primary-foreground/90 text-pretty">
+              Let's discuss how our industry expertise can help solve your specific technology challenges and drive your
+              business forward.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button asChild size="lg" variant="secondary" className="text-lg px-8">
+                <Link href="/contact">Schedule Industry Consultation</Link>
+              </Button>
+              <Button
+                asChild
+                size="lg"
+                variant="outline"
+                className="text-lg px-8 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary bg-transparent"
+              >
+                <Link href="/services">View Our Services</Link>
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <Footer />
+    </main>
+  )
+}

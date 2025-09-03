@@ -1,0 +1,310 @@
+import { Navigation } from "@/components/navigation"
+import { Footer } from "@/components/footer"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { Button } from "@/components/ui/button"
+import { Input } from "@/components/ui/input"
+import { Textarea } from "@/components/ui/textarea"
+import { Label } from "@/components/ui/label"
+import { Badge } from "@/components/ui/badge"
+import { Phone, Mail, MapPin, Clock, MessageSquare, Calendar, Headphones } from "lucide-react"
+
+const contactMethods = [
+  {
+    icon: Phone,
+    title: "Call Us",
+    description: "Speak directly with our IT experts",
+    contact: "(555) 123-4567",
+    availability: "Mon-Fri 8AM-6PM EST",
+  },
+  {
+    icon: Mail,
+    title: "Email Us",
+    description: "Send us your questions anytime",
+    contact: "info@79ratio.com",
+    availability: "24/7 - We respond within 2 hours",
+  },
+  {
+    icon: MessageSquare,
+    title: "Live Chat",
+    description: "Get instant answers to your questions",
+    contact: "Available on our website",
+    availability: "Mon-Fri 9AM-5PM EST",
+  },
+  {
+    icon: Headphones,
+    title: "Emergency Support",
+    description: "24/7 support for existing clients",
+    contact: "(555) 123-HELP",
+    availability: "24/7/365 for emergencies",
+  },
+]
+
+const services = [
+  "IT Assessment & Consultation",
+  "24/7 Monitoring Setup",
+  "Cybersecurity Evaluation",
+  "Cloud Migration Planning",
+  "Backup & Recovery Solutions",
+  "Help Desk Support",
+]
+
+export default function ContactPage() {
+  return (
+    <main className="min-h-screen">
+      <Navigation />
+
+      {/* Hero Section */}
+      <section className="bg-gradient-to-br from-background to-muted py-20 lg:py-32">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="space-y-6">
+            <Badge className="mb-4">Get In Touch</Badge>
+            <h1 className="text-4xl lg:text-6xl font-bold text-foreground leading-tight text-balance">
+              Let's Discuss Your <span className="text-primary">IT Needs</span>
+            </h1>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed text-pretty">
+              Ready to transform your technology infrastructure? Our experts are here to help you find the right
+              solutions for your business. Schedule a free consultation today.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Methods */}
+      <section className="py-20 bg-background">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center space-y-4 mb-16">
+            <h2 className="text-3xl lg:text-4xl font-bold text-foreground text-balance">Multiple Ways to Connect</h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-pretty">
+              Choose the contact method that works best for you. We're here to help however you prefer to communicate.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {contactMethods.map((method, index) => {
+              const IconComponent = method.icon
+              return (
+                <Card key={index} className="text-center border-border bg-card hover:shadow-lg transition-shadow">
+                  <CardHeader className="space-y-4">
+                    <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto">
+                      <IconComponent className="w-6 h-6 text-primary" />
+                    </div>
+                    <div>
+                      <CardTitle className="text-lg text-card-foreground">{method.title}</CardTitle>
+                      <CardDescription className="text-muted-foreground">{method.description}</CardDescription>
+                    </div>
+                  </CardHeader>
+                  <CardContent className="space-y-2">
+                    <div className="font-semibold text-primary">{method.contact}</div>
+                    <div className="text-sm text-muted-foreground">{method.availability}</div>
+                  </CardContent>
+                </Card>
+              )
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Form & Info */}
+      <section className="py-20 bg-muted/50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12">
+            {/* Contact Form */}
+            <Card className="border-border bg-card">
+              <CardHeader>
+                <CardTitle className="text-2xl text-card-foreground">Send Us a Message</CardTitle>
+                <CardDescription className="text-muted-foreground">
+                  Fill out the form below and we'll get back to you within 2 hours during business hours.
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-6">
+                <form className="space-y-4">
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <div className="space-y-2">
+                      <Label htmlFor="firstName">First Name</Label>
+                      <Input id="firstName" placeholder="John" />
+                    </div>
+                    <div className="space-y-2">
+                      <Label htmlFor="lastName">Last Name</Label>
+                      <Input id="lastName" placeholder="Doe" />
+                    </div>
+                  </div>
+
+                  <div className="space-y-2">
+                    <Label htmlFor="email">Email</Label>
+                    <Input id="email" type="email" placeholder="john@company.com" />
+                  </div>
+
+                  <div className="space-y-2">
+                    <Label htmlFor="company">Company</Label>
+                    <Input id="company" placeholder="Your Company Name" />
+                  </div>
+
+                  <div className="space-y-2">
+                    <Label htmlFor="phone">Phone</Label>
+                    <Input id="phone" type="tel" placeholder="(555) 123-4567" />
+                  </div>
+
+                  <div className="space-y-2">
+                    <Label htmlFor="service">Service Interest</Label>
+                    <select
+                      id="service"
+                      className="w-full px-3 py-2 border border-input rounded-md bg-background text-foreground"
+                    >
+                      <option value="">Select a service...</option>
+                      {services.map((service, index) => (
+                        <option key={index} value={service}>
+                          {service}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+
+                  <div className="space-y-2">
+                    <Label htmlFor="message">Message</Label>
+                    <Textarea
+                      id="message"
+                      placeholder="Tell us about your IT needs and challenges..."
+                      className="min-h-[120px]"
+                    />
+                  </div>
+
+                  <Button type="submit" className="w-full">
+                    Send Message
+                  </Button>
+                </form>
+              </CardContent>
+            </Card>
+
+            {/* Company Info */}
+            <div className="space-y-8">
+              <Card className="border-border bg-card">
+                <CardHeader>
+                  <CardTitle className="text-xl text-card-foreground flex items-center gap-2">
+                    <MapPin className="w-5 h-5 text-primary" />
+                    Our Location
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <div>
+                    <div className="font-semibold text-card-foreground">79Ratio Headquarters</div>
+                    <div className="text-muted-foreground">
+                      123 Technology Drive
+                      <br />
+                      Suite 200
+                      <br />
+                      Your City, State 12345
+                    </div>
+                  </div>
+                  <div className="aspect-video bg-muted rounded-lg flex items-center justify-center">
+                    <div className="text-muted-foreground">Interactive Map Coming Soon</div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="border-border bg-card">
+                <CardHeader>
+                  <CardTitle className="text-xl text-card-foreground flex items-center gap-2">
+                    <Clock className="w-5 h-5 text-primary" />
+                    Business Hours
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-3">
+                  <div className="flex justify-between">
+                    <span className="text-muted-foreground">Monday - Friday</span>
+                    <span className="font-medium text-card-foreground">8:00 AM - 6:00 PM EST</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-muted-foreground">Saturday</span>
+                    <span className="font-medium text-card-foreground">9:00 AM - 2:00 PM EST</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-muted-foreground">Sunday</span>
+                    <span className="font-medium text-card-foreground">Emergency Support Only</span>
+                  </div>
+                  <div className="pt-2 border-t border-border">
+                    <div className="flex justify-between">
+                      <span className="text-muted-foreground">Emergency Support</span>
+                      <span className="font-medium text-primary">24/7/365</span>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="border-border bg-card">
+                <CardHeader>
+                  <CardTitle className="text-xl text-card-foreground flex items-center gap-2">
+                    <Calendar className="w-5 h-5 text-primary" />
+                    Schedule a Consultation
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <p className="text-muted-foreground">
+                    Ready to get started? Schedule a free 30-minute consultation to discuss your IT needs and learn how
+                    we can help.
+                  </p>
+                  <Button className="w-full">Schedule Free Consultation</Button>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-20 bg-background">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center space-y-4 mb-16">
+            <h2 className="text-3xl lg:text-4xl font-bold text-foreground text-balance">Frequently Asked Questions</h2>
+            <p className="text-xl text-muted-foreground text-pretty">
+              Quick answers to common questions about our services and process.
+            </p>
+          </div>
+
+          <div className="space-y-6">
+            <Card className="border-border bg-card">
+              <CardHeader>
+                <CardTitle className="text-lg text-card-foreground">
+                  How quickly can you respond to IT issues?
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">
+                  We provide 24/7/365 monitoring for our clients with response times under 5 minutes for critical
+                  issues. For new inquiries, we respond within 2 hours during business hours.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-border bg-card">
+              <CardHeader>
+                <CardTitle className="text-lg text-card-foreground">
+                  Do you work with businesses of all sizes?
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">
+                  Yes, we serve businesses from small practices to large organizations. Our solutions are scalable and
+                  tailored to meet the specific needs and budget of each client.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-border bg-card">
+              <CardHeader>
+                <CardTitle className="text-lg text-card-foreground">What industries do you specialize in?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">
+                  We specialize in law firms, healthcare providers, nonprofits, and manufacturing companies. Our team
+                  understands the unique compliance and technology requirements of these industries.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      <Footer />
+    </main>
+  )
+}
