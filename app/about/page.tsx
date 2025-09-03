@@ -60,6 +60,12 @@ export default function AboutPage() {
           {/* Floating Elements Animation */}
           <div className="absolute inset-0">
             <div
+              className="absolute inset-0 bg-cover bg-center bg-no-repeat animate-slow-drift opacity-30"
+              style={{
+                backgroundImage: "url(/about-bg.png)",
+              }}
+            />
+            <div
               className="absolute top-1/4 left-1/4 w-2 h-2 bg-primary rounded-full animate-float"
               style={{ animationDelay: "0s" }}
             />

@@ -94,22 +94,58 @@ export default function BlogPage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-background to-muted py-20 lg:py-32">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative py-20 lg:py-32 overflow-hidden">
+        {/* Background Image */}
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat animate-slow-drift"
+          style={{ backgroundImage: "url(/blog-bg.png)" }}
+        />
+
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-br from-black/85 via-black/75 to-black/85" />
+
+        {/* Floating Elements Animation */}
+        <div className="absolute inset-0">
+          <div
+            className="absolute top-1/4 left-1/4 w-2 h-2 bg-primary rounded-full animate-float"
+            style={{ animationDelay: "0s" }}
+          />
+          <div
+            className="absolute top-1/3 right-1/3 w-1 h-1 bg-cyan-400 rounded-full animate-float-slow"
+            style={{ animationDelay: "2s" }}
+          />
+          <div
+            className="absolute bottom-1/4 left-1/3 w-1.5 h-1.5 bg-primary/70 rounded-full animate-float"
+            style={{ animationDelay: "4s" }}
+          />
+          <div
+            className="absolute top-1/2 right-1/4 w-1 h-1 bg-cyan-300 rounded-full animate-float-slow"
+            style={{ animationDelay: "1s" }}
+          />
+          <div
+            className="absolute bottom-1/3 right-1/2 w-2 h-2 bg-primary/50 rounded-full animate-float"
+            style={{ animationDelay: "3s" }}
+          />
+        </div>
+
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-6">
-            <Badge className="mb-4">IT Insights & Resources</Badge>
-            <h1 className="text-4xl lg:text-6xl font-bold text-foreground leading-tight text-balance">
+            <Badge className="mb-4 bg-primary/20 text-white border-primary/30">IT Insights & Resources</Badge>
+            <h1 className="text-4xl lg:text-6xl font-bold text-white leading-tight text-balance">
               The <span className="text-primary">79Ratio Blog</span>
             </h1>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed text-pretty">
+            <p className="text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed text-pretty">
               Stay informed with the latest IT trends, best practices, and industry insights. Our experts share
               actionable advice to help your business thrive with technology.
             </p>
 
             {/* Search Bar */}
             <div className="max-w-md mx-auto relative">
-              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground w-4 h-4" />
-              <Input placeholder="Search articles..." className="pl-10" />
+              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-4 h-4" />
+              <Input
+                placeholder="Search articles..."
+                className="pl-10 bg-white/10 border-white/20 text-white placeholder:text-gray-300"
+              />
             </div>
           </div>
         </div>

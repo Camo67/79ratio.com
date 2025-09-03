@@ -86,13 +86,40 @@ export default function ServicesPage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-background to-muted py-20 lg:py-32">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="relative py-20 lg:py-32 overflow-hidden">
+        {/* Background Image */}
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: "url(/services-bg.png)" }}
+        />
+
+        {/* Dark Overlay */}
+        <div className="absolute inset-0 bg-black/60" />
+
+        {/* Floating Elements */}
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute top-20 left-10 w-2 h-2 bg-primary rounded-full animate-float opacity-60" />
+          <div className="absolute top-40 right-20 w-1 h-1 bg-accent rounded-full animate-float-slow opacity-40" />
+          <div
+            className="absolute bottom-32 left-1/4 w-1.5 h-1.5 bg-primary rounded-full animate-float opacity-50"
+            style={{ animationDelay: "1s" }}
+          />
+          <div
+            className="absolute top-1/3 right-1/3 w-1 h-1 bg-accent rounded-full animate-float-slow opacity-30"
+            style={{ animationDelay: "2s" }}
+          />
+          <div
+            className="absolute bottom-20 right-10 w-2 h-2 bg-primary rounded-full animate-float opacity-40"
+            style={{ animationDelay: "0.5s" }}
+          />
+        </div>
+
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="space-y-6">
-            <h1 className="text-4xl lg:text-6xl font-bold text-foreground leading-tight text-balance">
+            <h1 className="text-4xl lg:text-6xl font-bold text-white leading-tight text-balance">
               Comprehensive <span className="text-primary">IT Services</span>
             </h1>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed text-pretty">
+            <p className="text-xl text-white/90 max-w-3xl mx-auto leading-relaxed text-pretty">
               From proactive monitoring to strategic planning, we provide the complete IT infrastructure your business
               needs to thrive in today's digital landscape.
             </p>

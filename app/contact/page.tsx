@@ -54,14 +54,47 @@ export default function ContactPage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-background to-muted py-20 lg:py-32">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="relative py-20 lg:py-32 overflow-hidden">
+        {/* Background Image */}
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat animate-slow-drift"
+          style={{ backgroundImage: "url(/contact-bg.jpeg)" }}
+        />
+
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-br from-black/85 via-black/75 to-black/85" />
+
+        {/* Floating Elements Animation */}
+        <div className="absolute inset-0">
+          <div
+            className="absolute top-1/4 left-1/4 w-2 h-2 bg-cyan-400 rounded-full animate-float"
+            style={{ animationDelay: "0s" }}
+          />
+          <div
+            className="absolute top-1/3 right-1/3 w-1 h-1 bg-primary rounded-full animate-float-slow"
+            style={{ animationDelay: "2s" }}
+          />
+          <div
+            className="absolute bottom-1/4 left-1/3 w-3 h-3 bg-cyan-300/60 rounded-full animate-float"
+            style={{ animationDelay: "4s" }}
+          />
+          <div
+            className="absolute top-1/2 right-1/4 w-1.5 h-1.5 bg-primary/80 rounded-full animate-float-slow"
+            style={{ animationDelay: "1s" }}
+          />
+          <div
+            className="absolute bottom-1/3 right-1/2 w-2 h-2 bg-cyan-400/70 rounded-full animate-float"
+            style={{ animationDelay: "3s" }}
+          />
+        </div>
+
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="space-y-6">
-            <Badge className="mb-4">Get In Touch</Badge>
-            <h1 className="text-4xl lg:text-6xl font-bold text-foreground leading-tight text-balance">
+            <Badge className="mb-4 bg-primary/20 text-white border-primary/30">Get In Touch</Badge>
+            <h1 className="text-4xl lg:text-6xl font-bold text-white leading-tight text-balance">
               Let's Discuss Your <span className="text-primary">IT Needs</span>
             </h1>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed text-pretty">
+            <p className="text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed text-pretty">
               Ready to transform your technology infrastructure? Our experts are here to help you find the right
               solutions for your business. Schedule a free consultation today.
             </p>
