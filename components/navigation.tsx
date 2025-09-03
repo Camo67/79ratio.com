@@ -42,7 +42,9 @@ export function Navigation() {
               Contact
             </Link>
             <Button variant="outline" asChild>
-              <Link href="/login">Client Login</Link>
+              <a href="https://79ratio.deskdirector.com/auth/v1/" target="_blank" rel="noopener noreferrer">
+                Client Login
+              </a>
             </Button>
             <Button asChild>
               <Link href="/contact">Get Started</Link>
@@ -98,7 +100,9 @@ export function Navigation() {
               </Link>
               <div className="px-3 py-2">
                 <Button variant="outline" asChild className="w-full mb-2 bg-transparent">
-                  <Link href="/login">Client Login</Link>
+                  <a href="https://79ratio.deskdirector.com/auth/v1/" target="_blank" rel="noopener noreferrer">
+                    Client Login
+                  </a>
                 </Button>
               </div>
               <div className="px-3 py-2">
