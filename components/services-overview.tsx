@@ -1,4 +1,3 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Monitor, Shield, Cloud, HardDrive, Headphones, Settings, ArrowRight } from "lucide-react"
 import Link from "next/link"
@@ -83,35 +82,42 @@ export function ServicesOverview() {
           </p>
         </div>
 
-        {/* Services Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+        {/* Services Block Grid */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
           {services.map((service, index) => {
             const IconComponent = service.icon
+            const serviceSlug = service.title
+              .toLowerCase()
+              .replace(/[^a-z0-9]+/g, "-")
+              .replace(/(^-|-$)/g, "")
+
             return (
-              <Card
-                key={index}
-                className="group hover:shadow-lg transition-all duration-300 border-border bg-card/90 backdrop-blur-sm hover:bg-card"
-              >
-                <CardHeader className="space-y-4">
-                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                    <IconComponent className="w-6 h-6 text-primary" />
+              <Link key={index} href={`/services/${serviceSlug}`} className="group block">
+                <div className="relative h-48 bg-gradient-to-br from-primary/20 to-primary/5 rounded-xl border border-primary/20 hover:border-primary/40 transition-all duration-300 hover:shadow-xl hover:shadow-primary/10 overflow-hidden">
+                  {/* Background Pattern */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-black/5 to-black/20" />
+
+                  {/* Content */}
+                  <div className="relative h-full p-6 flex flex-col justify-between">
+                    <div className="flex items-start justify-between">
+                      <div className="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center group-hover:bg-primary/30 transition-colors">
+                        <IconComponent className="w-6 h-6 text-primary" />
+                      </div>
+                      <ArrowRight className="w-5 h-5 text-primary/60 group-hover:text-primary group-hover:translate-x-1 transition-all duration-300" />
+                    </div>
+
+                    <div>
+                      <h3 className="text-xl font-bold text-black mb-2 group-hover:text-primary transition-colors">
+                        {service.title}
+                      </h3>
+                      <p className="text-gray-600 text-sm line-clamp-2">{service.description}</p>
+                    </div>
                   </div>
-                  <div>
-                    <CardTitle className="text-xl text-black">{service.title}</CardTitle>
-                    <CardDescription className="text-gray-600 mt-2">{service.description}</CardDescription>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <ul className="space-y-2">
-                    {service.features.map((feature, featureIndex) => (
-                      <li key={featureIndex} className="flex items-center text-sm text-gray-600">
-                        <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3" />
-                        {feature}
-                      </li>
-                    ))}
-                  </ul>
-                </CardContent>
-              </Card>
+
+                  {/* Hover Effect */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                </div>
+              </Link>
             )
           })}
         </div>

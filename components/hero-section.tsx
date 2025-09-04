@@ -17,23 +17,31 @@ export function HeroSection() {
         />
         <div className="absolute inset-0 bg-gradient-to-br from-black/80 via-black/60 to-black/80" />
 
-        {/* Floating Elements Animation */}
         <div className="absolute inset-0">
+          {/* Fibonacci spiral elements */}
           <div
-            className="absolute top-1/4 left-1/4 w-2 h-2 bg-primary rounded-full animate-float"
+            className="absolute top-1/4 left-1/4 w-3 h-3 bg-primary rounded-full animate-float opacity-80"
             style={{ animationDelay: "0s" }}
           />
           <div
-            className="absolute top-1/3 right-1/3 w-1 h-1 bg-cyan-400 rounded-full animate-float-slow"
+            className="absolute top-1/3 right-1/3 w-2 h-2 bg-cyan-400 rounded-full animate-float-slow opacity-60"
             style={{ animationDelay: "1s" }}
           />
           <div
-            className="absolute bottom-1/4 left-1/3 w-1.5 h-1.5 bg-primary/60 rounded-full animate-float"
+            className="absolute bottom-1/4 left-1/3 w-4 h-4 bg-primary/40 rounded-full animate-float opacity-50"
             style={{ animationDelay: "2s" }}
           />
           <div
-            className="absolute top-1/2 right-1/4 w-1 h-1 bg-cyan-300 rounded-full animate-float-slow"
+            className="absolute top-1/2 right-1/4 w-1.5 h-1.5 bg-cyan-300 rounded-full animate-float-slow opacity-70"
             style={{ animationDelay: "0.5s" }}
+          />
+          <div
+            className="absolute top-3/4 left-1/2 w-2.5 h-2.5 bg-primary/60 rounded-full animate-float opacity-40"
+            style={{ animationDelay: "1.5s" }}
+          />
+          <div
+            className="absolute bottom-1/3 right-1/2 w-1 h-1 bg-cyan-200 rounded-full animate-float-slow opacity-80"
+            style={{ animationDelay: "2.5s" }}
           />
         </div>
       </div>
@@ -55,11 +63,13 @@ export function HeroSection() {
           {/* Hero Content */}
           <div className="space-y-8 max-w-4xl">
             <div className="space-y-4">
-              <h1 className="text-4xl lg:text-6xl font-bold text-white leading-tight text-balance">
-                We seamlessly integrate <span className="text-primary">advanced technology</span> into the organic
-                fabric of your brand
+              <h1 className="lg:text-6xl font-bold text-white leading-tight text-balance text-3xl">
+                Where Technology Evolves with <span className="text-primary">Precision</span>
               </h1>
-              <p className="text-xl text-gray-200 leading-relaxed text-pretty">
+              <p className="text-gray-200 leading-relaxed text-pretty text-lg">
+                Sustainable Excellence • Strategic Innovation • Tailored Management
+              </p>
+              <p className="text-gray-300 leading-relaxed text-pretty text-base mt-4">
                 79Ratio delivers comprehensive IT solutions tailored for law firms, healthcare providers, nonprofits,
                 and manufacturing companies. Experience proactive support, 24/7 monitoring, and strategic technology
                 guidance.
@@ -68,7 +78,7 @@ export function HeroSection() {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="text-lg px-8">
-                <Link href="/contact">Schedule Consultation</Link>
+                <Link href="/contact">Discover How We Manage, Evolve, and Elevate Your Technology</Link>
               </Button>
               <Button
                 asChild
@@ -80,10 +90,9 @@ export function HeroSection() {
               </Button>
             </div>
 
-            {/* Trust Indicators */}
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 pt-8 justify-items-center">
-              <div className="flex items-center space-x-3">
-                <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
+              <div className="flex items-center space-x-3 animate-fade-in" style={{ animationDelay: "0.2s" }}>
+                <div className="w-10 h-10 bg-primary/20 rounded-lg flex items-center justify-center border border-primary/30">
                   <Shield className="w-5 h-5 text-primary" />
                 </div>
                 <div>
@@ -92,8 +101,8 @@ export function HeroSection() {
                 </div>
               </div>
 
-              <div className="flex items-center space-x-3">
-                <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
+              <div className="flex items-center space-x-3 animate-fade-in" style={{ animationDelay: "0.4s" }}>
+                <div className="w-10 h-10 bg-primary/20 rounded-lg flex items-center justify-center border border-primary/30">
                   <Clock className="w-5 h-5 text-primary" />
                 </div>
                 <div>
@@ -102,8 +111,8 @@ export function HeroSection() {
                 </div>
               </div>
 
-              <div className="flex items-center space-x-3">
-                <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
+              <div className="flex items-center space-x-3 animate-fade-in" style={{ animationDelay: "0.6s" }}>
+                <div className="w-10 h-10 bg-primary/20 rounded-lg flex items-center justify-center border border-primary/30">
                   <Users className="w-5 h-5 text-primary" />
                 </div>
                 <div>
@@ -112,8 +121,8 @@ export function HeroSection() {
                 </div>
               </div>
 
-              <div className="flex items-center space-x-3">
-                <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
+              <div className="flex items-center space-x-3 animate-fade-in" style={{ animationDelay: "0.8s" }}>
+                <div className="w-10 h-10 bg-primary/20 rounded-lg flex items-center justify-center border border-primary/30">
                   <Zap className="w-5 h-5 text-primary" />
                 </div>
                 <div>
@@ -124,7 +133,7 @@ export function HeroSection() {
             </div>
 
             <div className="pt-6 border-t border-white/10">
-              <p className="text-lg text-gray-300 font-medium">Your IT Partner for Seamless Operations</p>
+              <p className="text-lg text-primary font-medium">Ratio79. Precision. Sustainability. Excellence.</p>
             </div>
           </div>
         </div>
