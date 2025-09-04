@@ -93,29 +93,28 @@ export function ServicesOverview() {
 
             return (
               <Link key={index} href={`/services/${serviceSlug}`} className="group block">
-                <div className="relative h-48 bg-gradient-to-br from-primary/20 to-primary/5 rounded-xl border border-primary/20 hover:border-primary/40 transition-all duration-300 hover:shadow-xl hover:shadow-primary/10 overflow-hidden">
+                <div className="relative h-48 bg-gradient-to-br from-black/80 to-black/60 rounded-xl border border-primary/30 hover:border-primary/60 transition-all duration-300 hover:shadow-xl hover:shadow-primary/20 overflow-hidden backdrop-blur-sm">
                   {/* Background Pattern */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-black/5 to-black/20" />
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent" />
 
                   {/* Content */}
                   <div className="relative h-full p-6 flex flex-col justify-between">
                     <div className="flex items-start justify-between">
-                      <div className="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center group-hover:bg-primary/30 transition-colors">
+                      <div className="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center group-hover:bg-primary/40 transition-colors">
                         <IconComponent className="w-6 h-6 text-primary" />
                       </div>
                       <ArrowRight className="w-5 h-5 text-primary/60 group-hover:text-primary group-hover:translate-x-1 transition-all duration-300" />
                     </div>
 
                     <div>
-                      <h3 className="text-xl font-bold text-black mb-2 group-hover:text-primary transition-colors">
+                      <h3 className="text-xl font-bold text-white mb-2 group-hover:text-primary transition-colors">
                         {service.title}
                       </h3>
-                      <p className="text-gray-600 text-sm line-clamp-2">{service.description}</p>
+                      <p className="text-gray-300 text-sm line-clamp-2">{service.description}</p>
                     </div>
                   </div>
 
-                  {/* Hover Effect */}
-                  <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 </div>
               </Link>
             )

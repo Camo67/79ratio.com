@@ -13,7 +13,7 @@ const contactMethods = [
     icon: Phone,
     title: "Call Us",
     description: "Speak directly with our IT experts",
-    contact: "(555) 123-4567",
+    contact: "(630) 394-2700",
     availability: "Mon-Fri 8AM-6PM EST",
   },
   {
@@ -34,7 +34,7 @@ const contactMethods = [
     icon: Headphones,
     title: "Emergency Support",
     description: "24/7 support for existing clients",
-    contact: "(555) 123-HELP",
+    contact: "(630) 394-2700",
     availability: "24/7/365 for emergencies",
   },
 ]
@@ -174,7 +174,7 @@ export default function ContactPage() {
 
                   <div className="space-y-2">
                     <Label htmlFor="phone">Phone</Label>
-                    <Input id="phone" type="tel" placeholder="(555) 123-4567" />
+                    <Input id="phone" type="tel" placeholder="(630) 394-2700" />
                   </div>
 
                   <div className="space-y-2">
@@ -221,11 +221,14 @@ export default function ContactPage() {
                   <div>
                     <div className="font-semibold text-card-foreground">79Ratio Headquarters</div>
                     <div className="text-muted-foreground">
-                      123 Technology Drive
+                      25 S Grove Ave Ste 501
                       <br />
-                      Suite 200
+                      Elgin, Illinois 60120
                       <br />
-                      Your City, State 12345
+                      United States
+                      <br />
+                      <br />
+                      <strong>Phone: (630) 394-2700</strong>
                     </div>
                   </div>
                   <div className="aspect-video bg-muted rounded-lg flex items-center justify-center">

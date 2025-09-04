@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
@@ -9,6 +9,26 @@ import { Menu, X, ChevronDown, Shield, Phone, Building, Lock } from "lucide-reac
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
   const [isMegaMenuOpen, setIsMegaMenuOpen] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (isMegaMenuOpen) {
+        setIsMegaMenuOpen(false)
+      }
+    }
+
+    if (isMegaMenuOpen) {
+      window.addEventListener("scroll", handleScroll, { passive: true })
+    }
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll)
+    }
+  }, [isMegaMenuOpen])
+
+  const handleMegaMenuEnter = () => {
+    setIsMegaMenuOpen(true)
+  }
 
   const majorServices = [
     {
@@ -67,73 +87,104 @@ export function Navigation() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <div
-              className="relative"
-              onMouseEnter={() => setIsMegaMenuOpen(true)}
-              onMouseLeave={() => setIsMegaMenuOpen(false)}
-            >
+            <div className="relative" onMouseEnter={handleMegaMenuEnter}>
               <button className="text-white hover:text-primary transition-colors flex items-center space-x-1">
                 <span>{"What we do"}</span>
                 <ChevronDown className="w-4 h-4" />
               </button>
 
               {isMegaMenuOpen && (
-                <div className="absolute top-full left-0 mt-2 w-[800px] bg-black/95 backdrop-blur-sm border border-primary/20 rounded-lg shadow-2xl overflow-hidden">
-                  <div className="p-6">
-                    {/* Major Services Grid */}
-                    <div className="mb-6">
-                      <h3 className="text-primary font-semibold mb-4 text-sm uppercase tracking-wide">
-                        Major Services
-                      </h3>
-                      <div className="grid grid-cols-2 gap-4">
-                        {majorServices.map((service, index) => {
-                          const IconComponent = service.icon
-                          return (
-                            <Link
-                              key={service.href}
-                              href={service.href}
-                              className="group p-4 rounded-lg border border-primary/20 hover:border-primary/40 hover:bg-primary/5 transition-all duration-200"
-                              style={{
-                                animationDelay: `${index * 0.1}s`,
-                                animation: "fadeInUp 0.3s ease-out forwards",
-                              }}
-                            >
-                              <div className="flex items-start space-x-3">
-                                <div className="flex-shrink-0">
-                                  <IconComponent className="w-6 h-6 text-primary group-hover:text-primary/80" />
+                <div className="fixed top-16 left-0 right-0 bg-black/95 backdrop-blur-sm border-b border-primary/20 shadow-2xl overflow-hidden z-40">
+                  <div className="max-w-7xl mx-auto p-8">
+                    <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
+                      {/* Major Services Grid - Takes up 3 columns */}
+                      <div className="lg:col-span-3">
+                        <h3 className="text-primary font-semibold mb-6 text-lg uppercase tracking-wide">
+                          Major Services
+                        </h3>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                          {majorServices.map((service, index) => {
+                            const IconComponent = service.icon
+                            return (
+                              <Link
+                                key={service.href}
+                                href={service.href}
+                                className="group p-6 rounded-lg border border-primary/20 hover:border-primary/40 hover:bg-primary/5 transition-all duration-200"
+                                style={{
+                                  animationDelay: `${index * 0.1}s`,
+                                  animation: "fadeInUp 0.3s ease-out forwards",
+                                }}
+                              >
+                                <div className="flex items-start space-x-4">
+                                  <div className="flex-shrink-0">
+                                    <IconComponent className="w-8 h-8 text-primary group-hover:text-primary/80" />
+                                  </div>
+                                  <div>
+                                    <h4 className="text-white font-medium text-base group-hover:text-primary transition-colors">
+                                      {service.title}
+                                    </h4>
+                                    <p className="text-gray-400 text-sm mt-2 group-hover:text-gray-300">
+                                      {service.description}
+                                    </p>
+                                  </div>
                                 </div>
-                                <div>
-                                  <h4 className="text-white font-medium text-sm group-hover:text-primary transition-colors">
-                                    {service.title}
-                                  </h4>
-                                  <p className="text-gray-400 text-xs mt-1 group-hover:text-gray-300">
-                                    {service.description}
-                                  </p>
-                                </div>
-                              </div>
-                            </Link>
-                          )
-                        })}
-                      </div>
-                    </div>
+                              </Link>
+                            )
+                          })}
+                        </div>
 
-                    {/* Additional Links */}
-                    <div>
-                      <h3 className="text-primary font-semibold mb-3 text-sm uppercase tracking-wide">Quick Links</h3>
-                      <div className="grid grid-cols-3 gap-2">
-                        {additionalLinks.map((item, index) => (
-                          <Link
-                            key={item.href}
-                            href={item.href}
-                            className="px-3 py-2 text-white hover:text-primary hover:bg-primary/10 transition-all duration-200 rounded text-sm"
-                            style={{
-                              animationDelay: `${(index + 4) * 0.05}s`,
-                              animation: "fadeInUp 0.3s ease-out forwards",
-                            }}
-                          >
-                            {item.label}
-                          </Link>
-                        ))}
+                        {/* Additional Links */}
+                        <div>
+                          <h3 className="text-primary font-semibold mb-4 text-lg uppercase tracking-wide">
+                            Quick Links
+                          </h3>
+                          <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+                            {additionalLinks.map((item, index) => (
+                              <Link
+                                key={item.href}
+                                href={item.href}
+                                className="px-4 py-3 text-white hover:text-primary hover:bg-primary/10 transition-all duration-200 rounded text-sm border border-transparent hover:border-primary/20"
+                                style={{
+                                  animationDelay: `${(index + 4) * 0.05}s`,
+                                  animation: "fadeInUp 0.3s ease-out forwards",
+                                }}
+                              >
+                                {item.label}
+                              </Link>
+                            ))}
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Contact Information - Takes up 1 column */}
+                      <div className="lg:col-span-1 border-l border-primary/20 pl-8">
+                        <h3 className="text-primary font-semibold mb-6 text-lg uppercase tracking-wide">
+                          Get In Touch
+                        </h3>
+                        <div className="space-y-6">
+                          <div>
+                            <h4 className="text-white font-medium mb-2">Call Us Now</h4>
+                            <a
+                              href="tel:4694855577"
+                              className="text-2xl font-bold text-primary hover:text-primary/80 transition-colors"
+                            >
+                              (469) 485-5577
+                            </a>
+                          </div>
+                          <div>
+                            <h4 className="text-white font-medium mb-2">Office Location</h4>
+                            <p className="text-gray-400 text-sm">
+                              25 S Grove Ave Ste 501
+                              <br />
+                              Elgin, Illinois 60120
+                            </p>
+                          </div>
+                          <div>
+                            <Button asChild className="w-full">
+                              <Link href="/contact">Schedule Consultation</Link>
+                            </Button>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
