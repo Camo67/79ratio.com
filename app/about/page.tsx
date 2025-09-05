@@ -81,7 +81,7 @@ export default function AboutPage() {
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="max-w-4xl mx-auto text-center">
             <div className="space-y-8">
               <div className="space-y-4">
                 <h1 className="text-4xl lg:text-6xl font-bold text-white leading-tight text-balance">
@@ -94,7 +94,7 @@ export default function AboutPage() {
                 </p>
               </div>
 
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button asChild size="lg" className="text-lg px-8">
                   <Link href="/contact">Partner With Us</Link>
                 </Button>
@@ -106,18 +106,6 @@ export default function AboutPage() {
                 >
                   <Link href="/team">Meet Our Team</Link>
                 </Button>
-              </div>
-            </div>
-
-            <div className="relative">
-              <div className="aspect-square bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl p-8 flex items-center justify-center">
-                <Image
-                  src="/professional-it-team-collaborating-in-modern-offic.jpg"
-                  alt="79Ratio team collaborating on IT solutions"
-                  width={600}
-                  height={600}
-                  className="w-full h-full object-cover rounded-xl"
-                />
               </div>
             </div>
           </div>
