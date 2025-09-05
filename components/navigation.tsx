@@ -216,8 +216,12 @@ export function Navigation() {
                 Client Login
               </a>
             </Button>
-            <Button asChild>
-              <Link href="/contact">Get Started</Link>
+            <Button
+              variant="outline"
+              asChild
+              className="text-primary border-primary hover:bg-primary hover:text-black bg-transparent"
+            >
+              <Link href="/schedule-call">Schedule a Call</Link>
             </Button>
           </div>
 
@@ -270,7 +274,7 @@ export function Navigation() {
                 <Button
                   variant="outline"
                   asChild
-                  className="w-full mb-2 bg-transparent text-white border-white hover:bg-white hover:text-black"
+                  className="w-full mb-2 bg-transparent text-primary border-primary hover:bg-primary hover:text-black"
                 >
                   <a href="https://79ratio.deskdirector.com/auth/v1/" target="_blank" rel="noopener noreferrer">
                     Client Login
@@ -278,8 +282,12 @@ export function Navigation() {
                 </Button>
               </div>
               <div className="px-3 py-2">
-                <Button asChild className="w-full text-white hover:text-primary">
-                  <Link href="/contact">Get Started</Link>
+                <Button
+                  variant="outline"
+                  asChild
+                  className="w-full mb-2 bg-transparent text-primary border-primary hover:bg-primary hover:text-black"
+                >
+                  <Link href="/schedule-call">Schedule a Call</Link>
                 </Button>
               </div>
             </div>

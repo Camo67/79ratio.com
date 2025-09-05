@@ -5,7 +5,7 @@ import Image from "next/image"
 
 export function HeroSection() {
   return (
-    <section className="relative overflow-hidden py-20 lg:py-32">
+    <section className="relative overflow-hidden py-20 lg:py-32 bg-black">
       {/* Animated Background */}
       <div className="absolute inset-0 z-0">
         <div
@@ -15,7 +15,7 @@ export function HeroSection() {
             filter: "brightness(0.3)",
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-black/80 via-black/60 to-black/80" />
+        <div className="absolute inset-0 bg-gradient-to-br from-black/90 via-black/80 to-black/90" />
 
         <div className="absolute inset-0">
           {/* Fibonacci spiral elements */}
@@ -66,10 +66,10 @@ export function HeroSection() {
               <h1 className="lg:text-6xl font-bold text-white leading-tight text-balance text-3xl">
                 Where Technology Evolves with <span className="text-primary">Precision</span>
               </h1>
-              <p className="text-gray-200 leading-relaxed text-pretty text-lg">
+              <p className="text-gray-100 leading-relaxed text-pretty text-lg">
                 Sustainable Excellence • Strategic Innovation • Tailored Management
               </p>
-              <p className="text-gray-300 leading-relaxed text-pretty text-base mt-4">
+              <p className="text-gray-200 leading-relaxed text-pretty text-base mt-4">
                 79Ratio delivers comprehensive IT solutions tailored for law firms, healthcare providers, nonprofits,
                 and manufacturing companies. Experience proactive support, 24/7 monitoring, and strategic technology
                 guidance.
@@ -78,7 +78,7 @@ export function HeroSection() {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="text-lg px-8">
-                <Link href="/contact">Discover How We Manage, Evolve, and Elevate Your Technology</Link>
+                <Link href="/contact">Schedule a Call</Link>
               </Button>
               <Button
                 asChild
@@ -97,7 +97,7 @@ export function HeroSection() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">Secure</div>
-                  <div className="text-sm text-gray-300">Enterprise-grade</div>
+                  <div className="text-sm text-gray-200">Enterprise-grade</div>
                 </div>
               </div>
 
@@ -107,7 +107,7 @@ export function HeroSection() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">24/7/365</div>
-                  <div className="text-sm text-gray-300">Monitoring</div>
+                  <div className="text-sm text-gray-200">Monitoring</div>
                 </div>
               </div>
 
@@ -117,7 +117,7 @@ export function HeroSection() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">Expert</div>
-                  <div className="text-sm text-gray-300">Support Team</div>
+                  <div className="text-sm text-gray-200">Support Team</div>
                 </div>
               </div>
 
@@ -127,7 +127,7 @@ export function HeroSection() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">Proactive</div>
-                  <div className="text-sm text-gray-300">Approach</div>
+                  <div className="text-sm text-gray-200">Approach</div>
                 </div>
               </div>
             </div>

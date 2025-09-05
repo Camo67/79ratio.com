@@ -71,7 +71,7 @@ export default function MonitoringPage() {
 
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button asChild size="lg" className="text-lg px-8">
-                  <Link href="/contact">Get Started Today</Link>
+                  <Link href="/contact">Contact Us Today</Link>
                 </Button>
                 <Button asChild variant="outline" size="lg" className="text-lg px-8 bg-transparent">
                   <Link href="/services">View All Services</Link>
@@ -227,7 +227,7 @@ export default function MonitoringPage() {
                   </li>
                 </ul>
                 <Button asChild className="w-full">
-                  <Link href="/contact">Get Started</Link>
+                  <Link href="/contact">Contact Us</Link>
                 </Button>
               </CardContent>
             </Card>

@@ -60,7 +60,7 @@ export default function MonitoringPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="text-lg px-8">
-                <Link href="/contact">Get Started Today</Link>
+                <Link href="/contact">Contact Us Today</Link>
               </Button>
               <Button
                 asChild
@@ -166,7 +166,7 @@ export default function MonitoringPage() {
               </div>
             </div>
             <div className="bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl p-8">
-              <h3 className="text-2xl font-bold text-foreground mb-4">Get Started Today</h3>
+              <h3 className="text-2xl font-bold text-foreground mb-4">Contact Us Today</h3>
               <p className="text-muted-foreground mb-6">
                 Ready to protect your business with proactive monitoring? Contact us for a free consultation and custom
                 quote.

@@ -275,8 +275,8 @@ export default function ContactPage() {
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <p className="text-muted-foreground">
-                    Ready to get started? Schedule a free 30-minute consultation to discuss your IT needs and learn how
-                    we can help.
+                    Ready to transform your technology infrastructure? Schedule a free 30-minute consultation to discuss
+                    your IT needs and learn how we can help.
                   </p>
                   <Button className="w-full">Schedule Free Consultation</Button>
                 </CardContent>
