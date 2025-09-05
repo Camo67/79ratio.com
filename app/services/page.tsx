@@ -2,7 +2,6 @@ import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { Badge } from "@/components/ui/badge"
 import { Monitor, Shield, Cloud, HardDrive, Headphones, Settings, ArrowRight, CheckCircle } from "lucide-react"
 import Link from "next/link"
 
@@ -20,7 +19,6 @@ const services = [
       "Instant alert notifications",
     ],
     benefits: ["99.9% uptime guarantee", "Reduced downtime costs", "Improved system performance", "Peace of mind"],
-    pricing: "Starting at $299/month",
   },
   {
     icon: Shield,
@@ -34,7 +32,6 @@ const services = [
       "Reduced security risks",
       "Employee education",
     ],
-    pricing: "Starting at $199/month",
   },
   {
     icon: Cloud,
@@ -44,7 +41,6 @@ const services = [
       "Expert cloud migration, optimization, and management services for Microsoft 365, AWS, and Azure platforms.",
     features: ["Cloud migration planning", "Cost optimization", "Performance monitoring", "Backup & disaster recovery"],
     benefits: ["Reduced IT costs", "Improved scalability", "Enhanced collaboration", "Business continuity"],
-    pricing: "Custom pricing",
   },
   {
     icon: HardDrive,
@@ -53,7 +49,6 @@ const services = [
     description: "Reliable data protection with automated backups and rapid disaster recovery solutions.",
     features: ["Automated daily backups", "Rapid data recovery", "Disaster recovery planning", "Compliance reporting"],
     benefits: ["Data protection", "Business continuity", "Regulatory compliance", "Reduced recovery time"],
-    pricing: "Starting at $149/month",
   },
   {
     icon: Headphones,
@@ -62,7 +57,6 @@ const services = [
     description: "Responsive technical support with local expertise and personalized service for your team.",
     features: ["Local technical support", "Remote assistance", "Ticket management system", "Priority support levels"],
     benefits: ["Quick issue resolution", "Improved productivity", "Reduced IT frustration", "Expert guidance"],
-    pricing: "Starting at $99/month",
   },
   {
     icon: Settings,
@@ -76,7 +70,6 @@ const services = [
       "Future-ready infrastructure",
       "Competitive advantage",
     ],
-    pricing: "Custom consulting",
   },
 ]
 
@@ -160,12 +153,7 @@ export default function ServicesPage() {
                       </ul>
                     </div>
 
-                    <div className="pt-4 border-t border-border">
-                      <div className="flex items-center justify-between mb-4">
-                        <Badge variant="secondary" className="text-xs">
-                          {service.pricing}
-                        </Badge>
-                      </div>
+                    <div className="pt-4">
                       <Button asChild className="w-full">
                         <Link href={`/services/${service.slug}`} className="inline-flex items-center gap-2">
                           Learn More
