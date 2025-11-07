@@ -1,3 +1,4 @@
+import Link from "next/link"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
@@ -5,76 +6,7 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Input } from "@/components/ui/input"
 import { Calendar, User, ArrowRight, Search, TrendingUp } from "lucide-react"
-import Link from "next/link"
-
-const blogPosts = [
-  {
-    title: "5 Essential Cybersecurity Practices for Law Firms in 2024",
-    slug: "cybersecurity-practices-law-firms-2024",
-    excerpt:
-      "Learn the critical security measures every law firm needs to implement to protect client data and maintain Bar Association compliance.",
-    author: "Michael Rodriguez",
-    date: "March 15, 2024",
-    category: "Cybersecurity",
-    readTime: "8 min read",
-    featured: true,
-  },
-  {
-    title: "HIPAA Compliance: A Complete Guide for Healthcare Providers",
-    slug: "hipaa-compliance-guide-healthcare-providers",
-    excerpt:
-      "Everything healthcare organizations need to know about HIPAA compliance, from technical safeguards to staff training.",
-    author: "Sarah Chen",
-    date: "March 10, 2024",
-    category: "Healthcare IT",
-    readTime: "12 min read",
-    featured: true,
-  },
-  {
-    title: "Cloud Migration Strategies for Small Businesses",
-    slug: "cloud-migration-strategies-small-businesses",
-    excerpt:
-      "A step-by-step approach to migrating your business to the cloud while minimizing downtime and maximizing benefits.",
-    author: "James Wilson",
-    date: "March 5, 2024",
-    category: "Cloud Computing",
-    readTime: "10 min read",
-    featured: false,
-  },
-  {
-    title: "The True Cost of IT Downtime for Manufacturing Companies",
-    slug: "cost-it-downtime-manufacturing-companies",
-    excerpt:
-      "Understanding the financial impact of system failures and how proactive monitoring can prevent costly disruptions.",
-    author: "David Thompson",
-    date: "February 28, 2024",
-    category: "Manufacturing IT",
-    readTime: "6 min read",
-    featured: false,
-  },
-  {
-    title: "Nonprofit Technology: Maximizing Impact with Limited Budgets",
-    slug: "nonprofit-technology-maximizing-impact-limited-budgets",
-    excerpt:
-      "Cost-effective IT solutions that help nonprofits achieve their mission while staying within budget constraints.",
-    author: "Lisa Martinez",
-    date: "February 22, 2024",
-    category: "Nonprofit IT",
-    readTime: "9 min read",
-    featured: false,
-  },
-  {
-    title: "Backup and Disaster Recovery: Your Business Continuity Lifeline",
-    slug: "backup-disaster-recovery-business-continuity",
-    excerpt:
-      "Why every business needs a comprehensive backup and disaster recovery plan, and how to implement one effectively.",
-    author: "Amanda Foster",
-    date: "February 15, 2024",
-    category: "Data Protection",
-    readTime: "7 min read",
-    featured: false,
-  },
-]
+import { blogPosts } from "@/lib/blog-posts"
 
 const categories = [
   "All Posts",
