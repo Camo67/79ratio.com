@@ -58,7 +58,7 @@ export default function ContactPage() {
         {/* Background Image */}
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat animate-slow-drift"
-          style={{ backgroundImage: "url(/contact-bg.jpeg)" }}
+          style={{ backgroundImage: "url('/Image_fx (29).jpg')" }}
         />
 
         {/* Overlay */}
@@ -231,8 +231,15 @@ export default function ContactPage() {
                       <strong>Phone: (630) 394-2700</strong>
                     </div>
                   </div>
-                  <div className="aspect-video bg-muted rounded-lg flex items-center justify-center">
-                    <div className="text-muted-foreground">Interactive Map Coming Soon</div>
+                  <div className="aspect-video rounded-lg overflow-hidden border border-border">
+                    <iframe
+                      src="https://maps.google.com/maps?q=25%20S%20Grove%20Ave%20Elgin%20Illinois&output=embed"
+                      title="79Ratio location map"
+                      className="w-full h-full"
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                      allowFullScreen
+                    />
                   </div>
                 </CardContent>
               </Card>

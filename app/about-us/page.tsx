@@ -58,8 +58,8 @@ export default function AboutUsPage() {
           <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat animate-slow-drift"
             style={{
-              backgroundImage: "url(/about-bg.png)",
-              filter: "brightness(0.2)",
+              backgroundImage: "url(/Image_fx (21).jpg)",
+              filter: "brightness(0.35)",
             }}
           />
           <div className="absolute inset-0 bg-gradient-to-br from-black/85 via-black/75 to-black/85" />
@@ -207,10 +207,10 @@ export default function AboutUsPage() {
                     <div className="w-16 h-16 bg-primary/20 rounded-2xl flex items-center justify-center mx-auto border border-primary/30">
                       <IconComponent className="w-8 h-8 text-primary" />
                     </div>
-                    <CardTitle className="text-xl text-black">{value.title}</CardTitle>
+                    <CardTitle className="text-xl text-white">{value.title}</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <CardDescription className="text-gray-600">{value.description}</CardDescription>
+                    <CardDescription className="text-white">{value.description}</CardDescription>
                   </CardContent>
                 </Card>
               )

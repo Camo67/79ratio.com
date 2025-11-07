@@ -31,13 +31,20 @@ export default function ResourcesPage() {
       <Navigation />
 
       {/* Hero */}
-      <section className="bg-gradient-to-br from-background to-muted py-20 lg:py-32">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
-          <Badge className="mx-auto w-fit bg-primary/10 text-primary">Resources</Badge>
-          <h1 className="text-4xl lg:text-6xl font-bold text-foreground leading-tight text-balance">
+      <section className="relative overflow-hidden py-20 lg:py-32 text-white">
+        <div className="absolute inset-0">
+          <div
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            style={{ backgroundImage: "url(/Image_fx (17).jpg)" }}
+          />
+          <div className="absolute inset-0 bg-gradient-to-br from-black/90 via-black/80 to-black/90" />
+        </div>
+        <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
+          <Badge className="mx-auto w-fit bg-primary/20 text-primary border border-primary/30">Resources</Badge>
+          <h1 className="text-4xl lg:text-6xl font-bold leading-tight text-balance">
             Valuable Guides and Tools for Digital Transformation Success
           </h1>
-          <p className="text-lg text-muted-foreground leading-relaxed text-pretty">
+          <p className="text-lg text-gray-200 leading-relaxed text-pretty">
             Access whitepapers, case studies, and how-to guides crafted to help you navigate technology solutions
             confidently and effectively.
           </p>

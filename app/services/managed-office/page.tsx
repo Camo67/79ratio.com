@@ -100,6 +100,10 @@ export default function ManagedOfficePage() {
 
       {/* Hero Section */}
       <section className="relative overflow-hidden py-20 lg:py-32 bg-black text-foreground">
+        <div className="absolute inset-0">
+          <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url(/Image_fx-26.jpg)" }} />
+          <div className="absolute inset-0 bg-gradient-to-br from-black/90 via-black/80 to-black/90" />
+        </div>
         <div className="absolute inset-0 opacity-40">
           <div className="absolute -top-24 left-1/4 h-72 w-72 bg-primary blur-[140px]" />
           <div className="absolute top-16 right-0 h-80 w-80 bg-accent blur-[140px]" />

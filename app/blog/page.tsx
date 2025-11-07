@@ -98,7 +98,7 @@ export default function BlogPage() {
         {/* Background Image */}
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat animate-slow-drift"
-          style={{ backgroundImage: "url(/blog-bg.png)" }}
+          style={{ backgroundImage: "url(/it-helpdesk-services-24-7.jpg)" }}
         />
 
         {/* Overlay */}

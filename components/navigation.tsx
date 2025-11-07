@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useEffect, useRef, useState } from "react"
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
@@ -9,6 +9,8 @@ import { Menu, X, ChevronDown, Shield, Phone, Building, Lock } from "lucide-reac
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
   const [isMegaMenuOpen, setIsMegaMenuOpen] = useState(false)
+  const megaMenuRef = useRef<HTMLDivElement | null>(null)
+  const megaMenuButtonRef = useRef<HTMLButtonElement | null>(null)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,9 +28,34 @@ export function Navigation() {
     }
   }, [isMegaMenuOpen])
 
-  const handleMegaMenuEnter = () => {
-    setIsMegaMenuOpen(true)
+  const toggleMegaMenu = () => {
+    setIsMegaMenuOpen((prev) => !prev)
   }
+
+  const closeMegaMenu = () => {
+    setIsMegaMenuOpen(false)
+  }
+
+  useEffect(() => {
+    if (!isMegaMenuOpen) return
+
+    const handleClickOutside = (event: MouseEvent) => {
+      const target = event.target as Node
+      if (
+        megaMenuRef.current &&
+        !megaMenuRef.current.contains(target) &&
+        megaMenuButtonRef.current &&
+        !megaMenuButtonRef.current.contains(target)
+      ) {
+        setIsMegaMenuOpen(false)
+      }
+    }
+
+    document.addEventListener("mousedown", handleClickOutside)
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside)
+    }
+  }, [isMegaMenuOpen])
 
   const majorServices = [
     {
@@ -85,14 +112,25 @@ export function Navigation() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <div className="relative" onMouseEnter={handleMegaMenuEnter}>
-              <button className="text-foreground hover:text-primary transition-colors flex items-center space-x-1">
+            <div className="relative">
+              <button
+                type="button"
+                ref={megaMenuButtonRef}
+                onClick={toggleMegaMenu}
+                className="text-foreground hover:text-primary transition-colors flex items-center space-x-1"
+                aria-expanded={isMegaMenuOpen}
+                aria-controls="mega-menu"
+              >
                 <span>{"What we do"}</span>
                 <ChevronDown className="w-4 h-4" />
               </button>
 
               {isMegaMenuOpen && (
-                <div className="fixed top-16 left-0 right-0 bg-black/95 backdrop-blur-sm border-b border-primary/30 shadow-2xl overflow-hidden z-40">
+                <div
+                  ref={megaMenuRef}
+                  id="mega-menu"
+                  className="fixed top-16 left-0 right-0 bg-black/95 backdrop-blur-sm border-b border-primary/30 shadow-2xl overflow-hidden z-40"
+                >
                   <div className="max-w-7xl mx-auto p-8">
                     <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
                       {/* Major Services Grid - Takes up 3 columns */}
@@ -107,6 +145,7 @@ export function Navigation() {
                               <Link
                                 key={service.href}
                                 href={service.href}
+                                onClick={closeMegaMenu}
                                 className="group p-6 rounded-lg border border-primary/30 hover:border-primary/60 hover:bg-primary/5 transition-all duration-200"
                                 style={{
                                   animationDelay: `${index * 0.1}s`,
@@ -141,6 +180,7 @@ export function Navigation() {
                               <Link
                                 key={item.href}
                                 href={item.href}
+                                onClick={closeMegaMenu}
                                 className="px-4 py-3 text-foreground hover:text-primary hover:bg-primary/10 transition-all duration-200 rounded text-sm border border-transparent hover:border-primary/30"
                                 style={{
                                   animationDelay: `${(index + 4) * 0.05}s`,
@@ -179,7 +219,9 @@ export function Navigation() {
                           </div>
                           <div>
                             <Button asChild className="w-full">
-                              <Link href="/contact">Schedule Consultation</Link>
+                              <Link href="/contact" onClick={closeMegaMenu}>
+                                Schedule Consultation
+                              </Link>
                             </Button>
                           </div>
                         </div>

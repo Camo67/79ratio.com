@@ -116,7 +116,7 @@ export default function IndustriesPage() {
         {/* Background Image */}
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat animate-slow-drift"
-          style={{ backgroundImage: "url(/industries-bg.png)" }}
+          style={{ backgroundImage: "url(/business-it-solutions-overview.jpg)" }}
         />
 
         {/* Overlay */}
