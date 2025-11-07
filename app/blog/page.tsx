@@ -132,11 +132,11 @@ export default function BlogPage() {
           <div className="text-center space-y-6">
             <Badge className="mb-4 bg-primary/20 text-white border-primary/30">IT Insights & Resources</Badge>
             <h1 className="text-4xl lg:text-6xl font-bold text-white leading-tight text-balance">
-              The <span className="text-primary">79Ratio Blog</span>
+              Insights, Trends, and Tips from 79Ratio’s Technology Experts
             </h1>
             <p className="text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed text-pretty">
-              Stay informed with the latest IT trends, best practices, and industry insights. Our experts share
-              actionable advice to help your business thrive with technology.
+              Stay informed on the latest in cloud innovation, cybersecurity, and sector-specific advancements with our
+              regularly updated blog.
             </p>
 
             {/* Search Bar */}
@@ -147,12 +147,15 @@ export default function BlogPage() {
                 className="pl-10 bg-white/10 border-white/20 text-white placeholder:text-gray-300"
               />
             </div>
+            <Button asChild size="lg" className="text-lg px-8">
+              <Link href="#posts">Explore Our Articles</Link>
+            </Button>
           </div>
         </div>
       </section>
 
       {/* Featured Posts */}
-      <section className="py-20 bg-background">
+      <section id="posts" className="py-20 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-4 mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-foreground text-balance">Featured Articles</h2>

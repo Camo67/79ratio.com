@@ -33,25 +33,25 @@ export function Navigation() {
   const majorServices = [
     {
       title: "Managed IT & Cybersecurity",
-      href: "/managed-it-cybersecurity",
+      href: "/services/managed-technology-cybersecurity",
       icon: Shield,
       description: "Complete IT management and security solutions",
     },
     {
       title: "Integrated Voice & Data",
-      href: "/integrated-voice-data",
+      href: "/services/integrated-voice-data",
       icon: Phone,
       description: "Unified communication systems",
     },
     {
       title: "Managed Office",
-      href: "/managed-office",
+      href: "/services/managed-office",
       icon: Building,
       description: "Complete office technology management",
     },
     {
       title: "Physical Security",
-      href: "/physical-security",
+      href: "/services/physical-security",
       icon: Lock,
       description: "Comprehensive security solutions",
     },
@@ -61,13 +61,11 @@ export function Navigation() {
     { label: "About Us", href: "/about-us" },
     { label: "Difference", href: "/difference" },
     { label: "Leadership", href: "/leadership" },
-    { label: "Workflow Automation", href: "/business-process-automation" },
-    { label: "Microsoft Development", href: "/microsoft-development-services" },
-    { label: "Smarter Construction", href: "/smarter-construction" },
+    { label: "Business Process Automation", href: "/business-process-automation" },
+    { label: "Technology Development Services", href: "/technology-development-services" },
     { label: "Blog", href: "/blog" },
-    { label: "Resources", href: "/resources/blog" },
+    { label: "Resources", href: "/resources" },
     { label: "Knowledge Base", href: "/knowledge-base" },
-    { label: "Contact", href: "/contact" },
   ]
 
   return (

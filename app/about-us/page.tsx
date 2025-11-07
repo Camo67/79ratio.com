@@ -106,20 +106,23 @@ export default function AboutUsPage() {
             <div className="space-y-8 max-w-4xl">
               <div className="space-y-4">
                 <h1 className="text-4xl lg:text-6xl font-bold text-white leading-tight text-balance">
-                  People First. Technology Second. <span className="text-primary">Success Always.</span>
+                  Discover the story behind 79Ratio, our mission to empower businesses, and the values that drive us to
+                  innovate digital solutions.
                 </h1>
                 <p className="text-gray-200 leading-relaxed text-pretty text-lg">
-                  Sustainable Excellence • Strategic Innovation • Tailored Management
+                  We exist to fuel growth, enhance security, and streamline operations for organizations that deserve
+                  better technology partners.
                 </p>
                 <p className="text-gray-300 leading-relaxed text-pretty text-base mt-4">
-                  At 79Ratio, we believe that great technology starts with understanding people. Our culture of
-                  empowerment, continuous learning, and client-focused innovation drives everything we do.
+                  At 79Ratio, we are dedicated to providing tailored technology solutions that fit each client&apos;s
+                  unique needs. Our experienced team combines deep expertise with a client-first approach so every
+                  engagement is built on understanding, trust, and measurable value.
                 </p>
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button asChild size="lg" className="text-lg px-8">
-                  <Link href="/contact">Join the Journey — Collaborate, Learn, and Grow with 79ratio</Link>
+                  <Link href="/contact">Connect with Us Today</Link>
                 </Button>
                 <Button
                   asChild
