@@ -101,19 +101,19 @@ export default function PhysicalSecurityPage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden py-20 lg:py-32 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 text-white">
+      <section className="relative overflow-hidden py-20 lg:py-32 bg-black text-foreground">
         <div className="absolute inset-0 opacity-40">
           <div className="absolute -top-24 left-1/3 h-72 w-72 bg-primary blur-[160px]" />
           <div className="absolute top-10 right-0 h-80 w-80 bg-accent blur-[160px]" />
         </div>
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8">
-          <Badge variant="secondary" className="bg-white/10 text-white border-white/20">
+          <Badge variant="secondary" className="bg-primary/15 text-primary border border-primary/40">
             Physical Security
           </Badge>
-          <h1 className="text-4xl lg:text-6xl font-bold leading-tight text-balance">
+          <h1 className="text-4xl lg:text-6xl font-bold leading-tight text-balance text-primary">
             Defend Assets, People, and Peace of Mind with Advanced Physical Security
           </h1>
-          <p className="text-lg lg:text-xl text-white/80 max-w-3xl mx-auto leading-relaxed text-pretty">
+          <p className="text-lg lg:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed text-pretty">
             From access control to real-time surveillance and incident response, 79Ratio shields your workspace against
             every physical threat—so you can focus on growth, not worry.
           </p>

@@ -101,19 +101,19 @@ export default function ManagedTechnologyCybersecurityPage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 py-20 lg:py-32 text-white">
+      <section className="relative overflow-hidden bg-black py-20 lg:py-32 text-foreground">
         <div className="absolute inset-0 opacity-40">
           <div className="absolute -top-32 left-1/4 h-72 w-72 rounded-full bg-primary blur-[120px]" />
           <div className="absolute top-0 right-0 h-96 w-96 rounded-full bg-accent blur-[140px]" />
         </div>
         <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8">
-          <Badge variant="secondary" className="bg-white/10 text-white border-white/20">
+          <Badge variant="secondary" className="bg-primary/15 text-primary border border-primary/40">
             Managed Technology & Cybersecurity
           </Badge>
-          <h1 className="text-4xl lg:text-6xl font-bold leading-tight text-balance">
+          <h1 className="text-4xl lg:text-6xl font-bold leading-tight text-balance text-primary">
             Comprehensive Managed Technology & Cybersecurity Services
           </h1>
-          <p className="text-lg lg:text-xl text-white/80 max-w-3xl mx-auto leading-relaxed text-pretty">
+          <p className="text-lg lg:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed text-pretty">
             Protect, streamline, and empower your business with always-on management and advanced digital defense—from
             strategic support to real-time threat protection, 79Ratio has your back.
           </p>

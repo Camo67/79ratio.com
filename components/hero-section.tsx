@@ -12,10 +12,10 @@ export function HeroSection() {
           className="absolute inset-0 bg-cover bg-center bg-no-repeat animate-slow-drift"
           style={{
             backgroundImage: "url(/home-bg.png)",
-            filter: "brightness(0.3)",
+            filter: "brightness(0.6)",
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-black/90 via-black/80 to-black/90" />
+        <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-black/60 to-black/70" />
 
         <div className="absolute inset-0">
           {/* Fibonacci spiral elements */}
@@ -49,12 +49,12 @@ export function HeroSection() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center text-center space-y-12">
           {/* Logo */}
-          <div className="flex justify-center">
-            <Image
-              src="/79ratio-logo.webp"
-              alt="79Ratio Logo"
-              width={300}
-              height={100}
+            <div className="flex justify-center">
+              <Image
+                src="/79ratio-logo.webp"
+                alt="79Ratio Logo"
+                width={300}
+                height={100}
               className="h-16 w-auto"
               priority
             />
@@ -63,13 +63,13 @@ export function HeroSection() {
           {/* Hero Content */}
           <div className="space-y-8 max-w-4xl">
             <div className="space-y-4">
-              <h1 className="lg:text-6xl font-bold text-white leading-tight text-balance text-3xl">
-                Where Technology Evolves with <span className="text-primary">Precision</span>
+              <h1 className="lg:text-6xl font-bold text-primary leading-tight text-balance text-3xl">
+                Where Technology Evolves with <span className="text-[var(--primary-soft)]">Precision</span>
               </h1>
-              <p className="text-gray-100 leading-relaxed text-pretty text-lg">
+              <p className="text-[var(--foreground)] leading-relaxed text-pretty text-lg">
                 Sustainable Excellence • Strategic Innovation • Tailored Management
               </p>
-              <p className="text-gray-200 leading-relaxed text-pretty text-base mt-4">
+              <p className="text-[var(--muted-foreground)] leading-relaxed text-pretty text-base mt-4">
                 79Ratio delivers comprehensive IT solutions tailored for law firms, healthcare providers, nonprofits,
                 and manufacturing companies. Experience proactive support, 24/7 monitoring, and strategic technology
                 guidance.
@@ -80,12 +80,7 @@ export function HeroSection() {
               <Button asChild size="lg" className="text-lg px-8">
                 <Link href="/contact">Schedule a Call</Link>
               </Button>
-              <Button
-                asChild
-                variant="outline"
-                size="lg"
-                className="text-lg px-8 bg-transparent border-white text-white hover:bg-white hover:text-black"
-              >
+              <Button asChild variant="outline" size="lg" className="text-lg px-8">
                 <Link href="/services">View Services</Link>
               </Button>
             </div>
@@ -96,8 +91,8 @@ export function HeroSection() {
                   <Shield className="w-5 h-5 text-primary" />
                 </div>
                 <div>
-                  <div className="font-semibold text-white">Secure</div>
-                  <div className="text-sm text-gray-200">Enterprise-grade</div>
+                  <div className="font-semibold text-[var(--foreground)]">Secure</div>
+                  <div className="text-sm text-[var(--muted-foreground)]">Enterprise-grade</div>
                 </div>
               </div>
 
@@ -106,8 +101,8 @@ export function HeroSection() {
                   <Clock className="w-5 h-5 text-primary" />
                 </div>
                 <div>
-                  <div className="font-semibold text-white">24/7/365</div>
-                  <div className="text-sm text-gray-200">Monitoring</div>
+                  <div className="font-semibold text-[var(--foreground)]">24/7/365</div>
+                  <div className="text-sm text-[var(--muted-foreground)]">Monitoring</div>
                 </div>
               </div>
 
@@ -116,8 +111,8 @@ export function HeroSection() {
                   <Users className="w-5 h-5 text-primary" />
                 </div>
                 <div>
-                  <div className="font-semibold text-white">Expert</div>
-                  <div className="text-sm text-gray-200">Support Team</div>
+                  <div className="font-semibold text-[var(--foreground)]">Expert</div>
+                  <div className="text-sm text-[var(--muted-foreground)]">Support Team</div>
                 </div>
               </div>
 
@@ -126,13 +121,13 @@ export function HeroSection() {
                   <Zap className="w-5 h-5 text-primary" />
                 </div>
                 <div>
-                  <div className="font-semibold text-white">Proactive</div>
-                  <div className="text-sm text-gray-200">Approach</div>
+                  <div className="font-semibold text-[var(--foreground)]">Proactive</div>
+                  <div className="text-sm text-[var(--muted-foreground)]">Approach</div>
                 </div>
               </div>
             </div>
 
-            <div className="pt-6 border-t border-white/10">
+            <div className="pt-6 border-t border-primary/30">
               <p className="text-lg text-primary font-medium">Ratio79. Precision. Sustainability. Excellence.</p>
             </div>
           </div>

@@ -50,11 +50,11 @@ export function ServicesOverview() {
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat animate-slow-drift"
           style={{
-            backgroundImage: "url(/digital-bg.png)",
-            filter: "brightness(0.15)",
+            backgroundImage: "url(/cards.jpg)",
+            filter: "brightness(0.4)",
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/90 via-black/80 to-black/90" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/70 to-black/85" />
 
         <div className="absolute inset-0">
           <div
@@ -75,8 +75,8 @@ export function ServicesOverview() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center space-y-4 mb-16">
-          <h2 className="text-3xl lg:text-5xl font-bold text-white text-balance">Comprehensive IT Solutions</h2>
-          <p className="text-xl text-gray-200 max-w-3xl mx-auto text-pretty">
+          <h2 className="text-3xl lg:text-5xl font-bold text-primary text-balance">Comprehensive IT Solutions</h2>
+          <p className="text-xl text-[var(--foreground)] max-w-3xl mx-auto text-pretty">
             From proactive monitoring to strategic planning, we provide the complete IT infrastructure your business
             needs to thrive in today's digital landscape.
           </p>
@@ -93,7 +93,7 @@ export function ServicesOverview() {
 
             return (
               <Link key={index} href={`/services/${serviceSlug}`} className="group block">
-                <div className="relative h-48 bg-gradient-to-br from-black/80 to-black/60 rounded-xl border border-primary/30 hover:border-primary/60 transition-all duration-300 hover:shadow-xl hover:shadow-primary/20 overflow-hidden backdrop-blur-sm">
+                <div className="relative h-48 bg-gradient-to-br from-black/80 to-black/60 rounded-xl border border-primary/40 hover:border-primary transition-all duration-300 hover:shadow-[0_20px_50px_rgba(212,175,55,0.35)] overflow-hidden backdrop-blur-sm">
                   {/* Background Pattern */}
                   <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent" />
 
@@ -107,10 +107,10 @@ export function ServicesOverview() {
                     </div>
 
                     <div>
-                      <h3 className="text-xl font-bold text-white mb-2 group-hover:text-primary transition-colors">
+                      <h3 className="text-xl font-bold text-primary mb-2 group-hover:text-[var(--primary-soft)] transition-colors">
                         {service.title}
                       </h3>
-                      <p className="text-gray-300 text-sm line-clamp-2">{service.description}</p>
+                      <p className="text-[var(--foreground)]/80 text-sm line-clamp-2">{service.description}</p>
                     </div>
                   </div>
 

@@ -69,7 +69,7 @@ export function Navigation() {
   ]
 
   return (
-    <nav className="border-b sticky top-0 z-50 bg-black text-black border-black">
+    <nav className="border-b sticky top-0 z-50 bg-black text-foreground border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <Link href="/" className="flex items-center">
@@ -86,13 +86,13 @@ export function Navigation() {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             <div className="relative" onMouseEnter={handleMegaMenuEnter}>
-              <button className="text-white hover:text-primary transition-colors flex items-center space-x-1">
+              <button className="text-foreground hover:text-primary transition-colors flex items-center space-x-1">
                 <span>{"What we do"}</span>
                 <ChevronDown className="w-4 h-4" />
               </button>
 
               {isMegaMenuOpen && (
-                <div className="fixed top-16 left-0 right-0 bg-black/95 backdrop-blur-sm border-b border-primary/20 shadow-2xl overflow-hidden z-40">
+                <div className="fixed top-16 left-0 right-0 bg-black/95 backdrop-blur-sm border-b border-primary/30 shadow-2xl overflow-hidden z-40">
                   <div className="max-w-7xl mx-auto p-8">
                     <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
                       {/* Major Services Grid - Takes up 3 columns */}
@@ -107,7 +107,7 @@ export function Navigation() {
                               <Link
                                 key={service.href}
                                 href={service.href}
-                                className="group p-6 rounded-lg border border-primary/20 hover:border-primary/40 hover:bg-primary/5 transition-all duration-200"
+                                className="group p-6 rounded-lg border border-primary/30 hover:border-primary/60 hover:bg-primary/5 transition-all duration-200"
                                 style={{
                                   animationDelay: `${index * 0.1}s`,
                                   animation: "fadeInUp 0.3s ease-out forwards",
@@ -118,7 +118,7 @@ export function Navigation() {
                                     <IconComponent className="w-8 h-8 text-primary group-hover:text-primary/80" />
                                   </div>
                                   <div>
-                                    <h4 className="text-white font-medium text-base group-hover:text-primary transition-colors">
+                                    <h4 className="text-foreground font-medium text-base group-hover:text-primary transition-colors">
                                       {service.title}
                                     </h4>
                                     <p className="text-gray-400 text-sm mt-2 group-hover:text-gray-300">
@@ -141,7 +141,7 @@ export function Navigation() {
                               <Link
                                 key={item.href}
                                 href={item.href}
-                                className="px-4 py-3 text-white hover:text-primary hover:bg-primary/10 transition-all duration-200 rounded text-sm border border-transparent hover:border-primary/20"
+                                className="px-4 py-3 text-foreground hover:text-primary hover:bg-primary/10 transition-all duration-200 rounded text-sm border border-transparent hover:border-primary/30"
                                 style={{
                                   animationDelay: `${(index + 4) * 0.05}s`,
                                   animation: "fadeInUp 0.3s ease-out forwards",
@@ -155,13 +155,13 @@ export function Navigation() {
                       </div>
 
                       {/* Contact Information - Takes up 1 column */}
-                      <div className="lg:col-span-1 border-l border-primary/20 pl-8">
+                        <div className="lg:col-span-1 border-l border-primary/30 pl-8">
                         <h3 className="text-primary font-semibold mb-6 text-lg uppercase tracking-wide">
                           Get In Touch
                         </h3>
                         <div className="space-y-6">
                           <div>
-                            <h4 className="text-white font-medium mb-2">Call Us Now</h4>
+                            <h4 className="text-foreground font-medium mb-2">Call Us Now</h4>
                             <a
                               href="tel:4694855577"
                               className="text-2xl font-bold text-primary hover:text-primary/80 transition-colors"
@@ -170,8 +170,8 @@ export function Navigation() {
                             </a>
                           </div>
                           <div>
-                            <h4 className="text-white font-medium mb-2">Office Location</h4>
-                            <p className="text-gray-400 text-sm">
+                            <h4 className="text-foreground font-medium mb-2">Office Location</h4>
+                            <p className="text-muted-foreground text-sm">
                               25 S Grove Ave Ste 501
                               <br />
                               Elgin, Illinois 60120
@@ -190,25 +190,25 @@ export function Navigation() {
               )}
             </div>
 
-            <Link href="/about" className="text-white hover:text-primary transition-colors">
+            <Link href="/about" className="text-foreground hover:text-primary transition-colors">
               About
             </Link>
-            <Link href="/services" className="text-white hover:text-primary transition-colors">
+            <Link href="/services" className="text-foreground hover:text-primary transition-colors">
               Services
             </Link>
-            <Link href="/industries" className="text-white hover:text-primary transition-colors">
+            <Link href="/industries" className="text-foreground hover:text-primary transition-colors">
               Industries
             </Link>
-            <Link href="/blog" className="text-white hover:text-primary transition-colors">
+            <Link href="/blog" className="text-foreground hover:text-primary transition-colors">
               Blog
             </Link>
-            <Link href="/contact" className="text-white hover:text-primary transition-colors">
+            <Link href="/contact" className="text-foreground hover:text-primary transition-colors">
               Contact
             </Link>
             <Button
               variant="outline"
               asChild
-              className="text-white border-white hover:bg-white hover:text-black bg-transparent"
+              className="text-foreground border-border hover:bg-primary/20 hover:text-primary bg-transparent"
             >
               <a href="https://79ratio.deskdirector.com/auth/v1/" target="_blank" rel="noopener noreferrer">
                 Client Login
@@ -229,7 +229,7 @@ export function Navigation() {
               variant="ghost"
               size="sm"
               onClick={() => setIsOpen(!isOpen)}
-              className="text-white hover:text-primary"
+              className="text-foreground hover:text-primary"
             >
               {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </Button>
@@ -246,7 +246,7 @@ export function Navigation() {
                   <Link
                     key={service.href}
                     href={service.href}
-                    className="block px-3 py-2 text-white hover:text-primary transition-colors text-sm"
+                    className="block px-3 py-2 text-foreground hover:text-primary transition-colors text-sm"
                     onClick={() => setIsOpen(false)}
                   >
                     <div className="flex items-center space-x-2">
@@ -261,7 +261,7 @@ export function Navigation() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="block px-3 py-2 text-white hover:text-primary transition-colors text-sm"
+                  className="block px-3 py-2 text-foreground hover:text-primary transition-colors text-sm"
                   onClick={() => setIsOpen(false)}
                 >
                   {item.label}
