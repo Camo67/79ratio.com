@@ -196,38 +196,34 @@ export default function MonitoringPage() {
       <section className="py-20 bg-muted/50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="space-y-6">
-            <h2 className="text-3xl lg:text-4xl font-bold text-foreground text-balance">Transparent Pricing</h2>
+            <h2 className="text-3xl lg:text-4xl font-bold text-foreground text-balance">Schedule Your Monitoring Quote</h2>
             <p className="text-xl text-muted-foreground text-pretty">
-              Starting at $299/month for comprehensive 24/7/365 monitoring with no hidden fees.
+              Every environment has unique coverage, compliance, and response requirements. Book time with our monitoring architects to map your needs and receive a tailored proposal.
             </p>
             <Card className="max-w-md mx-auto border-border bg-card">
-              <CardHeader className="text-center">
-                <CardTitle className="text-2xl text-card-foreground">Complete Monitoring</CardTitle>
-                <div className="text-4xl font-bold text-primary">
-                  $299<span className="text-lg text-muted-foreground">/month</span>
-                </div>
+              <CardHeader className="text-center space-y-2">
+                <CardTitle className="text-2xl text-card-foreground">Coverage Planning Session</CardTitle>
+                <CardDescription className="text-muted-foreground">
+                  30-minute working session to align scope, SLAs, and rollout timeline.
+                </CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
                 <ul className="space-y-2 text-left">
                   <li className="flex items-center text-sm">
                     <CheckCircle className="w-4 h-4 text-primary mr-2" />
-                    24/7/365 monitoring coverage
+                    Document critical systems and escalation paths
                   </li>
                   <li className="flex items-center text-sm">
                     <CheckCircle className="w-4 h-4 text-primary mr-2" />
-                    Real-time alerts and notifications
+                    Review compliance, reporting, and response targets
                   </li>
                   <li className="flex items-center text-sm">
                     <CheckCircle className="w-4 h-4 text-primary mr-2" />
-                    Performance optimization
-                  </li>
-                  <li className="flex items-center text-sm">
-                    <CheckCircle className="w-4 h-4 text-primary mr-2" />
-                    Monthly reporting
+                    Receive a customized pricing breakdown and next steps
                   </li>
                 </ul>
                 <Button asChild className="w-full">
-                  <Link href="/contact">Contact Us</Link>
+                  <Link href="/schedule-call">Schedule for Pricing</Link>
                 </Button>
               </CardContent>
             </Card>

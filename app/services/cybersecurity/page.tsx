@@ -212,38 +212,34 @@ export default function CybersecurityPage() {
       <section className="py-20 bg-muted/50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="space-y-6">
-            <h2 className="text-3xl lg:text-4xl font-bold text-foreground text-balance">Security Investment</h2>
+            <h2 className="text-3xl lg:text-4xl font-bold text-foreground text-balance">Plan Your Security Investment</h2>
             <p className="text-xl text-muted-foreground text-pretty">
-              Starting at $199/month for comprehensive cybersecurity protection tailored to your business needs.
+              Get a tailored security roadmap and pricing breakdown by meeting with our cybersecurity strategists.
             </p>
             <Card className="max-w-md mx-auto border-border bg-card">
-              <CardHeader className="text-center">
-                <CardTitle className="text-2xl text-card-foreground">Complete Security</CardTitle>
-                <div className="text-4xl font-bold text-primary">
-                  $199<span className="text-lg text-muted-foreground">/month</span>
-                </div>
+              <CardHeader className="text-center space-y-2">
+                <CardTitle className="text-2xl text-card-foreground">Security Strategy Session</CardTitle>
+                <CardDescription className="text-muted-foreground">
+                  Align risks, priorities, and required controls before we present investment options.
+                </CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
                 <ul className="space-y-2 text-left">
                   <li className="flex items-center text-sm">
                     <CheckCircle className="w-4 h-4 text-primary mr-2" />
-                    Multi-layered security protection
+                    Assess current defenses, compliance mandates, and cyber insurance needs
                   </li>
                   <li className="flex items-center text-sm">
                     <CheckCircle className="w-4 h-4 text-primary mr-2" />
-                    24/7 threat monitoring
+                    Prioritize protections by business impact and risk tolerance
                   </li>
                   <li className="flex items-center text-sm">
                     <CheckCircle className="w-4 h-4 text-primary mr-2" />
-                    Employee security training
-                  </li>
-                  <li className="flex items-center text-sm">
-                    <CheckCircle className="w-4 h-4 text-primary mr-2" />
-                    Compliance support
+                    Receive a customized proposal with phased pricing options
                   </li>
                 </ul>
                 <Button asChild className="w-full">
-                  <Link href="/contact">Get Protected</Link>
+                  <Link href="/schedule-call">Schedule for Pricing</Link>
                 </Button>
               </CardContent>
             </Card>

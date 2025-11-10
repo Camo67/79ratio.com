@@ -85,7 +85,7 @@ export default function StrategyServicesPage() {
 
               <div className="grid grid-cols-2 gap-6 pt-8">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-primary">$4.2M</div>
+                  <div className="text-3xl font-bold text-primary">4.2M</div>
                   <div className="text-sm text-muted-foreground">Average Spend Optimized</div>
                 </div>
                 <div className="text-center">
@@ -216,4 +216,3 @@ export default function StrategyServicesPage() {
     </main>
   )
 }
-

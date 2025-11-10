@@ -40,7 +40,7 @@ const solutions = [
 ]
 
 const impactStats = [
-  { value: "$1.2M", label: "Technology Grants Administered" },
+  { value: "1.2M", label: "Technology Grants Administered" },
   { value: "68", label: "Nonprofits Supported" },
   { value: "35%", label: "Average Cost Savings" },
 ]
@@ -52,7 +52,7 @@ const successStory = {
   solution:
     "Migrated to Microsoft 365 E3, deployed secure file sharing, implemented conditional access, and trained staff on phishing defense.",
   results: [
-    "Secured $250k of new funding tied to technology modernization",
+    "Secured 250k of new funding tied to technology modernization",
     "Volunteer onboarding time dropped from 10 days to 48 hours",
     "Zero security incidents during the last audit cycle",
   ],
@@ -210,4 +210,3 @@ export default function NonprofitsPage() {
     </main>
   )
 }
-
