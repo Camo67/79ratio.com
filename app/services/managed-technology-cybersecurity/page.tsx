@@ -106,7 +106,7 @@ export default function ManagedTechnologyCybersecurityPage() {
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: "url(/generated-image-2.png)" }}
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-black/85 via-black/80 to-black/90" />
+        <div className="absolute inset-0 bg-gradient-to-br from-black/75 via-black/55 to-black/75" />
         <div className="absolute inset-0 opacity-40">
           <div className="absolute -top-32 left-1/4 h-72 w-72 rounded-full bg-primary blur-[120px]" />
           <div className="absolute top-0 right-0 h-96 w-96 rounded-full bg-accent blur-[140px]" />

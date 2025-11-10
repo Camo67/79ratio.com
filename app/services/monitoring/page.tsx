@@ -89,7 +89,6 @@ export default function MonitoringPage() {
                 </div>
               </div>
             </div>
-
             <div className="relative">
               <div className="aspect-square bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl p-8 flex items-center justify-center">
                 <img

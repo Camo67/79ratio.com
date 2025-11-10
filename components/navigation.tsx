@@ -85,7 +85,6 @@ export function Navigation() {
   ]
 
   const additionalLinks = [
-    { label: "About Us", href: "/about-us" },
     { label: "Difference", href: "/difference" },
     { label: "Leadership", href: "/leadership" },
     { label: "Business Process Automation", href: "/business-process-automation" },

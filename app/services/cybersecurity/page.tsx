@@ -45,16 +45,23 @@ export default function CybersecurityPage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-background to-muted py-20 lg:py-32">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative overflow-hidden py-20 lg:py-32">
+        <div className="absolute inset-0">
+          <div
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            style={{ backgroundImage: "url(/Image_fx (23).jpg)" }}
+          />
+          <div className="absolute inset-0 bg-gradient-to-br from-black/55 via-black/35 to-black/55" />
+        </div>
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <div className="space-y-4">
-                <Badge className="mb-4">Cybersecurity Solutions</Badge>
-                <h1 className="text-4xl lg:text-6xl font-bold text-foreground leading-tight text-balance">
+                <Badge className="mb-4 text-white">Cybersecurity Solutions</Badge>
+                <h1 className="text-4xl lg:text-6xl font-bold text-white leading-tight text-balance">
                   Multi-Layered <span className="text-primary">Security Protection</span>
                 </h1>
-                <p className="text-xl text-muted-foreground leading-relaxed text-pretty">
+                <p className="text-xl text-white/80 leading-relaxed text-pretty">
                   Protect your business from evolving cyber threats with our comprehensive security solutions,
                   compliance management, and employee training programs.
                 </p>
@@ -72,11 +79,11 @@ export default function CybersecurityPage() {
               <div className="grid grid-cols-2 gap-6 pt-8">
                 <div className="text-center">
                   <div className="text-3xl font-bold text-primary">99.9%</div>
-                  <div className="text-sm text-muted-foreground">Threat Detection Rate</div>
+                  <div className="text-sm text-white/80">Threat Detection Rate</div>
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-bold text-primary">Less than 1 minute</div>
-                  <div className="text-sm text-muted-foreground">Response Time</div>
+                  <div className="text-sm text-white/80">Response Time</div>
                 </div>
               </div>
             </div>

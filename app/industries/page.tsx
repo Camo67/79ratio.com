@@ -120,7 +120,7 @@ export default function IndustriesPage() {
         />
 
         {/* Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-br from-black/85 via-black/75 to-black/85" />
+        <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-black/55 to-black/70" />
 
         {/* Floating Elements Animation */}
         <div className="absolute inset-0">

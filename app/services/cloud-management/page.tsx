@@ -18,11 +18,11 @@ export default function CloudManagementPage() {
           <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat animate-slow-drift"
             style={{
-              backgroundImage: "url(/industries-bg.png)",
+              backgroundImage: 'url("/Image_fx (19).jpg")',
               filter: "brightness(0.15)",
             }}
           />
-          <div className="absolute inset-0 bg-gradient-to-br from-black/85 via-black/75 to-black/85" />
+          <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-black/55 to-black/70" />
 
           <div className="absolute inset-0">
             <div

@@ -17,9 +17,9 @@ export default function LeadershipPage() {
         <div className="absolute inset-0">
           <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-            style={{ backgroundImage: "url(/Image_fx (6).jpg)" }}
+            style={{ backgroundImage: 'url("/Image_fx%20(6).jpg")' }}
           />
-          <div className="absolute inset-0 bg-gradient-to-br from-black/90 via-black/80 to-black/90" />
+          <div className="absolute inset-0 bg-gradient-to-br from-black/55 via-black/35 to-black/55" />
         </div>
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
           <Badge className="mx-auto w-fit bg-primary/20 text-primary border border-primary/30">Leadership</Badge>

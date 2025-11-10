@@ -22,7 +22,7 @@ export default function CybersecurityPage() {
               filter: "brightness(0.15)",
             }}
           />
-          <div className="absolute inset-0 bg-gradient-to-br from-black/85 via-black/75 to-black/85" />
+          <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-black/55 to-black/70" />
 
           <div className="absolute inset-0">
             <div

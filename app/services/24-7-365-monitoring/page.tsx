@@ -18,11 +18,11 @@ export default function MonitoringPage() {
           <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat animate-slow-drift"
             style={{
-              backgroundImage: "url(/services-bg.png)",
-              filter: "brightness(0.15)",
+              backgroundImage: "url(/Image_fx (24).jpg)",
+              filter: "brightness(0.2)",
             }}
           />
-          <div className="absolute inset-0 bg-gradient-to-br from-black/85 via-black/75 to-black/85" />
+          <div className="absolute inset-0 bg-gradient-to-br from-black/55 via-black/35 to-black/55" />
 
           <div className="absolute inset-0">
             <div
