@@ -61,16 +61,27 @@ export default function LawFirmsPage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-background to-muted py-20 lg:py-32">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative py-20 lg:py-32 overflow-hidden">
+        <div className="absolute inset-0">
+          <div
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            style={{ backgroundImage: 'url("/law_firms.jpg")' }}
+          />
+          <div className="absolute inset-0 bg-gradient-to-br from-black/80 via-black/60 to-black/80" />
+          <div className="absolute inset-0 bg-gradient-to-tr from-black/20 via-black/5 to-transparent" />
+          <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+            <div className="w-1/2 h-1/2 rounded-full bg-black/60 blur-[140px]" />
+          </div>
+        </div>
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-8">
+            <div className="space-y-8 text-white">
               <div className="space-y-4">
-                <Badge className="mb-4">Legal Industry Expertise</Badge>
-                <h1 className="text-4xl lg:text-6xl font-bold text-foreground leading-tight text-balance">
+                <Badge className="mb-4 text-white border-white/40 bg-white/10">Legal Industry Expertise</Badge>
+                <h1 className="text-4xl lg:text-6xl font-bold leading-tight text-balance">
                   IT Solutions for <span className="text-primary">Law Firms</span>
                 </h1>
-                <p className="text-xl text-muted-foreground leading-relaxed text-pretty">
+                <p className="text-xl text-white/90 leading-relaxed text-pretty">
                   Specialized technology solutions designed for legal practices. We understand the unique security,
                   compliance, and confidentiality requirements of the legal profession.
                 </p>
@@ -88,24 +99,15 @@ export default function LawFirmsPage() {
               <div className="grid grid-cols-2 gap-6 pt-8">
                 <div className="text-center">
                   <div className="text-3xl font-bold text-primary">100%</div>
-                  <div className="text-sm text-muted-foreground">Bar Compliance</div>
+                  <div className="text-sm text-white/80">Bar Compliance</div>
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-bold text-primary">50+</div>
-                  <div className="text-sm text-muted-foreground">Law Firms Served</div>
+                  <div className="text-sm text-white/80">Law Firms Served</div>
                 </div>
               </div>
             </div>
 
-            <div className="relative">
-              <div className="aspect-square bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl p-8 flex items-center justify-center">
-                <img
-                  src="/modern-law-firm-office-with-secure-technology.jpg"
-                  alt="Modern law firm office with secure technology infrastructure"
-                  className="w-full h-full object-cover rounded-xl"
-                />
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -265,6 +267,7 @@ export default function LawFirmsPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="space-y-6">
             <h2 className="text-3xl lg:text-4xl font-bold text-primary-foreground text-balance">
+              // eslint-disable-next-line react/no-unescaped-entities
               Ready to Modernize Your Law Firm's IT?
             </h2>
             <p className="text-xl text-primary-foreground/90 text-pretty">

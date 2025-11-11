@@ -1,5 +1,6 @@
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
+import Image from "next/image"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Scale, Heart, HandHeart, Factory, ArrowRight } from "lucide-react"
@@ -30,6 +31,7 @@ const industries = [
       author: "Sarah Johnson, Managing Partner",
       firm: "Johnson & Associates Law Firm",
     },
+    image: "/professional-female-director-in-business-attire.jpg",
   },
   {
     icon: Heart,
@@ -54,6 +56,7 @@ const industries = [
       author: "Dr. Michael Chen",
       firm: "Riverside Medical Group",
     },
+    image: "/professional-female-cybersecurity-specialist.jpg",
   },
   {
     icon: HandHeart,
@@ -78,6 +81,7 @@ const industries = [
       author: "Lisa Martinez, Executive Director",
       firm: "Community Hope Foundation",
     },
+    image: "/professional-female-help-desk-manager.jpg",
   },
   {
     icon: Factory,
@@ -103,6 +107,7 @@ const industries = [
       author: "David Thompson, IT Director",
       firm: "Precision Manufacturing Inc.",
     },
+    image: "/professional-male-network-engineer.jpg",
   },
 ]
 
@@ -181,10 +186,20 @@ export default function IndustriesPage() {
               return (
                 <Card key={index} className="group hover:shadow-lg transition-all duration-300 border-border bg-card">
                   <CardHeader className="space-y-4">
-                    <div className="flex items-center space-x-4">
-                      <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                        <IconComponent className="w-6 h-6 text-primary" />
-                      </div>
+              <div className="relative h-48 rounded-2xl overflow-hidden bg-slate-900">
+                <Image
+                  src={industry.image}
+                  alt={`${industry.title} industry representation`}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 40vw"
+                  className="object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 to-black/0" />
+              </div>
+              <div className="flex items-center space-x-4">
+                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                  <IconComponent className="w-6 h-6 text-primary" />
+                </div>
                       <div>
                         <CardTitle className="text-2xl text-card-foreground">{industry.title}</CardTitle>
                         <CardDescription className="text-muted-foreground">{industry.description}</CardDescription>

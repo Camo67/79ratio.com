@@ -63,51 +63,54 @@ export default function HealthcarePage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-background to-muted py-20 lg:py-32">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative py-20 lg:py-32 overflow-hidden">
+        <div className="absolute inset-0">
+          <div
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            style={{ backgroundImage: 'url("/healthcare.jpg")' }}
+          />
+          <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-black/65 to-black/70" />
+          <div className="absolute inset-0 bg-gradient-to-tr from-black/20 via-black/5 to-transparent" />
+          <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+            <div className="w-1/2 h-1/2 rounded-full bg-black/40 blur-[160px]" />
+          </div>
+        </div>
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <div className="space-y-4">
-                <Badge className="mb-4">Healthcare IT Expertise</Badge>
-                <h1 className="text-4xl lg:text-6xl font-bold text-foreground leading-tight text-balance">
+                <Badge className="mb-4 text-white border-white/40 bg-white/10">Healthcare IT Expertise</Badge>
+                <h1 className="text-4xl lg:text-6xl font-bold text-white leading-tight text-balance">
                   HIPAA-Compliant IT for <span className="text-primary">Healthcare</span>
                 </h1>
-                <p className="text-xl text-muted-foreground leading-relaxed text-pretty">
+                <p className="text-xl text-white leading-relaxed text-pretty">
                   Specialized technology solutions designed for healthcare providers. We ensure HIPAA compliance,
                   optimize EHR systems, and support telehealth initiatives while protecting patient data.
                 </p>
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button asChild size="lg" className="text-lg px-8">
+                <Button asChild size="lg" className="text-lg px-8 text-white bg-white/10 border border-white/40 hover:bg-white/20">
                   <Link href="/contact">Schedule Healthcare IT Consultation</Link>
                 </Button>
-                <Button asChild variant="outline" size="lg" className="text-lg px-8 bg-transparent">
+                <Button asChild variant="outline" size="lg" className="text-lg px-8 bg-transparent border-white text-white hover:bg-white hover:text-black">
                   <Link href="/industries">View All Industries</Link>
                 </Button>
               </div>
 
               <div className="grid grid-cols-2 gap-6 pt-8">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-primary">100%</div>
-                  <div className="text-sm text-muted-foreground">HIPAA Compliant</div>
+                  <div className="text-3xl font-bold text-white">100%</div>
+                  <div className="text-sm text-white/70">HIPAA Compliant</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-primary">30+</div>
-                  <div className="text-sm text-muted-foreground">Healthcare Clients</div>
+                  <div className="text-3xl font-bold text-white">30+</div>
+                  <div className="text-sm text-white/70">Healthcare Clients</div>
                 </div>
               </div>
             </div>
 
-            <div className="relative">
-              <div className="aspect-square bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl p-8 flex items-center justify-center">
-                <img
-                  src="/modern-healthcare-facility-with-secure-technology.jpg"
-                  alt="Modern healthcare facility with secure technology infrastructure"
-                  className="w-full h-full object-cover rounded-xl"
-                />
-              </div>
-            </div>
+            <div />
           </div>
         </div>
       </section>
