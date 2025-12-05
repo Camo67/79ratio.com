@@ -56,7 +56,7 @@ export default function TechnologyDevelopmentServicesPage() {
             Custom Technology Solutions Tailored to Your Business Needs
           </h1>
           <p className="text-lg lg:text-xl text-muted-foreground leading-relaxed text-pretty">
-            From application development to system integrations, 79Ratio builds bespoke solutions that enhance
+            From application development to system integrations, 79 Ratio builds bespoke solutions that enhance
             operational efficiency and support your growth. Our expertise spans Microsoft environments, web platforms,
             and emerging technologies.
           </p>

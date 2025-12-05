@@ -18,7 +18,7 @@ export default function TeamPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="space-y-6">
             <h1 className="text-4xl lg:text-6xl font-bold text-foreground leading-tight text-balance">
-              Meet the <span className="text-primary">79Ratio Team</span>
+              Meet the <span className="text-primary">79 Ratio Team</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed text-pretty">
               Our experienced professionals bring decades of combined expertise in IT strategy, cybersecurity, cloud
@@ -112,7 +112,7 @@ export default function TeamPage() {
             <h2 className="text-3xl lg:text-4xl font-bold text-foreground text-balance">Join Our Growing Team</h2>
             <p className="text-xl text-muted-foreground text-pretty">
               We're always looking for talented professionals who share our passion for technology and commitment to
-              client success. Explore opportunities to grow your career with 79Ratio.
+              client success. Explore opportunities to grow your career with 79 Ratio.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="text-lg px-8">

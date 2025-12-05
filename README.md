@@ -1,4 +1,4 @@
-# 79Ratio website content
+# 79 Ratio website content
 
 *Automatically synced with your [v0.app](https://v0.app) deployments*
 
@@ -31,7 +31,7 @@ Automated builds and deployments to Cloudflare Pages run through `.github/workfl
 ```bash
 npm ci
 npm run build:cloudflare
-npx wrangler pages deploy .open-next --project-name 79-ratio-website-option
+npx wrangler pages deploy .open-next --project-name 79ratio
 ```
 
 `npm run build:cloudflare` uses `@opennextjs/cloudflare` to emit `.open-next/_worker.js`, which is required for Cloudflare Pages' worker runtime. Make sure your local environment has `CLOUDFLARE_ACCOUNT_ID` and `CLOUDFLARE_API_TOKEN` configured (either via `wrangler login` or environment variables) before running the deploy command.

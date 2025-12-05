@@ -36,7 +36,7 @@ export default function SolutionsPage() {
           <div className="mb-8">
             <Image
               src="/79ratio-logo.webp"
-              alt="79Ratio Logo"
+              alt="79 Ratio Logo"
               width={200}
               height={67}
               className="mx-auto mb-8"

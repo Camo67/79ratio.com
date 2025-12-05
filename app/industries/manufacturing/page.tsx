@@ -169,7 +169,7 @@ export default function ManufacturingPage() {
           <div className="text-center space-y-4 mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-foreground text-balance">Plant Modernization in Action</h2>
             <p className="text-xl text-muted-foreground text-pretty">
-              Real results from a multi-site manufacturer that partnered with 79Ratio.
+              Real results from a multi-site manufacturer that partnered with 79 Ratio.
             </p>
           </div>
           <Card className="border-border bg-card">

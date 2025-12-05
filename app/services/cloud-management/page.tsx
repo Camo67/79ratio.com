@@ -44,7 +44,7 @@ export default function CloudManagementPage() {
           <div className="space-y-6">
             <Image
               src="/79ratio-logo.webp"
-              alt="79Ratio Logo"
+              alt="79 Ratio Logo"
               width={200}
               height={67}
               className="mx-auto mb-8"

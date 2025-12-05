@@ -58,7 +58,7 @@ export default function BusinessProcessAutomationPage() {
             Accelerate Your Business with Intelligent Process Automation
           </h1>
           <p className="text-lg lg:text-xl text-muted-foreground leading-relaxed text-pretty">
-            Automate repetitive tasks, integrate workflows, and enhance productivity with 79Ratio’s business process
+            Automate repetitive tasks, integrate workflows, and enhance productivity with 79 Ratio’s business process
             automation services. Experience up to 70% time savings and reduce errors while freeing your team to focus on
             strategic initiatives.
           </p>

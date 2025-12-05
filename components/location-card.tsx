@@ -15,7 +15,7 @@ export function LocationCard() {
         <div className="relative aspect-video rounded-lg overflow-hidden">
           <Image
             src="/office-location-map.jpg"
-            alt="79Ratio Office Location - 25 S Grove Ave Ste 501, Elgin, Illinois 60120"
+            alt="79 Ratio Office Location - 25 S Grove Ave Ste 501, Elgin, Illinois 60120"
             fill
             className="object-cover"
           />

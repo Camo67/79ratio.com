@@ -42,7 +42,8 @@ export default function DifferencePage() {
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
             style={{ backgroundImage: 'url("/Image_fx%20(18).jpg")' }}
           />
-          <div className="absolute inset-0 bg-gradient-to-br from-black/55 via-black/35 to-black/55" />
+          <div className="absolute inset-0 bg-gradient-to-br from-primary/35 via-primary/20 to-accent/25 mix-blend-multiply" />
+          <div className="absolute inset-0 bg-gradient-to-br from-black/65 via-black/45 to-black/65" />
         </div>
         <div className="absolute inset-0 opacity-40">
           <div className="absolute -top-24 left-1/3 h-72 w-72 bg-primary blur-[160px]" />
@@ -53,15 +54,15 @@ export default function DifferencePage() {
             Difference
           </Badge>
           <h1 className="text-4xl lg:text-6xl font-bold leading-tight text-balance text-primary">
-            What Sets 79Ratio Apart in the World of Digital Solutions
+            What Sets 79 Ratio Apart in the World of Digital Solutions
           </h1>
           <p className="text-lg lg:text-xl text-muted-foreground leading-relaxed text-pretty">
-            79Ratio is not just another technology provider—we deliver custom, scalable, and secure digital ecosystems
+            79 Ratio is not just another technology provider—we deliver custom, scalable, and secure digital ecosystems
             that align with your goals. Fewer disruptions. Faster innovation. Measurable results for healthcare, law,
             manufacturing, and nonprofit teams.
           </p>
           <Button asChild size="lg" className="text-lg px-8">
-            <Link href="/contact">Discover the 79Ratio Advantage</Link>
+            <Link href="/contact">Discover the 79 Ratio Advantage</Link>
           </Button>
         </div>
       </section>
@@ -113,9 +114,11 @@ export default function DifferencePage() {
       {/* CTA */}
       <section className="py-20 bg-gradient-to-r from-primary to-accent text-primary-foreground">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
-          <h2 className="text-3xl lg:text-4xl font-bold text-balance">Ready to transform your digital landscape?</h2>
-          <p className="text-lg text-primary-foreground/90 text-pretty">
-            Discover the 79Ratio advantage and how we can modernize your operations with confidence.
+          <h2 className="text-3xl lg:text-4xl font-bold text-balance text-black">
+            Ready to transform your digital landscape?
+          </h2>
+          <p className="text-lg text-black/80 text-pretty">
+            Discover the 79 Ratio advantage and how we can modernize your operations with confidence.
           </p>
           <Button asChild size="lg" variant="secondary" className="text-lg px-8">
             <Link href="/contact">Let&apos;s Talk</Link>

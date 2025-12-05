@@ -101,7 +101,7 @@ export function Navigation() {
           <Link href="/" className="flex items-center">
             <Image
               src="/79ratio-logo.webp"
-              alt="79Ratio Logo"
+              alt="79 Ratio Logo"
               width={160}
               height={50}
               className="h-10 w-auto"

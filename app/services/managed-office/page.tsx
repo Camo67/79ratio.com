@@ -66,7 +66,7 @@ const differentiators = [
   {
     stat: "500+",
     label: "Managed workspaces",
-    detail: "Law firms, nonprofits, manufacturers, and agencies rely on 79Ratio daily.",
+    detail: "Law firms, nonprofits, manufacturers, and agencies rely on 79 Ratio daily.",
   },
 ]
 
@@ -117,7 +117,7 @@ export default function ManagedOfficePage() {
           </h1>
           <p className="text-lg lg:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed text-pretty">
             Let your business run at peak efficiency with round-the-clock oversight, optimization, and support for every device,
-            system, and workspace—79Ratio keeps your office streamlined and worry-free.
+            system, and workspace—79 Ratio keeps your office streamlined and worry-free.
           </p>
           <Button asChild size="lg" className="text-lg px-8">
             <Link href="/contact">Request Your Office Assessment</Link>
@@ -132,7 +132,7 @@ export default function ManagedOfficePage() {
             <Badge className="bg-primary/10 text-primary w-fit">What the Product Is</Badge>
             <h2 className="text-3xl lg:text-4xl font-bold text-foreground text-balance">End-to-End Office Technology Care</h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              79Ratio Managed Office offers end-to-end management of all your office technology—computers, printers, networks,
+              79 Ratio Managed Office offers end-to-end management of all your office technology—computers, printers, networks,
               cloud collaboration tools, conferencing, and connected smart devices. We monitor, maintain, troubleshoot, and
               optimize your entire digital workspace, ensuring everything is always secure, up-to-date, and operating at its best.
             </p>
@@ -199,10 +199,10 @@ export default function ManagedOfficePage() {
       <section className="py-20 bg-background">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12">
           <div className="space-y-6">
-            <Badge className="bg-primary/10 text-primary w-fit">Why 79Ratio</Badge>
-            <h2 className="text-3xl lg:text-4xl font-bold text-foreground text-balance">Why Organizations Choose 79Ratio Managed Office</h2>
+            <Badge className="bg-primary/10 text-primary w-fit">Why 79 Ratio</Badge>
+            <h2 className="text-3xl lg:text-4xl font-bold text-foreground text-balance">Why Organizations Choose 79 Ratio Managed Office</h2>
             <p className="text-lg text-muted-foreground text-pretty">
-              Managing office technology shouldn’t distract you from what you do best—79Ratio reduces downtime, boosts productivity,
+              Managing office technology shouldn’t distract you from what you do best—79 Ratio reduces downtime, boosts productivity,
               and cuts operational headaches. Our proactive management prevents issues before they occur, increases device lifespan,
               and ensures your team always has the tools they need, fully supported.
             </p>

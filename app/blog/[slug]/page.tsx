@@ -26,13 +26,13 @@ export function generateMetadata({ params }: BlogPostPageProps): Metadata {
 
   if (!post) {
     return {
-      title: "79Ratio Blog",
-      description: "Technology insights from the 79Ratio team.",
+      title: "79 Ratio Blog",
+      description: "Technology insights from the 79 Ratio team.",
     }
   }
 
   return {
-    title: `${post.title} | 79Ratio`,
+    title: `${post.title} | 79 Ratio`,
     description: post.excerpt,
   }
 }
@@ -117,7 +117,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
                 <div className="space-y-2">
                   <h3 className="text-xl font-semibold text-card-foreground">{post.author}</h3>
                   <p className="text-muted-foreground">
-                    {post.author} and the 79Ratio team help organizations translate technology investments into business
+                    {post.author} and the 79 Ratio team help organizations translate technology investments into business
                     outcomes across security, productivity, and compliance.
                   </p>
                 </div>

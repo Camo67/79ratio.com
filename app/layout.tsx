@@ -7,7 +7,7 @@ import { Suspense } from "react"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "79Ratio - Your IT Partner for Seamless Operations",
+  title: "79 Ratio - Your IT Partner for Seamless Operations",
   description:
     "Comprehensive IT solutions for law firms, healthcare, nonprofits, and manufacturing. 24/7 monitoring, cybersecurity, cloud management, and expert support.",
   generator: "v0.app",

@@ -64,7 +64,7 @@ export default function BlogPage() {
           <div className="text-center space-y-6">
             <Badge className="mb-4 bg-primary/20 text-white border-primary/30">IT Insights & Resources</Badge>
             <h1 className="text-4xl lg:text-6xl font-bold text-white leading-tight text-balance">
-              Insights, Trends, and Tips from 79Ratio’s Technology Experts
+              Insights, Trends, and Tips from 79 Ratio’s Technology Experts
             </h1>
             <p className="text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed text-pretty">
               Stay informed on the latest in cloud innovation, cybersecurity, and sector-specific advancements with our

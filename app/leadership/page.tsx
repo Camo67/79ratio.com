@@ -24,7 +24,7 @@ export default function LeadershipPage() {
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
           <Badge className="mx-auto w-fit bg-primary/20 text-primary border border-primary/30">Leadership</Badge>
           <h1 className="text-4xl lg:text-6xl font-bold leading-tight text-balance">
-            Meet the leaders guiding 79Ratio towards innovation and excellence.
+            Meet the leaders guiding 79 Ratio towards innovation and excellence.
           </h1>
           <p className="text-lg text-gray-200 leading-relaxed text-pretty">
             Our leadership team brings decades of technology and industry expertise. They foster a culture of
@@ -46,7 +46,7 @@ export default function LeadershipPage() {
             </h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto text-pretty">
               From cybersecurity and cloud innovation to service delivery and support, these leaders shape the roadmap
-              that keeps 79Ratio ahead.
+              that keeps 79 Ratio ahead.
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

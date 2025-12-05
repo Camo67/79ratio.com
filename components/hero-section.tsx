@@ -52,7 +52,7 @@ export function HeroSection() {
             <div className="flex justify-center">
               <Image
                 src="/79ratio-logo.webp"
-                alt="79Ratio Logo"
+                alt="79 Ratio Logo"
                 width={300}
                 height={100}
               className="h-16 w-auto"
@@ -70,7 +70,7 @@ export function HeroSection() {
                 Sustainable Excellence • Strategic Innovation • Tailored Management
               </p>
               <p className="text-white leading-relaxed text-pretty text-base mt-4">
-                79Ratio delivers comprehensive IT solutions tailored for law firms, healthcare providers, nonprofits,
+                79 Ratio delivers comprehensive IT solutions tailored for law firms, healthcare providers, nonprofits,
                 and manufacturing companies. Experience proactive support, 24/7 monitoring, and strategic technology
                 guidance.
               </p>
@@ -128,7 +128,7 @@ export function HeroSection() {
             </div>
 
             <div className="pt-6 border-t border-primary/30">
-              <p className="text-lg text-primary font-medium">79RATIO. Precision. Sustainability. Excellence.</p>
+              <p className="text-lg text-primary font-medium">79 RATIO. Precision. Sustainability. Excellence.</p>
             </div>
           </div>
         </div>

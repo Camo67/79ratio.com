@@ -118,7 +118,7 @@ export default function IntegratedVoiceDataPage() {
           </h1>
           <p className="text-lg lg:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed text-pretty">
             Empower your team with seamless voice and data integration—crystal-clear calls, secure messaging, and instant
-            connectivity across every device, all managed by 79Ratio.
+            connectivity across every device, all managed by 79 Ratio.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button asChild size="lg" className="text-lg px-8">
@@ -145,7 +145,7 @@ export default function IntegratedVoiceDataPage() {
               Unified Voice, Video, and Data on One Platform
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              79Ratio’s Integrated Voice & Data service delivers unified communication systems tailored to your workplace.
+              79 Ratio’s Integrated Voice & Data service delivers unified communication systems tailored to your workplace.
               We combine cloud-powered calling, video conferencing, secure instant messaging, and data sharing on one platform.
               From VoIP desk phones and mobile apps to virtual meetings and collaborative document editing, we connect your
               people no matter where they work.
@@ -217,12 +217,12 @@ export default function IntegratedVoiceDataPage() {
       <section className="py-20 bg-background">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12">
           <div className="space-y-6">
-            <Badge className="bg-primary/10 text-primary w-fit">Why 79Ratio</Badge>
+            <Badge className="bg-primary/10 text-primary w-fit">Why 79 Ratio</Badge>
             <h2 className="text-3xl lg:text-4xl font-bold text-foreground text-balance">
-              Why Organizations Choose 79Ratio Voice & Data
+              Why Organizations Choose 79 Ratio Voice & Data
             </h2>
             <p className="text-lg text-muted-foreground text-pretty">
-              Disconnected communications slow down business—79Ratio’s unified platform streamlines workflows and boosts
+              Disconnected communications slow down business—79 Ratio’s unified platform streamlines workflows and boosts
               team productivity by up to 35%. Our expertise ensures calls and messages are always secure, clear, and easy
               to manage, whether serving law offices, clinics, nonprofits, or manufacturing floors.
             </p>

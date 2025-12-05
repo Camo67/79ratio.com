@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/wrangler/config-schema.json",
-  "name": "79-ratio-website-option",
+  "name": "79ratio",
   "pages_build_output_dir": ".open-next",
   "compatibility_flags": [
     "nodejs_compat",

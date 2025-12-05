@@ -118,7 +118,7 @@ export default function PhysicalSecurityPage() {
             Defend Assets, People, and Peace of Mind with Advanced Physical Security
           </h1>
           <p className="text-lg lg:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed text-pretty">
-            From access control to real-time surveillance and incident response, 79Ratio shields your workspace against
+            From access control to real-time surveillance and incident response, 79 Ratio shields your workspace against
             every physical threat—so you can focus on growth, not worry.
           </p>
           <Button asChild size="lg" className="text-lg px-8">
@@ -136,7 +136,7 @@ export default function PhysicalSecurityPage() {
               Integrated Protection for Facilities, People, and Data
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              79Ratio’s Physical Security service delivers a complete suite of protections for your property, team, data,
+              79 Ratio’s Physical Security service delivers a complete suite of protections for your property, team, data,
               and critical infrastructure. Our integrated approach utilizes advanced access control, video surveillance,
               intrusion alarms, environmental monitoring, and emergency protocols—all customized for your industry and risk
               profile.
@@ -206,12 +206,12 @@ export default function PhysicalSecurityPage() {
       <section className="py-20 bg-background">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12">
           <div className="space-y-6">
-            <Badge className="bg-primary/10 text-primary w-fit">Why 79Ratio</Badge>
+            <Badge className="bg-primary/10 text-primary w-fit">Why 79 Ratio</Badge>
             <h2 className="text-3xl lg:text-4xl font-bold text-foreground text-balance">
-              Why Organizations Trust 79Ratio Physical Security
+              Why Organizations Trust 79 Ratio Physical Security
             </h2>
             <p className="text-lg text-muted-foreground text-pretty">
-              Physical breaches can shut down business, risk lives, and damage your reputation—79Ratio prevents losses and
+              Physical breaches can shut down business, risk lives, and damage your reputation—79 Ratio prevents losses and
               ensures safety with systems that deter intruders, respond rapidly, and provide clear audit trails. We simplify
               compliance, enhance employee confidence, and maintain uninterrupted operations.
             </p>

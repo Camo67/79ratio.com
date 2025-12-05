@@ -63,7 +63,7 @@ const differentiators = [
   {
     stat: "500+",
     label: "Organizations protected",
-    detail: "Legal, healthcare, nonprofit, and manufacturing teams rely on 79Ratio daily.",
+    detail: "Legal, healthcare, nonprofit, and manufacturing teams rely on 79 Ratio daily.",
   },
   {
     stat: "< 15 min",
@@ -120,7 +120,7 @@ export default function ManagedTechnologyCybersecurityPage() {
           </h1>
           <p className="text-lg lg:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed text-pretty">
             Protect, streamline, and empower your business with always-on management and advanced digital defense—from
-            strategic support to real-time threat protection, 79Ratio has your back.
+            strategic support to real-time threat protection, 79 Ratio has your back.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button asChild size="lg" className="text-lg px-8">
@@ -144,7 +144,7 @@ export default function ManagedTechnologyCybersecurityPage() {
           <div className="space-y-6">
             <h2 className="text-3xl lg:text-4xl font-bold text-foreground text-balance">What the Product Is</h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              79Ratio’s Managed Technology & Cybersecurity solutions deliver round-the-clock oversight for your entire
+              79 Ratio’s Managed Technology & Cybersecurity solutions deliver round-the-clock oversight for your entire
               technology landscape, blending proactive maintenance, monitoring, secure remote support, and multilayered
               cyber defense. From endpoint protection and network management to rapid incident response and compliance
               alignment, we keep your systems running efficiently and securely, so you can focus on growth.
@@ -221,9 +221,9 @@ export default function ManagedTechnologyCybersecurityPage() {
       <section className="py-20 bg-background">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-start">
           <div className="space-y-6">
-            <h2 className="text-3xl lg:text-4xl font-bold text-foreground text-balance">Why People Choose 79Ratio</h2>
+            <h2 className="text-3xl lg:text-4xl font-bold text-foreground text-balance">Why People Choose 79 Ratio</h2>
             <p className="text-lg text-muted-foreground text-pretty">
-              Unexpected outages and cyber threats can cripple business—79Ratio prevents 99.9% of issues before they
+              Unexpected outages and cyber threats can cripple business—79 Ratio prevents 99.9% of issues before they
               arise, while slashing downtime and maximizing productivity. With over 500 satisfied partners, our managed
               approach doesn’t just solve problems fast—it anticipates them, fortifies your environment, and ensures
               continuous compliance.
@@ -300,9 +300,9 @@ export default function ManagedTechnologyCybersecurityPage() {
       {/* CTA */}
       <section className="py-20 bg-gradient-to-r from-primary to-accent text-primary-foreground">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
-          <h2 className="text-3xl lg:text-4xl font-bold text-balance">Sleep easy—let 79Ratio handle it.</h2>
+          <h2 className="text-3xl lg:text-4xl font-bold text-balance">Sleep easy—let 79 Ratio handle it.</h2>
           <p className="text-lg text-primary-foreground/90 text-pretty">
-            Sleep easy—let 79Ratio handle your technology and security, so you can lead with confidence.
+            Sleep easy—let 79 Ratio handle your technology and security, so you can lead with confidence.
           </p>
           <Button asChild size="lg" variant="secondary" className="text-lg px-8">
             <Link href="/contact">Start Now with a Free Security Assessment</Link>

@@ -12,7 +12,7 @@ export function Footer() {
             <Link href="/" className="flex items-center">
               <Image
                 src="/79ratio-logo.webp"
-                alt="79Ratio Logo"
+                alt="79 Ratio Logo"
                 width={160}
                 height={50}
                 className="h-10 w-auto"
@@ -142,7 +142,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-border mt-12 pt-8 text-center text-sm text-muted-foreground">
-          <p>&copy; 2024 79Ratio. All rights reserved. | Privacy Policy | Terms of Service</p>
+          <p>&copy; 2024 79 Ratio. All rights reserved. | Privacy Policy | Terms of Service</p>
         </div>
       </div>
     </footer>

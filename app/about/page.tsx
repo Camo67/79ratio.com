@@ -40,7 +40,7 @@ const stats = [
 ]
 
 const milestones = [
-  { year: "2018", event: "79Ratio Founded", description: "Started with a vision to simplify IT for businesses" },
+  { year: "2018", event: "79 Ratio Founded", description: "Started with a vision to simplify IT for businesses" },
   { year: "2020", event: "First 100 Clients", description: "Reached our first major milestone in client growth" },
   { year: "2021", event: "24/7 Operations", description: "Launched round-the-clock monitoring and support services" },
   {
@@ -155,7 +155,7 @@ export default function AboutPage() {
                   Your Trusted IT Partner Since <span className="text-primary">2018</span>
                 </h1>
                 <p className="text-xl text-white/90 leading-relaxed text-pretty">
-                  At 79Ratio, we believe technology should empower your business, not complicate it. We deliver
+                  At 79 Ratio, we believe technology should empower your business, not complicate it. We deliver
                   comprehensive IT solutions with a personal touch, ensuring your systems run smoothly so you can focus
                   on what matters most.
                 </p>
@@ -333,7 +333,7 @@ export default function AboutPage() {
                   asChild
                   variant="outline"
                   size="lg"
-                  className="text-lg px-8 bg-transparent border-white text-white hover:bg-white hover:text-black"
+                  className="text-lg px-8 bg-transparent border-white text-white hover:bg-black hover:text-white hover:border-white"
                 >
                   <Link href="/contact">Start Your Journey</Link>
                 </Button>
@@ -393,13 +393,13 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-4 text-white/90 leading-relaxed">
                 <p>
-                  Founded in 2018, 79Ratio emerged from a simple belief: businesses deserve IT partners who understand
+                  Founded in 2018, 79 Ratio emerged from a simple belief: businesses deserve IT partners who understand
                   their unique challenges and deliver solutions that truly work. What started as a small team of
                   passionate technologists has grown into a trusted partner for hundreds of organizations across law,
                   healthcare, nonprofit, and manufacturing sectors.
                 </p>
                 <p>
-                  Our name, "79Ratio," reflects our commitment to the optimal balance between technology and business
+                  Our name, "79 Ratio," reflects our commitment to the optimal balance between technology and business
                   needs. We don't just implement solutions – we craft technology strategies that align with your goals,
                   budget, and growth plans.
                 </p>
@@ -414,7 +414,7 @@ export default function AboutPage() {
             <div className="relative">
               <Image
                 src="/modern-it-infrastructure-and-server-room.jpg"
-                alt="79Ratio's modern IT infrastructure"
+                alt="79 Ratio's modern IT infrastructure"
                 width={600}
                 height={400}
                 className="w-full h-auto rounded-2xl shadow-lg"
@@ -474,14 +474,14 @@ export default function AboutPage() {
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="space-y-6">
           <h2 className="text-3xl lg:text-4xl font-bold text-white text-balance">
-            Ready to Experience the 79Ratio Difference?
+            Ready to Experience the 79 Ratio Difference?
           </h2>
           <p className="text-xl text-white/90 text-pretty">
             Join hundreds of satisfied clients who trust us with their technology needs. Let's discuss how we can help
             your business thrive.
           </p>
           <div className="py-6 border-t border-b border-primary/20">
-            <p className="text-2xl text-primary font-bold">79RATIO. Precision. Sustainability. Excellence.</p>
+            <p className="text-2xl text-primary font-bold">79 RATIO. Precision. Sustainability. Excellence.</p>
           </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="text-lg px-8">

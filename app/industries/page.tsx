@@ -27,7 +27,7 @@ const industries = [
     ],
     testimonial: {
       quote:
-        "79Ratio understands the unique security needs of our law firm. Their proactive approach keeps our client data secure and our systems running smoothly.",
+        "79 Ratio understands the unique security needs of our law firm. Their proactive approach keeps our client data secure and our systems running smoothly.",
       author: "Sarah Johnson, Managing Partner",
       firm: "Johnson & Associates Law Firm",
     },
@@ -52,7 +52,7 @@ const industries = [
     ],
     testimonial: {
       quote:
-        "Our practice relies on 79Ratio for HIPAA compliance and secure patient data management. They've been instrumental in our digital transformation.",
+        "Our practice relies on 79 Ratio for HIPAA compliance and secure patient data management. They've been instrumental in our digital transformation.",
       author: "Dr. Michael Chen",
       firm: "Riverside Medical Group",
     },
@@ -77,7 +77,7 @@ const industries = [
     ],
     testimonial: {
       quote:
-        "79Ratio helps us do more with less. Their cost-effective solutions allow us to focus our resources on our mission while keeping our technology secure.",
+        "79 Ratio helps us do more with less. Their cost-effective solutions allow us to focus our resources on our mission while keeping our technology secure.",
       author: "Lisa Martinez, Executive Director",
       firm: "Community Hope Foundation",
     },
@@ -103,7 +103,7 @@ const industries = [
     ],
     testimonial: {
       quote:
-        "79Ratio keeps our production systems running 24/7. Their understanding of manufacturing IT needs has been crucial to our operational success.",
+        "79 Ratio keeps our production systems running 24/7. Their understanding of manufacturing IT needs has been crucial to our operational success.",
       author: "David Thompson, IT Director",
       firm: "Precision Manufacturing Inc.",
     },
@@ -277,7 +277,7 @@ export default function IndustriesPage() {
                   environment.
                 </p>
                 <p>
-                  When you partner with 79Ratio, you're not just getting an IT provider – you're getting a team that
+                  When you partner with 79 Ratio, you're not just getting an IT provider – you're getting a team that
                   understands your industry and is committed to helping you succeed within its unique landscape.
                 </p>
               </div>

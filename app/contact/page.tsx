@@ -135,7 +135,7 @@ export default function ContactPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Contact Form */}
-            <Card className="border-border bg-card">
+            <Card className="border-border bg-card" id="contact-form">
               <CardHeader>
                 <CardTitle className="text-2xl text-card-foreground">Send Us a Message</CardTitle>
                 <CardDescription className="text-muted-foreground">
@@ -212,7 +212,7 @@ export default function ContactPage() {
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div>
-                    <div className="font-semibold text-card-foreground">79Ratio Headquarters</div>
+                    <div className="font-semibold text-card-foreground">79 Ratio Headquarters</div>
                     <div className="text-muted-foreground">
                       25 S Grove Ave Ste 501
                       <br />
@@ -227,7 +227,7 @@ export default function ContactPage() {
                   <div className="aspect-video rounded-lg overflow-hidden border border-border">
                     <iframe
                       src="https://maps.google.com/maps?q=25%20S%20Grove%20Ave%20Elgin%20Illinois&output=embed"
-                      title="79Ratio location map"
+                      title="79 Ratio location map"
                       className="w-full h-full"
                       loading="lazy"
                       referrerPolicy="no-referrer-when-downgrade"
@@ -278,7 +278,9 @@ export default function ContactPage() {
                     Ready to transform your technology infrastructure? Schedule a free 30-minute consultation to discuss
                     your IT needs and learn how we can help.
                   </p>
-                  <Button className="w-full">Schedule Free Consultation</Button>
+                  <Button asChild className="w-full">
+                    <a href="#contact-form">Schedule Free Consultation</a>
+                  </Button>
                 </CardContent>
               </Card>
             </div>
@@ -305,7 +307,7 @@ export default function ContactPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  We provide 24/7/365 monitoring for our clients with response times under 5 minutes for critical
+                  We provide 24/7/365 monitoring for our clients with response times under 15 minutes for critical
                   issues. For new inquiries, we respond within 2 hours during business hours.
                 </p>
               </CardContent>
