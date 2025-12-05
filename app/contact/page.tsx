@@ -6,15 +6,15 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Label } from "@/components/ui/label"
 import { Badge } from "@/components/ui/badge"
-import { Phone, Mail, MapPin, Clock, MessageSquare, Calendar, Headphones } from "lucide-react"
+import { Phone, Mail, MapPin, Clock, Calendar, Headphones } from "lucide-react"
 
 const contactMethods = [
   {
     icon: Phone,
     title: "Call Us",
     description: "Speak directly with our IT experts",
-    contact: "(630) 394-2700",
-    availability: "Mon-Fri 8AM-6PM EST",
+    contact: "630-394-2700",
+    availability: "Mon-Fri 8AM-5PM EST",
   },
   {
     icon: Mail,
@@ -24,17 +24,10 @@ const contactMethods = [
     availability: "24/7 - We respond within 2 hours",
   },
   {
-    icon: MessageSquare,
-    title: "Live Chat",
-    description: "Get instant answers to your questions",
-    contact: "Available on our website",
-    availability: "Mon-Fri 9AM-5PM EST",
-  },
-  {
     icon: Headphones,
     title: "Emergency Support",
     description: "24/7 support for existing clients",
-    contact: "(630) 394-2700",
+    contact: "630-394-2700",
     availability: "24/7/365 for emergencies",
   },
 ]
@@ -174,7 +167,7 @@ export default function ContactPage() {
 
                   <div className="space-y-2">
                     <Label htmlFor="phone">Phone</Label>
-                    <Input id="phone" type="tel" placeholder="(630) 394-2700" />
+                    <Input id="phone" type="tel" placeholder="630-394-2700" />
                   </div>
 
                   <div className="space-y-2">
@@ -228,7 +221,7 @@ export default function ContactPage() {
                       United States
                       <br />
                       <br />
-                      <strong>Phone: (630) 394-2700</strong>
+                      <strong>Phone: 630-394-2700</strong>
                     </div>
                   </div>
                   <div className="aspect-video rounded-lg overflow-hidden border border-border">
@@ -254,11 +247,11 @@ export default function ContactPage() {
                 <CardContent className="space-y-3">
                   <div className="flex justify-between">
                     <span className="text-muted-foreground">Monday - Friday</span>
-                    <span className="font-medium text-card-foreground">8:00 AM - 6:00 PM EST</span>
+                    <span className="font-medium text-card-foreground">8:00 AM - 5:00 PM EST</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-muted-foreground">Saturday</span>
-                    <span className="font-medium text-card-foreground">9:00 AM - 2:00 PM EST</span>
+                    <span className="font-medium text-card-foreground">Emergency Support Only</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-muted-foreground">Sunday</span>

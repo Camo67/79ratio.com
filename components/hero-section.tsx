@@ -69,7 +69,7 @@ export function HeroSection() {
               <p className="text-[var(--foreground)] leading-relaxed text-pretty text-lg">
                 Sustainable Excellence • Strategic Innovation • Tailored Management
               </p>
-              <p className="text-[var(--muted-foreground)] leading-relaxed text-pretty text-base mt-4">
+              <p className="text-white leading-relaxed text-pretty text-base mt-4">
                 79Ratio delivers comprehensive IT solutions tailored for law firms, healthcare providers, nonprofits,
                 and manufacturing companies. Experience proactive support, 24/7 monitoring, and strategic technology
                 guidance.
@@ -128,7 +128,7 @@ export function HeroSection() {
             </div>
 
             <div className="pt-6 border-t border-primary/30">
-              <p className="text-lg text-primary font-medium">Ratio79. Precision. Sustainability. Excellence.</p>
+              <p className="text-lg text-primary font-medium">79RATIO. Precision. Sustainability. Excellence.</p>
             </div>
           </div>
         </div>

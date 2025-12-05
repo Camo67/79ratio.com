@@ -202,10 +202,10 @@ export function Navigation() {
                           <div>
                             <h4 className="text-foreground font-medium mb-2">Call Us Now</h4>
                             <a
-                              href="tel:4694855577"
+                              href="tel:+16303942700"
                               className="text-2xl font-bold text-primary hover:text-primary/80 transition-colors"
                             >
-                              (469) 485-5577
+                              630-394-2700
                             </a>
                           </div>
                           <div>

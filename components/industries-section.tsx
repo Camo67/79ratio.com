@@ -68,6 +68,8 @@ function IndustryCard({
             className="md:hidden absolute inset-0 bg-contain bg-center bg-no-repeat"
             style={{ backgroundImage: "url(/fibinacci.jpg)" }}
           />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/70 to-black/85" />
+          <div className="absolute inset-0 bg-primary/15 mix-blend-screen opacity-50" />
         </div>
 
         <div className="relative p-6">

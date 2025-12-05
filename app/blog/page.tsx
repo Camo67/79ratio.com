@@ -76,7 +76,7 @@ export default function BlogPage() {
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-4 h-4" />
               <Input
                 placeholder="Search articles..."
-                className="pl-10 bg-white/10 border-white/20 text-white placeholder:text-gray-300"
+                className="pl-10 bg-white/10 border-white/20 text-white placeholder:text-white"
               />
             </div>
             <Button asChild size="lg" className="text-lg px-8">

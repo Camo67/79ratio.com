@@ -51,7 +51,7 @@ export default function KnowledgeBasePage() {
           </p>
           <div className="max-w-xl mx-auto relative">
             <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-300 w-5 h-5" />
-            <Input className="pl-12 py-6 text-base bg-white/10 border-white/30 text-white placeholder:text-gray-300" placeholder="Search the knowledge base..." />
+            <Input className="pl-12 py-6 text-base bg-white/10 border-white/30 text-white placeholder:text-white" placeholder="Search the knowledge base..." />
           </div>
         </div>
       </section>

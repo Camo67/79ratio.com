@@ -35,21 +35,21 @@ const values = [
 const stats = [
   { number: "24/7/365", label: "Monitoring & Support" },
   { number: "99.9%", label: "Uptime Guarantee" },
-  { number: "15+", label: "Years Experience" },
+  { number: "6+", label: "Years Experience" },
   { number: "500+", label: "Satisfied Clients" },
 ]
 
 const milestones = [
-  { year: "2009", event: "79Ratio Founded", description: "Started with a vision to simplify IT for businesses" },
-  { year: "2012", event: "First 100 Clients", description: "Reached our first major milestone in client growth" },
-  { year: "2015", event: "24/7 Operations", description: "Launched round-the-clock monitoring and support services" },
+  { year: "2018", event: "79Ratio Founded", description: "Started with a vision to simplify IT for businesses" },
+  { year: "2020", event: "First 100 Clients", description: "Reached our first major milestone in client growth" },
+  { year: "2021", event: "24/7 Operations", description: "Launched round-the-clock monitoring and support services" },
   {
-    year: "2018",
+    year: "2022",
     event: "Cloud Transformation",
     description: "Became a leading cloud migration and management partner",
   },
   {
-    year: "2021",
+    year: "2023",
     event: "Cybersecurity Focus",
     description: "Expanded security services in response to growing threats",
   },
@@ -101,7 +101,7 @@ const missionStats = [
   },
   {
     icon: Award,
-    label: "15+",
+    label: "6+",
     detail: "Years Experience",
   },
 ]
@@ -152,7 +152,7 @@ export default function AboutPage() {
             <div className="space-y-8">
               <div className="space-y-4">
                 <h1 className="text-4xl lg:text-6xl font-bold text-white leading-tight text-balance">
-                  Your Trusted IT Partner Since <span className="text-primary">2009</span>
+                  Your Trusted IT Partner Since <span className="text-primary">2018</span>
                 </h1>
                 <p className="text-xl text-white/90 leading-relaxed text-pretty">
                   At 79Ratio, we believe technology should empower your business, not complicate it. We deliver
@@ -393,7 +393,7 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-4 text-white/90 leading-relaxed">
                 <p>
-                  Founded in 2009, 79Ratio emerged from a simple belief: businesses deserve IT partners who understand
+                  Founded in 2018, 79Ratio emerged from a simple belief: businesses deserve IT partners who understand
                   their unique challenges and deliver solutions that truly work. What started as a small team of
                   passionate technologists has grown into a trusted partner for hundreds of organizations across law,
                   healthcare, nonprofit, and manufacturing sectors.
@@ -481,7 +481,7 @@ export default function AboutPage() {
             your business thrive.
           </p>
           <div className="py-6 border-t border-b border-primary/20">
-            <p className="text-2xl text-primary font-bold">Ratio79. Precision. Sustainability. Excellence.</p>
+            <p className="text-2xl text-primary font-bold">79RATIO. Precision. Sustainability. Excellence.</p>
           </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="text-lg px-8">

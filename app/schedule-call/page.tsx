@@ -98,7 +98,7 @@ export default function ScheduleCallPage() {
                   </div>
                 </div>
                 <Button asChild className="w-full">
-                  <a href="tel:6303942700">Call (630) 394-2700</a>
+                  <a href="tel:6303942700">Call 630-394-2700</a>
                 </Button>
               </CardContent>
             </Card>
@@ -182,7 +182,7 @@ export default function ScheduleCallPage() {
               <Button size="lg" asChild>
                 <a href="tel:6303942700" className="flex items-center space-x-2">
                   <Phone className="w-5 h-5" />
-                  <span>(630) 394-2700</span>
+                  <span>630-394-2700</span>
                 </a>
               </Button>
               <Button size="lg" variant="outline" asChild>

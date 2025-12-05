@@ -26,7 +26,7 @@ export function ContactCard() {
           <div className="flex items-center gap-2">
             <Phone className="w-4 h-4 text-primary" />
             <a href="tel:+16303942700" className="font-medium hover:text-primary transition-colors">
-              (630) 394-2700
+              630-394-2700
             </a>
           </div>
         </div>
