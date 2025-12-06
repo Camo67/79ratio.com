@@ -105,11 +105,14 @@ export default function ContactPage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center max-w-5xl mx-auto">
             {contactMethods.map((method, index) => {
               const IconComponent = method.icon
               return (
-                <Card key={index} className="text-center border-border bg-card hover:shadow-lg transition-shadow">
+                <Card
+                  key={index}
+                  className="w-full max-w-sm text-center border-border bg-card hover:shadow-lg transition-shadow"
+                >
                   <CardHeader className="space-y-4">
                     <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto">
                       <IconComponent className="w-6 h-6 text-primary" />

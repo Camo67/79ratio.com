@@ -15,7 +15,6 @@ import {
   Headphones,
   HeartPulse,
   Map,
-  Network,
   RefreshCw,
   Shield,
   ShieldCheck,
@@ -54,21 +53,24 @@ const includedServices = [
   },
 ]
 
-const differentiators = [
+const trustPoints = [
+  "Complete protection across networks, endpoints, cloud workloads, and user access.",
+  "Unified service model combining security operations, compliance reporting, and executive insight under one SLA.",
+  "Tailored strategies designed for law firms, healthcare providers, nonprofits, and manufacturing businesses.",
+]
+
+const provenResults = [
   {
-    stat: "99.9%",
-    label: "Issues prevented before impact",
-    detail: "Predictive tooling and documented runbooks eliminate recurring incidents.",
+    title: "Threats stopped before impact",
+    description: "Predictive tooling and automated playbooks prevent recurring incidents.",
   },
   {
-    stat: "500+",
-    label: "Organizations protected",
-    detail: "Legal, healthcare, nonprofit, and manufacturing teams rely on 79 Ratio daily.",
+    title: "500+ organizations protected",
+    description: "Legal, healthcare, nonprofit, and industrial teams rely on 79 Ratio’s managed defense every day.",
   },
   {
-    stat: "< 15 min",
-    label: "Average response time",
-    detail: "Prioritized queueing plus local experts keep productivity high.",
+    title: "Under 15-minute response time",
+    description: "Prioritized incident handling and local cybersecurity experts keep your people working without interruption.",
   },
 ]
 
@@ -217,49 +219,42 @@ export default function ManagedTechnologyCybersecurityPage() {
         </div>
       </section>
 
-      {/* Why Choose Section */}
+      {/* Why Trust Section */}
       <section className="py-20 bg-background">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-start">
           <div className="space-y-6">
-            <h2 className="text-3xl lg:text-4xl font-bold text-foreground text-balance">Why People Choose 79 Ratio</h2>
+            <h2 className="text-3xl lg:text-4xl font-bold text-foreground text-balance">Why Businesses Trust 79 Ratio</h2>
             <p className="text-lg text-muted-foreground text-pretty">
-              Unexpected outages and cyber threats can cripple business—79 Ratio prevents 99.9% of issues before they
-              arise, while slashing downtime and maximizing productivity. With over 500 satisfied partners, our managed
-              approach doesn’t just solve problems fast—it anticipates them, fortifies your environment, and ensures
-              continuous compliance.
+              Unexpected outages and cyber threats can paralyze operations. 79 Ratio proactively stops issues before they
+              ever reach your systems—cutting downtime, boosting productivity, and maintaining peak performance 24/7.
+              With more than 500 trusted partners, our managed protection goes beyond rapid response—it anticipates
+              risks, secures every layer of your environment, and keeps your organization fully compliant.
             </p>
             <div className="space-y-4">
-              <div className="flex items-start gap-3">
-                <Network className="w-5 h-5 text-primary mt-1" />
-                <p className="text-muted-foreground">
-                  Integrated coverage across networks, endpoints, cloud workloads, and user access.
-                </p>
-              </div>
-              <div className="flex items-start gap-3">
-                <Shield className="w-5 h-5 text-primary mt-1" />
-                <p className="text-muted-foreground">
-                  Security operations, compliance reporting, and executive strategy share a single SLA.
-                </p>
-              </div>
-              <div className="flex items-start gap-3">
-                <Map className="w-5 h-5 text-primary mt-1" />
-                <p className="text-muted-foreground">
-                  Sector-specific playbooks for law firms, healthcare providers, nonprofits, and manufacturers.
-                </p>
-              </div>
+              {trustPoints.map((point) => (
+                <div key={point} className="flex items-start gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-primary mt-1" />
+                  <p className="text-muted-foreground">{point}</p>
+                </div>
+              ))}
             </div>
           </div>
-          <div className="grid sm:grid-cols-3 gap-4">
-            {differentiators.map((item) => (
-              <Card key={item.label} className="bg-card border-border text-center">
-                <CardContent className="py-8 px-4 space-y-3">
-                  <p className="text-3xl font-bold text-primary">{item.stat}</p>
-                  <p className="text-sm font-medium text-card-foreground">{item.label}</p>
-                  <p className="text-xs text-muted-foreground">{item.detail}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
+          <Card className="bg-card border-border shadow-lg">
+            <CardHeader>
+              <CardTitle className="text-2xl text-card-foreground">Proven Results</CardTitle>
+              <CardDescription className="text-muted-foreground">
+                Outcomes our clients count on every day.
+              </CardDescription>
+            </CardHeader>
+            <CardContent className="space-y-4">
+              {provenResults.map((result) => (
+                <div key={result.title} className="rounded-xl border border-border/60 bg-muted/20 p-4 space-y-1">
+                  <p className="text-lg font-semibold text-card-foreground">{result.title}</p>
+                  <p className="text-sm text-muted-foreground">{result.description}</p>
+                </div>
+              ))}
+            </CardContent>
+          </Card>
         </div>
       </section>
 

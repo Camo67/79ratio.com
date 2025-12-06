@@ -128,7 +128,7 @@ export default function IntegratedVoiceDataPage() {
               asChild
               size="lg"
               variant="outline"
-              className="text-lg px-8 border-white/40 text-white hover:bg-white hover:text-black bg-transparent"
+              className="text-lg px-8 border-white/40 text-white bg-transparent hover:bg-white hover:text-black focus-visible:text-black active:text-black"
             >
               <Link href="/schedule-call">Talk to an Expert</Link>
             </Button>
