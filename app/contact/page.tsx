@@ -8,6 +8,8 @@ import { Label } from "@/components/ui/label"
 import { Badge } from "@/components/ui/badge"
 import { Phone, Mail, MapPin, Clock, Calendar, Headphones } from "lucide-react"
 
+const addSpaceInBrand = (value: string) => value.replace(/79(?=ratio)/gi, "79 ")
+
 const contactMethods = [
   {
     icon: Phone,
@@ -123,7 +125,15 @@ export default function ContactPage() {
                     </div>
                   </CardHeader>
                   <CardContent className="space-y-2">
-                    <div className="font-semibold text-primary">{method.contact}</div>
+                    <div className="font-semibold text-primary">
+                      {method.contact.includes("@") ? (
+                        <a href={`mailto:${method.contact}`} className="hover:underline">
+                          {addSpaceInBrand(method.contact)}
+                        </a>
+                      ) : (
+                        addSpaceInBrand(method.contact)
+                      )}
+                    </div>
                     <div className="text-sm text-muted-foreground">{method.availability}</div>
                   </CardContent>
                 </Card>

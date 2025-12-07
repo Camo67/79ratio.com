@@ -18,14 +18,25 @@ const services = [
       "Performance optimization",
       "Instant alert notifications",
     ],
-    benefits: ["99.9% uptime guarantee", "Reduced downtime costs", "Improved system performance", "Peace of mind"],
+    benefits: [
+      "Issues prevented before impact",
+      "Reduced downtime costs",
+      "Improved system performance",
+      "Peace of mind",
+    ],
   },
   {
     icon: Shield,
     title: "Cybersecurity Solutions",
     slug: "cybersecurity",
-    description: "Comprehensive security measures including firewalls, endpoint protection, and compliance management.",
-    features: ["Multi-layered security", "Endpoint protection", "Security awareness training", "Compliance audits"],
+    description:
+      "Zero trust security that verifies every access request, protects endpoints, and keeps compliance always-on.",
+    features: [
+      "Zero trust security",
+      "Endpoint protection",
+      "Security awareness training",
+      "Compliance audits",
+    ],
     benefits: [
       "Protection from cyber threats",
       "Regulatory compliance",
@@ -170,13 +181,13 @@ export default function ServicesPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-primary to-accent">
+      <section className="py-20 bg-gradient-to-r from-primary to-accent text-black">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="space-y-6">
-            <h2 className="text-3xl lg:text-4xl font-bold text-primary-foreground text-balance">
+            <h2 className="text-3xl lg:text-4xl font-bold text-balance text-black">
               Ready to Transform Your IT Infrastructure?
             </h2>
-            <p className="text-xl text-primary-foreground/90 text-pretty">
+            <p className="text-xl text-black/80 text-pretty">
               Let's discuss your specific needs and create a customized IT solution that drives your business forward.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -187,7 +198,7 @@ export default function ServicesPage() {
                 asChild
                 size="lg"
                 variant="outline"
-                className="text-lg px-8 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary bg-transparent"
+                className="text-lg px-8 border-black text-white bg-transparent"
               >
                 <Link href="/about">Learn About Us</Link>
               </Button>

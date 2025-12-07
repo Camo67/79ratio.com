@@ -18,6 +18,7 @@ import {
   RefreshCw,
   Shield,
   ShieldCheck,
+  Network,
 } from "lucide-react"
 
 const includedServices = [
@@ -54,9 +55,18 @@ const includedServices = [
 ]
 
 const trustPoints = [
-  "Complete protection across networks, endpoints, cloud workloads, and user access.",
-  "Unified service model combining security operations, compliance reporting, and executive insight under one SLA.",
-  "Tailored strategies designed for law firms, healthcare providers, nonprofits, and manufacturing businesses.",
+  {
+    icon: Network,
+    text: "Integrated coverage across networks, endpoints, cloud workloads, and user access.",
+  },
+  {
+    icon: ShieldCheck,
+    text: "Unified service model combining security operations, compliance reporting, and executive insight under one SLA.",
+  },
+  {
+    icon: CheckCircle2,
+    text: "Tailored strategies designed for law firms, healthcare providers, nonprofits, and manufacturing businesses.",
+  },
 ]
 
 const provenResults = [
@@ -231,12 +241,15 @@ export default function ManagedTechnologyCybersecurityPage() {
               risks, secures every layer of your environment, and keeps your organization fully compliant.
             </p>
             <div className="space-y-4">
-              {trustPoints.map((point) => (
-                <div key={point} className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-primary mt-1" />
-                  <p className="text-muted-foreground">{point}</p>
-                </div>
-              ))}
+              {trustPoints.map((point) => {
+                const Icon = point.icon
+                return (
+                  <div key={point.text} className="flex items-start gap-3">
+                    <Icon className="w-5 h-5 text-primary mt-1" />
+                    <p className="text-muted-foreground">{point.text}</p>
+                  </div>
+                )
+              })}
             </div>
           </div>
           <Card className="bg-card border-border shadow-lg">
@@ -293,10 +306,12 @@ export default function ManagedTechnologyCybersecurityPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-gradient-to-r from-primary to-accent text-primary-foreground">
+      <section className="py-20 bg-gradient-to-r from-primary to-accent text-black">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
-          <h2 className="text-3xl lg:text-4xl font-bold text-balance">Sleep easy—let 79 Ratio handle it.</h2>
-          <p className="text-lg text-primary-foreground/90 text-pretty">
+          <h2 className="text-3xl lg:text-4xl font-bold text-balance text-black">
+            Sleep easy—let 79 Ratio handle it.
+          </h2>
+          <p className="text-lg text-black/90 text-pretty">
             Sleep easy—let 79 Ratio handle your technology and security, so you can lead with confidence.
           </p>
           <Button asChild size="lg" variant="secondary" className="text-lg px-8">

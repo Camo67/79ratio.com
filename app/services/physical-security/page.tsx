@@ -277,10 +277,10 @@ export default function PhysicalSecurityPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-gradient-to-r from-primary to-accent text-primary-foreground">
+      <section className="py-20 bg-gradient-to-r from-primary to-accent text-black">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
-          <h2 className="text-3xl lg:text-4xl font-bold text-balance">Protect What Matters Most</h2>
-          <p className="text-lg text-primary-foreground/90 text-pretty">
+          <h2 className="text-3xl lg:text-4xl font-bold text-balance text-black">Protect What Matters Most</h2>
+          <p className="text-lg text-black/80 text-pretty">
             Protect what matters most—schedule a no-obligation security walk-through with our experts today.
           </p>
           <Button asChild size="lg" variant="secondary" className="text-lg px-8">

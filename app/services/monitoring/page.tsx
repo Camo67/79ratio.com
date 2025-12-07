@@ -33,7 +33,7 @@ const features = [
 ]
 
 const benefits = [
-  "99.9% uptime guarantee with SLA backing",
+  "Issues prevented before impact through automated triggers",
   "Reduced downtime costs and business disruption",
   "Improved system performance and reliability",
   "Proactive issue resolution before problems occur",
@@ -80,8 +80,8 @@ export default function MonitoringPage() {
 
               <div className="grid grid-cols-2 gap-6 pt-8">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-primary">99.9%</div>
-                  <div className="text-sm text-muted-foreground">Uptime Guarantee</div>
+                  <div className="text-3xl font-bold text-primary">30+</div>
+                  <div className="text-sm text-muted-foreground">Issues prevented before impact (avg / month)</div>
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-bold text-primary">5 min</div>
@@ -231,13 +231,13 @@ export default function MonitoringPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-primary to-accent">
+      <section className="py-20 bg-gradient-to-r from-primary to-accent text-black">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="space-y-6">
-            <h2 className="text-3xl lg:text-4xl font-bold text-primary-foreground text-balance">
+            <h2 className="text-3xl lg:text-4xl font-bold text-balance text-black">
               Ready to Protect Your Business?
             </h2>
-            <p className="text-xl text-primary-foreground/90 text-pretty">
+            <p className="text-xl text-black/80 text-pretty">
               Don't wait for problems to occur. Start proactive monitoring today and ensure your business stays
               operational.
             </p>

@@ -263,13 +263,13 @@ export default function LawFirmsPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-primary to-accent">
+      <section className="py-20 bg-gradient-to-r from-primary to-accent text-black">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="space-y-6">
-            <h2 className="text-3xl lg:text-4xl font-bold text-primary-foreground text-balance">
+            <h2 className="text-3xl lg:text-4xl font-bold text-balance text-black">
               Get Started Today: Ready to Modernize Your Law Firm&apos;s IT?
             </h2>
-            <p className="text-xl text-primary-foreground/90 text-pretty">
+            <p className="text-xl text-black/80 text-pretty">
               Let's discuss how our legal industry expertise can help your firm operate more efficiently while
               maintaining security and compliance.
             </p>

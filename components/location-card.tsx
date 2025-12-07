@@ -37,7 +37,9 @@ export function LocationCard() {
 
           <div className="flex items-center gap-2">
             <Mail className="w-4 h-4 text-muted-foreground" />
-            <span className="text-sm">info@79ratio.com</span>
+            <a className="text-sm hover:underline" href="mailto:info@79ratio.com">
+              info@79 ratio.com
+            </a>
           </div>
         </div>
       </CardContent>

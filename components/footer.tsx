@@ -30,7 +30,9 @@ export function Footer() {
               </div>
               <div className="flex items-center space-x-2 text-sm text-muted-foreground">
                 <Mail className="w-4 h-4" />
-                <span>info@79ratio.com</span>
+                <a className="hover:underline" href="mailto:info@79ratio.com">
+                  info@79 ratio.com
+                </a>
               </div>
               <div className="flex items-center space-x-2 text-sm text-muted-foreground">
                 <MapPin className="w-4 h-4" />

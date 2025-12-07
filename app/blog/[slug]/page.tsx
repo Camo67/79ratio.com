@@ -156,13 +156,13 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-primary to-accent">
+      <section className="py-20 bg-gradient-to-r from-primary to-accent text-black">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="space-y-6">
-            <h2 className="text-3xl lg:text-4xl font-bold text-primary-foreground text-balance">
+            <h2 className="text-3xl lg:text-4xl font-bold text-balance text-black">
               Need Help Implementing These Security Practices?
             </h2>
-            <p className="text-xl text-primary-foreground/90 text-pretty">
+            <p className="text-xl text-black/80 text-pretty">
               Our cybersecurity experts can help your law firm implement comprehensive security solutions that protect
               client data and ensure compliance.
             </p>

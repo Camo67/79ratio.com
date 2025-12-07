@@ -34,26 +34,48 @@ const values = [
 
 const stats = [
   { number: "24/7/365", label: "Monitoring & Support" },
-  { number: "99.9%", label: "Uptime Guarantee" },
-  { number: "6+", label: "Years Experience" },
+  { number: "30+", label: "Issues prevented before impact (avg / month)" },
+  { number: "6-7", label: "Years Young, Growing Fast" },
   { number: "500+", label: "Satisfied Clients" },
 ]
 
-const milestones = [
-  { year: "2018", event: "79 Ratio Founded", description: "Started with a vision to simplify IT for businesses" },
-  { year: "2020", event: "First 100 Clients", description: "Reached our first major milestone in client growth" },
-  { year: "2021", event: "24/7 Operations", description: "Launched round-the-clock monitoring and support services" },
+const journeyMoments = [
+  {
+    year: "2018",
+    title: "79 Ratio founded",
+    description: "A lean team launches with a promise: balance technology with business outcomes.",
+    image: "/professional-male-cto-in-business-attire.jpg",
+    badge: "Origin",
+  },
+  {
+    year: "2019",
+    title: "Merged with Impact Security (MSSP)",
+    description: "Brought SOC talent, playbooks, and cyber muscle into the core stack.",
+    image: "/professional-female-cybersecurity-specialist.jpg",
+    badge: "Security",
+  },
+  {
+    year: "2020",
+    title: "Physical security joins the stack",
+    description: "Rolled out CCTV, access control, and hardened on-prem environments.",
+    image: "/remote-it-support-service.png",
+    badge: "CCTV / Access",
+  },
   {
     year: "2022",
-    event: "Cloud Transformation",
-    description: "Became a leading cloud migration and management partner",
+    title: "Telecom & voice (20+ ISPs, ~$4B India market)",
+    description: "Expanded into phones and carrier-neutral connectivity for fast-growing teams.",
+    image: "/professional-male-network-engineer.jpg",
+    badge: "Telecom",
   },
   {
-    year: "2023",
-    event: "Cybersecurity Focus",
-    description: "Expanded security services in response to growing threats",
+    year: "2023+",
+    title: "Expansion flywheel",
+    description:
+      "Leadership experience fuels rapid new services and geo expansion—young company, mature momentum.",
+    image: "/technology-consulting-partners.png",
+    badge: "Next Up",
   },
-  { year: "2024", event: "500+ Clients", description: "Celebrating over 500 satisfied business partnerships" },
 ]
 
 const cultureValues = [
@@ -226,18 +248,34 @@ export default function AboutPage() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {milestones.map((milestone, index) => (
+            {journeyMoments.map((moment, index) => (
               <div
-                key={index}
-                className="bg-black/40 backdrop-blur-sm border border-primary/20 rounded-lg p-6 hover:bg-black/60 transition-all duration-300"
+                key={moment.title}
+                className="relative overflow-hidden bg-black/40 backdrop-blur-sm border border-primary/20 rounded-xl p-6 hover:bg-black/60 transition-all duration-300"
                 style={{
                   animationDelay: `${index * 0.1}s`,
                   animation: "fadeInUp 0.6s ease-out forwards",
                 }}
               >
-                <div className="text-2xl font-bold text-primary mb-2">{milestone.year}</div>
-                <div className="text-lg font-semibold text-white mb-2">{milestone.event}</div>
-                <div className="text-white/70 text-sm">{milestone.description}</div>
+                <div className="absolute -right-10 -bottom-10 h-32 w-32 rounded-full bg-primary/10 blur-2xl" />
+                <div className="flex items-center justify-between mb-3 relative z-10">
+                  <span className="text-xs font-semibold uppercase tracking-wide bg-primary/20 text-primary px-3 py-1 rounded-full">
+                    {moment.badge}
+                  </span>
+                  <span className="text-white/60 text-sm">{moment.year}</span>
+                </div>
+                <div className="relative z-10 space-y-3">
+                  <h3 className="text-lg font-semibold text-white">{moment.title}</h3>
+                  <p className="text-white/70 text-sm leading-relaxed">{moment.description}</p>
+                  <div className="relative mt-4 rounded-lg overflow-hidden border border-primary/20">
+                    <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-transparent to-accent/20" />
+                    <img
+                      src={moment.image}
+                      alt={`${moment.title} milestone`}
+                      className="w-full h-36 object-cover"
+                    />
+                  </div>
+                </div>
               </div>
             ))}
           </div>

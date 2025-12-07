@@ -9,9 +9,9 @@ import Link from "next/link"
 const securityLayers = [
   {
     icon: Shield,
-    title: "Firewall Protection",
+    title: "Zero Trust Access",
     description:
-      "Advanced firewall systems that monitor and control incoming and outgoing network traffic based on security rules.",
+      "Verify every user, device, and session—no implicit trust—before granting access to apps or data.",
   },
   {
     icon: Lock,
@@ -22,7 +22,7 @@ const securityLayers = [
   {
     icon: Eye,
     title: "Threat Detection",
-    description: "AI-powered threat detection systems that identify and respond to suspicious activities in real-time.",
+    description: "AI-powered detection that isolates suspicious activity before it becomes business-impacting.",
   },
   {
     icon: Users,
@@ -59,11 +59,11 @@ export default function CybersecurityPage() {
               <div className="space-y-4">
                 <Badge className="mb-4 text-white">Cybersecurity Solutions</Badge>
                 <h1 className="text-4xl lg:text-6xl font-bold text-white leading-tight text-balance">
-                  Multi-Layered <span className="text-primary">Security Protection</span>
+                  Zero Trust <span className="text-primary">Security Protection</span>
                 </h1>
                 <p className="text-xl text-white/80 leading-relaxed text-pretty">
-                  Protect your business from evolving cyber threats with our comprehensive security solutions,
-                  compliance management, and employee training programs.
+                  Assume threat, verify every access, and stop attacks before impact with identity-driven controls,
+                  compliant operations, and educated teams.
                 </p>
               </div>
 
@@ -78,8 +78,8 @@ export default function CybersecurityPage() {
 
               <div className="grid grid-cols-2 gap-6 pt-8">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-primary">99.9%</div>
-                  <div className="text-sm text-white/80">Threat Detection Rate</div>
+                  <div className="text-3xl font-bold text-primary">Every request</div>
+                  <div className="text-sm text-white/80">Verified before access</div>
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-bold text-primary">Less than 1 minute</div>
@@ -106,10 +106,11 @@ export default function CybersecurityPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-4 mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-foreground text-balance">
-              Comprehensive Security Layers
+              Zero Trust Security Layers
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-pretty">
-              Our multi-layered approach ensures complete protection against all types of cyber threats.
+              A zero trust stack that combines access control, endpoint defense, threat detection, and training to
+              prevent breaches before they begin.
             </p>
           </div>
 
@@ -255,13 +256,13 @@ export default function CybersecurityPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-primary to-accent">
+      <section className="py-20 bg-gradient-to-r from-primary to-accent text-black">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="space-y-6">
-            <h2 className="text-3xl lg:text-4xl font-bold text-primary-foreground text-balance">
+            <h2 className="text-3xl lg:text-4xl font-bold text-balance text-black">
               Don't Wait for a Security Breach
             </h2>
-            <p className="text-xl text-primary-foreground/90 text-pretty">
+            <p className="text-xl text-black/80 text-pretty">
               Protect your business today with our comprehensive cybersecurity solutions. Schedule a free security
               assessment.
             </p>

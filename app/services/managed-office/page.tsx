@@ -268,10 +268,10 @@ export default function ManagedOfficePage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-gradient-to-r from-primary to-accent text-primary-foreground">
+      <section className="py-20 bg-gradient-to-r from-primary to-accent text-black">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
-          <h2 className="text-3xl lg:text-4xl font-bold text-balance">Let us handle the technology.</h2>
-          <p className="text-lg text-primary-foreground/90 text-pretty">
+          <h2 className="text-3xl lg:text-4xl font-bold text-balance text-black">Let us handle the technology.</h2>
+          <p className="text-lg text-black/80 text-pretty">
             Let us handle the technology—so you can focus on business growth, collaboration, and service.
           </p>
           <Button asChild size="lg" variant="secondary" className="text-lg px-8">
