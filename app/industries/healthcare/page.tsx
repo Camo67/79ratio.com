@@ -78,7 +78,7 @@ export default function HealthcarePage() {
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-8">
+            <div className="space-y-8 hero-text-panel">
               <div className="space-y-4">
                 <Badge className="mb-4 text-white border-white/40 bg-white/10">Healthcare IT Expertise</Badge>
                 <h1 className="text-4xl lg:text-6xl font-bold text-white leading-tight text-balance">

@@ -61,7 +61,7 @@ export function HeroSection() {
           </div>
 
           {/* Hero Content */}
-          <div className="space-y-8 max-w-4xl">
+          <div className="space-y-8 max-w-4xl mx-auto hero-text-panel">
             <div className="space-y-4">
               <h1 className="lg:text-6xl font-bold text-primary leading-tight text-balance text-3xl">
                 Where Technology Evolves with <span className="text-[var(--primary-soft)]">Precision</span>

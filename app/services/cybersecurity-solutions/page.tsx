@@ -41,7 +41,7 @@ export default function CybersecurityPage() {
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="space-y-6">
+          <div className="space-y-6 max-w-4xl mx-auto hero-text-panel">
             <Image
               src="/79ratio-logo.webp"
               alt="79 Ratio Logo"

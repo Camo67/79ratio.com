@@ -39,7 +39,7 @@ export default function ResourcesPage() {
           />
           <div className="absolute inset-0 bg-gradient-to-br from-black/55 via-black/35 to-black/55" />
         </div>
-        <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
+        <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6 hero-text-panel">
           <Badge className="mx-auto w-fit bg-primary/20 text-primary border border-primary/30">Resources</Badge>
           <h1 className="text-4xl lg:text-6xl font-bold leading-tight text-balance">
             Valuable Guides and Tools for Digital Transformation Success

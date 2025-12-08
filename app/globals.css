@@ -161,6 +161,7 @@
   .text-gray-200,
   .text-gray-300 {
     color: #fff !important;
+    text-shadow: 0 12px 36px rgba(0, 0, 0, 0.55), 0 4px 14px rgba(0, 0, 0, 0.85);
   }
 
   h1.text-white,
@@ -177,6 +178,7 @@
   .text-gray-500,
   .text-gray-600 {
     color: #fff !important;
+    text-shadow: 0 10px 32px rgba(0, 0, 0, 0.5), 0 4px 12px rgba(0, 0, 0, 0.75);
   }
 
   .text-black {
@@ -199,6 +201,17 @@
   .button:focus-visible {
     background-color: #fff !important;
     color: #000 !important;
+  }
+}
+
+@layer components {
+  .hero-text-panel {
+    background: linear-gradient(145deg, rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.65));
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 1.25rem;
+    padding: clamp(1.25rem, 3vw, 2rem);
+    box-shadow: 0 22px 60px rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(8px);
   }
 }
 

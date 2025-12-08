@@ -45,7 +45,7 @@ export default function ScheduleCallPage() {
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="space-y-8 max-w-4xl mx-auto">
+          <div className="space-y-8 max-w-4xl mx-auto hero-text-panel">
             <Badge className="mb-4 bg-primary/20 text-primary border-primary/30">Schedule Your Consultation</Badge>
             <h1 className="text-4xl lg:text-6xl font-bold text-white leading-tight text-balance">
               Let's Discuss Your <span className="text-primary">Technology Needs</span>

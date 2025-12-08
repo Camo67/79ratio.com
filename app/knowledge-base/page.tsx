@@ -40,18 +40,20 @@ export default function KnowledgeBasePage() {
           />
           <div className="absolute inset-0 bg-gradient-to-br from-black/55 via-black/35 to-black/55" />
         </div>
-        <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
-          <Badge className="mx-auto w-fit bg-primary/20 text-primary border border-primary/30">Knowledge Base</Badge>
-          <h1 className="text-4xl lg:text-6xl font-bold leading-tight text-balance">
-            Find Quick Answers to Common Technology Questions
-          </h1>
-          <p className="text-lg text-white leading-relaxed text-pretty">
-            Our knowledge base offers FAQs, tutorials, and troubleshooting tips to support your daily technology usage
-            and optimize your experience.
-          </p>
-          <div className="max-w-xl mx-auto relative">
-            <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-white w-5 h-5" />
-            <Input className="pl-12 py-6 text-base bg-white/10 border-white/30 text-white placeholder:text-white" placeholder="Search the knowledge base..." />
+        <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="space-y-6 max-w-4xl mx-auto hero-text-panel">
+            <Badge className="mx-auto w-fit bg-primary/20 text-primary border border-primary/30">Knowledge Base</Badge>
+            <h1 className="text-4xl lg:text-6xl font-bold leading-tight text-balance">
+              Find Quick Answers to Common Technology Questions
+            </h1>
+            <p className="text-lg text-white leading-relaxed text-pretty">
+              Our knowledge base offers FAQs, tutorials, and troubleshooting tips to support your daily technology usage
+              and optimize your experience.
+            </p>
+            <div className="max-w-xl mx-auto relative">
+              <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-white w-5 h-5" />
+              <Input className="pl-12 py-6 text-base bg-white/10 border-white/30 text-white placeholder:text-white" placeholder="Search the knowledge base..." />
+            </div>
           </div>
         </div>
       </section>
