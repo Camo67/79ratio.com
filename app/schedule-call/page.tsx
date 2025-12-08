@@ -50,7 +50,7 @@ export default function ScheduleCallPage() {
             <h1 className="text-4xl lg:text-6xl font-bold text-white leading-tight text-balance">
               Let's Discuss Your <span className="text-primary">Technology Needs</span>
             </h1>
-            <p className="text-xl text-gray-200 leading-relaxed text-pretty max-w-3xl mx-auto">
+            <p className="text-xl text-white leading-relaxed text-pretty max-w-3xl mx-auto">
               Schedule a personalized consultation with our IT experts to discover how 79 Ratio can transform your
               business technology infrastructure.
             </p>

@@ -159,7 +159,7 @@ export function Navigation() {
                                     <h4 className="text-foreground font-medium text-base group-hover:text-primary transition-colors">
                                       {service.title}
                                     </h4>
-                                    <p className="text-gray-400 text-sm mt-2 group-hover:text-gray-300">
+                                    <p className="text-white text-sm mt-2 group-hover:text-white">
                                       {service.description}
                                     </p>
                                   </div>

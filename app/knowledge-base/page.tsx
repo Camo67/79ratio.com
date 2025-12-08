@@ -45,12 +45,12 @@ export default function KnowledgeBasePage() {
           <h1 className="text-4xl lg:text-6xl font-bold leading-tight text-balance">
             Find Quick Answers to Common Technology Questions
           </h1>
-          <p className="text-lg text-gray-200 leading-relaxed text-pretty">
+          <p className="text-lg text-white leading-relaxed text-pretty">
             Our knowledge base offers FAQs, tutorials, and troubleshooting tips to support your daily technology usage
             and optimize your experience.
           </p>
           <div className="max-w-xl mx-auto relative">
-            <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-300 w-5 h-5" />
+            <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-white w-5 h-5" />
             <Input className="pl-12 py-6 text-base bg-white/10 border-white/30 text-white placeholder:text-white" placeholder="Search the knowledge base..." />
           </div>
         </div>

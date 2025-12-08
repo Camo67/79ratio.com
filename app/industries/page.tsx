@@ -156,7 +156,7 @@ export default function IndustriesPage() {
             <h1 className="text-4xl lg:text-6xl font-bold text-white leading-tight text-balance">
               Industry-Specific <span className="text-primary">IT Expertise</span>
             </h1>
-            <p className="text-xl text-white/90 max-w-3xl mx-auto leading-relaxed text-pretty">
+            <p className="text-xl text-white max-w-3xl mx-auto leading-relaxed text-pretty">
               We understand the unique technology challenges and compliance requirements of your industry. Our
               specialized solutions are tailored to help your business thrive while meeting regulatory standards.
             </p>

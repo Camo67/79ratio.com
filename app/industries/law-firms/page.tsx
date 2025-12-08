@@ -82,7 +82,7 @@ export default function LawFirmsPage() {
                 <h1 className="text-4xl lg:text-6xl font-bold leading-tight text-balance">
                   IT Solutions for <span className="text-primary">Law Firms</span>
                 </h1>
-                <p className="text-xl text-white/90 leading-relaxed text-pretty">
+                <p className="text-xl text-white leading-relaxed text-pretty">
                   Specialized technology solutions designed for legal practices. We understand the unique security,
                   compliance, and confidentiality requirements of the legal profession.
                 </p>
@@ -100,11 +100,11 @@ export default function LawFirmsPage() {
               <div className="grid grid-cols-2 gap-6 pt-8">
                 <div className="text-center">
                   <div className="text-3xl font-bold text-primary">100%</div>
-                  <div className="text-sm text-white/80">Bar Compliance</div>
+                  <div className="text-sm text-white">Bar Compliance</div>
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-bold text-primary">50+</div>
-                  <div className="text-sm text-white/80">Law Firms Served</div>
+                  <div className="text-sm text-white">Law Firms Served</div>
                 </div>
               </div>
             </div>

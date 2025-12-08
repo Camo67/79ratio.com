@@ -89,7 +89,7 @@ export default function ContactPage() {
             <h1 className="text-4xl lg:text-6xl font-bold text-white leading-tight text-balance">
               Let's Discuss Your <span className="text-primary">IT Needs</span>
             </h1>
-            <p className="text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed text-pretty">
+            <p className="text-xl text-white max-w-3xl mx-auto leading-relaxed text-pretty">
               Ready to transform your technology infrastructure? Our experts are here to help you find the right
               solutions for your business. Schedule a free consultation today.
             </p>

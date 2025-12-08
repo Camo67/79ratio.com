@@ -54,7 +54,7 @@ export default function CloudManagementPage() {
             <h1 className="text-4xl lg:text-6xl font-bold text-white leading-tight text-balance">
               Expert <span className="text-primary">Cloud Management</span> Services
             </h1>
-            <p className="text-xl text-gray-200 leading-relaxed text-pretty max-w-3xl mx-auto">
+            <p className="text-xl text-white leading-relaxed text-pretty max-w-3xl mx-auto">
               Optimize your cloud infrastructure with expert migration, management, and optimization services for
               Microsoft 365, AWS, and Azure platforms.
             </p>

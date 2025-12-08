@@ -66,14 +66,14 @@ export default function BlogPage() {
             <h1 className="text-4xl lg:text-6xl font-bold text-white leading-tight text-balance">
               Insights, Trends, and Tips from 79 Ratio’s Technology Experts
             </h1>
-            <p className="text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed text-pretty">
+            <p className="text-xl text-white max-w-3xl mx-auto leading-relaxed text-pretty">
               Stay informed on the latest in cloud innovation, cybersecurity, and sector-specific advancements with our
               regularly updated blog.
             </p>
 
             {/* Search Bar */}
             <div className="max-w-md mx-auto relative">
-              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-4 h-4" />
+              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-white w-4 h-4" />
               <Input
                 placeholder="Search articles..."
                 className="pl-10 bg-white/10 border-white/20 text-white placeholder:text-white"

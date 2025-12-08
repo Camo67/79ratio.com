@@ -62,7 +62,7 @@ export default function CybersecurityPage() {
                 <h1 className="text-4xl lg:text-6xl font-bold text-white leading-tight text-balance">
                   Zero Trust <span className="text-primary">Security Protection</span>
                 </h1>
-                <p className="text-xl text-white/80 leading-relaxed text-pretty">
+                <p className="text-xl text-white leading-relaxed text-pretty">
                   Assume threat, verify every access, and stop attacks before impact with identity-driven controls,
                   compliant operations, and educated teams.
                 </p>
@@ -80,11 +80,11 @@ export default function CybersecurityPage() {
               <div className="grid grid-cols-2 gap-6 pt-8">
                 <div className="text-center">
                   <div className="text-3xl font-bold text-primary">Every request</div>
-                  <div className="text-sm text-white/80">Verified before access</div>
+                  <div className="text-sm text-white">Verified before access</div>
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-bold text-primary">Less than 1 minute</div>
-                  <div className="text-sm text-white/80">Response Time</div>
+                  <div className="text-sm text-white">Response Time</div>
                 </div>
               </div>
             </div>

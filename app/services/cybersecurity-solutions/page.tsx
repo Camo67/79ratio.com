@@ -54,7 +54,7 @@ export default function CybersecurityPage() {
             <h1 className="text-4xl lg:text-6xl font-bold text-white leading-tight text-balance">
               Advanced <span className="text-primary">Cybersecurity</span> Protection
             </h1>
-            <p className="text-xl text-gray-200 leading-relaxed text-pretty max-w-3xl mx-auto">
+            <p className="text-xl text-white leading-relaxed text-pretty max-w-3xl mx-auto">
               Protect your business with comprehensive cybersecurity solutions including firewalls, endpoint protection,
               and compliance management.
             </p>

@@ -2,7 +2,7 @@ import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { Shield, Users, Target, Award, Clock, TrendingUp } from "lucide-react"
+import { Shield, Users, Target, Award, Clock, TrendingUp, Cloud, RotateCcw, Headset, Compass } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 
@@ -128,6 +128,39 @@ const missionStats = [
   },
 ]
 
+const serviceHighlights = [
+  {
+    icon: Clock,
+    title: "24/7/365 Monitoring",
+    description: "Proactive network monitoring and threat detection to prevent issues before they impact your business operations.",
+  },
+  {
+    icon: Shield,
+    title: "Cybersecurity Solutions",
+    description: "Comprehensive security measures including firewalls, endpoint protection, and compliance management.",
+  },
+  {
+    icon: Cloud,
+    title: "Cloud Management",
+    description: "Expert cloud migration, optimization, and management services for Microsoft 365, AWS, and Azure platforms.",
+  },
+  {
+    icon: RotateCcw,
+    title: "Backup & Recovery",
+    description: "Reliable data protection with automated backups and rapid disaster recovery solutions.",
+  },
+  {
+    icon: Headset,
+    title: "Help Desk Support",
+    description: "Responsive technical support with local expertise and personalized service for your team.",
+  },
+  {
+    icon: Compass,
+    title: "IT Strategy & Planning",
+    description: "Strategic technology planning and implementation to align IT with your business objectives.",
+  },
+]
+
 export default function AboutPage() {
   return (
     <main className="min-h-screen text-white">
@@ -176,7 +209,7 @@ export default function AboutPage() {
                 <h1 className="text-4xl lg:text-6xl font-bold text-white leading-tight text-balance">
                   Your Trusted IT Partner Since <span className="text-primary">2018</span>
                 </h1>
-                <p className="text-xl text-white/90 leading-relaxed text-pretty">
+                <p className="text-xl text-white leading-relaxed text-pretty">
                   At 79 Ratio, we believe technology should empower your business, not complicate it. We deliver
                   comprehensive IT solutions with a personal touch, ensuring your systems run smoothly so you can focus
                   on what matters most.
@@ -219,9 +252,56 @@ export default function AboutPage() {
             {stats.map((stat, index) => (
               <div key={index} className="text-center">
                 <div className="text-3xl lg:text-4xl font-bold text-white mb-2">{stat.number}</div>
-                <div className="text-white/70 text-sm lg:text-base">{stat.label}</div>
+                <div className="text-white text-sm lg:text-base">{stat.label}</div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Services Snapshot Section */}
+      <section className="relative py-20 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <div
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat animate-slow-drift"
+            style={{
+              backgroundImage: "url(/about-bg.png)",
+              filter: "brightness(0.2)",
+            }}
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/75 to-black/85" />
+        </div>
+
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center space-y-4 mb-12">
+            <p className="text-xs tracking-[0.3em] uppercase text-primary font-semibold">Always-On Expertise</p>
+            <h2 className="text-3xl lg:text-4xl font-bold text-white text-balance">Coverage for Every Corner of IT</h2>
+            <p className="text-lg text-white max-w-3xl mx-auto text-pretty">
+              Purpose-built services that combine around-the-clock vigilance, resilient infrastructure, and hands-on support.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {serviceHighlights.map((service) => {
+              const IconComponent = service.icon
+              return (
+                <div
+                  key={service.title}
+                  className="relative overflow-hidden border border-primary/25 bg-black/70 backdrop-blur-sm rounded-xl p-6 shadow-lg shadow-black/20 hover:-translate-y-1 transition-transform duration-200"
+                >
+                  <div className="absolute -right-16 -bottom-16 h-32 w-32 rounded-full bg-primary/10 blur-2xl" />
+                  <div className="flex items-start space-x-4 relative z-10">
+                    <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center">
+                      <IconComponent className="w-6 h-6 text-primary" />
+                    </div>
+                    <div className="space-y-2">
+                      <h3 className="text-xl font-semibold text-white">{service.title}</h3>
+                      <p className="text-sm leading-relaxed text-white">{service.description}</p>
+                    </div>
+                  </div>
+                </div>
+              )
+            })}
           </div>
         </div>
       </section>
@@ -242,7 +322,7 @@ export default function AboutPage() {
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-4 mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-white text-balance">Our Journey of Innovation</h2>
-            <p className="text-xl text-white/70 max-w-3xl mx-auto text-pretty">
+            <p className="text-xl text-white max-w-3xl mx-auto text-pretty">
               From humble beginnings to industry leadership, our story is one of continuous growth and client success.
             </p>
           </div>
@@ -262,7 +342,7 @@ export default function AboutPage() {
                   <div className="space-y-3 rounded-lg bg-black/70 p-4 shadow-inner shadow-black/30 border border-white/5">
                     <div className="flex items-center justify-between text-xs font-semibold uppercase tracking-wide">
                       <span className="bg-primary/20 text-primary px-3 py-1 rounded-full">{moment.badge}</span>
-                      <span className="text-white/60">{moment.year}</span>
+                      <span className="text-white">{moment.year}</span>
                     </div>
                     <div className="space-y-2">
                       <h3 className="text-lg font-semibold text-white">{moment.title}</h3>
@@ -291,7 +371,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-4 mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-white text-balance">Culture: Empowering Our Teams</h2>
-            <p className="text-xl text-white/70 max-w-3xl mx-auto text-pretty">
+            <p className="text-xl text-white max-w-3xl mx-auto text-pretty">
               Our success comes from investing in our people and fostering an environment of continuous learning and innovation.
             </p>
           </div>
@@ -351,7 +431,7 @@ export default function AboutPage() {
                 <h2 className="text-3xl lg:text-4xl font-bold text-white text-balance">
                   Mission & Vision: Measurable Success Through People
                 </h2>
-                <div className="space-y-4 text-white/80 leading-relaxed">
+                <div className="space-y-4 text-white leading-relaxed">
                   <p>
                     <strong className="text-primary">Our Mission:</strong> To empower businesses through strategic
                     technology solutions that drive measurable results, delivered by a team that puts people first.
@@ -433,7 +513,7 @@ export default function AboutPage() {
               <h2 className="text-3xl lg:text-4xl font-bold text-white text-balance">
                 Our Story: Built on Trust and Excellence
               </h2>
-              <div className="space-y-4 text-white/90 leading-relaxed">
+              <div className="space-y-4 text-white leading-relaxed">
                 <p>
                   Founded in 2018, 79 Ratio emerged from a simple belief: businesses deserve IT partners who understand
                   their unique challenges and deliver solutions that truly work. What started as a small team of
@@ -471,7 +551,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-4 mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-white text-balance">Our Core Values</h2>
-            <p className="text-xl text-white/80 max-w-3xl mx-auto text-pretty">
+            <p className="text-xl text-white max-w-3xl mx-auto text-pretty">
               These principles guide everything we do, from initial consultation to ongoing support.
             </p>
           </div>
@@ -518,7 +598,7 @@ export default function AboutPage() {
           <h2 className="text-3xl lg:text-4xl font-bold text-white text-balance">
             Ready to Experience the 79 Ratio Difference?
           </h2>
-          <p className="text-xl text-white/90 text-pretty">
+          <p className="text-xl text-white text-pretty">
             Join hundreds of satisfied clients who trust us with their technology needs. Let's discuss how we can help
             your business thrive.
           </p>

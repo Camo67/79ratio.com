@@ -54,7 +54,7 @@ export default function MonitoringPage() {
             <h1 className="text-4xl lg:text-6xl font-bold text-white leading-tight text-balance">
               Proactive Network <span className="text-primary">Monitoring</span>
             </h1>
-            <p className="text-xl text-gray-200 leading-relaxed text-pretty max-w-3xl mx-auto">
+            <p className="text-xl text-white leading-relaxed text-pretty max-w-3xl mx-auto">
               Stay ahead of IT issues with our comprehensive monitoring solutions that detect and resolve problems
               before they impact your business operations.
             </p>

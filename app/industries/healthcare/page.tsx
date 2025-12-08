@@ -102,11 +102,11 @@ export default function HealthcarePage() {
               <div className="grid grid-cols-2 gap-6 pt-8">
                 <div className="text-center">
                   <div className="text-3xl font-bold text-white">100%</div>
-                  <div className="text-sm text-white/70">HIPAA Compliant</div>
+                  <div className="text-sm text-white">HIPAA Compliant</div>
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-bold text-white">30+</div>
-                  <div className="text-sm text-white/70">Healthcare Clients</div>
+                  <div className="text-sm text-white">Healthcare Clients</div>
                 </div>
               </div>
             </div>

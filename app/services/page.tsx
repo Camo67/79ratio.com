@@ -123,7 +123,7 @@ export default function ServicesPage() {
             <h1 className="text-4xl lg:text-6xl font-bold text-white leading-tight text-balance">
               Comprehensive <span className="text-primary">IT Services</span>
             </h1>
-            <p className="text-xl text-white/90 max-w-3xl mx-auto leading-relaxed text-pretty">
+            <p className="text-xl text-white max-w-3xl mx-auto leading-relaxed text-pretty">
               From proactive monitoring to strategic planning, we provide the complete IT infrastructure your business
               needs to thrive in today's digital landscape.
             </p>

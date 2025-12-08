@@ -45,7 +45,7 @@ export default function SolutionsPage() {
           </div>
 
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">Comprehensive IT Solutions</h1>
-          <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
+          <p className="text-xl text-white mb-8 max-w-3xl mx-auto">
             From cybersecurity to cloud management, we provide end-to-end technology solutions that drive your business
             forward with confidence and reliability.
           </p>
@@ -74,7 +74,7 @@ export default function SolutionsPage() {
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Our Solution Portfolio</h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+            <p className="text-xl text-white max-w-3xl mx-auto">
               Tailored technology solutions designed to meet the unique challenges of your industry
             </p>
           </div>
@@ -126,7 +126,7 @@ export default function SolutionsPage() {
                 <CardContent className="p-6">
                   <solution.icon className="w-12 h-12 text-primary mb-4" />
                   <h3 className="text-xl font-semibold text-white mb-3">{solution.title}</h3>
-                  <p className="text-gray-300 mb-4">{solution.description}</p>
+                  <p className="text-white mb-4">{solution.description}</p>
                   <Link href={solution.link}>
                     <Button
                       variant="outline"

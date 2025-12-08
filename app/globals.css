@@ -160,7 +160,7 @@
   .text-gray-100,
   .text-gray-200,
   .text-gray-300 {
-    color: var(--foreground) !important;
+    color: #fff !important;
   }
 
   h1.text-white,
@@ -176,7 +176,7 @@
   .text-gray-400,
   .text-gray-500,
   .text-gray-600 {
-    color: var(--muted-foreground) !important;
+    color: #fff !important;
   }
 
   .text-black {

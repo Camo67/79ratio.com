@@ -27,7 +27,7 @@ export default function LeadershipPage() {
           <h1 className="text-4xl lg:text-6xl font-bold leading-tight text-balance">
             Meet the leaders guiding 79 Ratio towards innovation and excellence.
           </h1>
-          <p className="text-lg text-gray-200 leading-relaxed text-pretty">
+          <p className="text-lg text-white leading-relaxed text-pretty">
             Our leadership team brings decades of technology and industry expertise. They foster a culture of
             innovation, partnership, and integrity—ensuring every solution is built on accountability and measurable
             impact.

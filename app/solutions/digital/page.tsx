@@ -26,7 +26,7 @@ export default function DigitalSystemsPage() {
           </div>
 
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">Digital Transformation</h1>
-          <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
+          <p className="text-xl text-white mb-8 max-w-3xl mx-auto">
             Modernize your business operations with strategic digital transformation that drives efficiency, innovation,
             and competitive advantage.
           </p>
@@ -53,7 +53,7 @@ export default function DigitalSystemsPage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Transform Your Business Operations</h2>
-              <p className="text-lg text-gray-300 mb-8">
+              <p className="text-lg text-white mb-8">
                 Our digital transformation services help you leverage cutting-edge technology to streamline processes,
                 enhance productivity, and create new opportunities for growth.
               </p>
@@ -87,7 +87,7 @@ export default function DigitalSystemsPage() {
                     </div>
                     <div>
                       <h3 className="text-xl font-semibold text-white mb-2">{service.title}</h3>
-                      <p className="text-gray-300">{service.description}</p>
+                      <p className="text-white">{service.description}</p>
                     </div>
                   </div>
                 ))}
@@ -104,7 +104,7 @@ export default function DigitalSystemsPage() {
                 <Card key={index} className="bg-white/10 backdrop-blur-sm border-white/20 text-center">
                   <CardContent className="p-6">
                     <div className="text-3xl font-bold text-primary mb-2">{stat.metric}</div>
-                    <div className="text-gray-300">{stat.label}</div>
+                    <div className="text-white">{stat.label}</div>
                   </CardContent>
                 </Card>
               ))}

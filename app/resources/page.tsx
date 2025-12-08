@@ -44,7 +44,7 @@ export default function ResourcesPage() {
           <h1 className="text-4xl lg:text-6xl font-bold leading-tight text-balance">
             Valuable Guides and Tools for Digital Transformation Success
           </h1>
-          <p className="text-lg text-gray-200 leading-relaxed text-pretty">
+          <p className="text-lg text-white leading-relaxed text-pretty">
             Access whitepapers, case studies, and how-to guides crafted to help you navigate technology solutions
             confidently and effectively.
           </p>
