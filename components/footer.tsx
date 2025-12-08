@@ -31,7 +31,7 @@ export function Footer() {
               <div className="flex items-center space-x-2 text-sm text-muted-foreground">
                 <Mail className="w-4 h-4" />
                 <a className="hover:underline" href="mailto:info@79ratio.com">
-                  info@79 ratio.com
+                  info@79ratio.com
                 </a>
               </div>
               <div className="flex items-center space-x-2 text-sm text-muted-foreground">
@@ -143,8 +143,12 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-border mt-12 pt-8 text-center text-sm text-muted-foreground">
-          <p>&copy; 2024 79 Ratio. All rights reserved. | Privacy Policy | Terms of Service</p>
+        <div className="border-t border-border mt-12 pt-8 text-center text-sm text-muted-foreground space-x-1">
+          <span>&copy; 2024 79 Ratio. All rights reserved. |</span>
+          <Link href="/privacy-policy" className="hover:text-primary underline-offset-4 hover:underline">
+            Privacy Policy
+          </Link>
+          <span>| Terms of Service</span>
         </div>
       </div>
     </footer>

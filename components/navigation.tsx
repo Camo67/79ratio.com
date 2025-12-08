@@ -92,6 +92,7 @@ export function Navigation() {
     { label: "Blog", href: "/blog" },
     { label: "Resources", href: "/resources" },
     { label: "Knowledge Base", href: "/knowledge-base" },
+    { label: "Privacy Policy", href: "/privacy-policy" },
   ]
 
   return (
