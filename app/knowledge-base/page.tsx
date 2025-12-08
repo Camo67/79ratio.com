@@ -35,7 +35,7 @@ export default function KnowledgeBasePage() {
       <section className="relative overflow-hidden py-20 lg:py-32 text-white">
         <div className="absolute inset-0">
           <div
-            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat hero-bg-image"
             style={{ backgroundImage: 'url("/Image_fx%20(21).jpg")' }}
           />
           <div className="absolute inset-0 bg-gradient-to-br from-black/55 via-black/35 to-black/55" />

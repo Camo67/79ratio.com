@@ -16,10 +16,10 @@ export default function CybersecurityPage() {
       <section className="relative py-20 lg:py-32 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <div
-            className="absolute inset-0 bg-cover bg-center bg-no-repeat animate-slow-drift"
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat animate-slow-drift hero-bg-image"
             style={{
               backgroundImage: "url(/contact-bg.jpeg)",
-              filter: "brightness(0.15)",
+              filter: "brightness(0.225)",
             }}
           />
           <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-black/55 to-black/70" />

@@ -5,8 +5,6 @@ import { Navigation } from "@/components/navigation"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { teamMembers } from "@/lib/team-data"
-import Image from "next/image"
 
 export default function LeadershipPage() {
   return (
@@ -17,7 +15,7 @@ export default function LeadershipPage() {
       <section className="relative overflow-hidden py-20 lg:py-32 text-white">
         <div className="absolute inset-0">
           <div
-            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat hero-bg-image"
             style={{ backgroundImage: 'url("/Image_fx%20(6).jpg")' }}
           />
           <div className="absolute inset-0 bg-gradient-to-br from-black/55 via-black/35 to-black/55" />
@@ -38,50 +36,34 @@ export default function LeadershipPage() {
         </div>
       </section>
 
-      {/* Leadership Grid */}
+      {/* Coming Soon */}
       <section className="py-20 bg-background">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
-          <div className="text-center space-y-4">
-            <h2 className="text-3xl lg:text-4xl font-bold text-foreground text-balance">
-              Experience, vision, and a client-first mindset.
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto text-pretty">
-              From cybersecurity and cloud innovation to service delivery and support, these leaders shape the roadmap
-              that keeps 79 Ratio ahead.
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8 text-center">
+          <div className="space-y-4">
+            <h2 className="text-3xl lg:text-4xl font-bold text-foreground text-balance">Leadership profiles coming soon</h2>
+            <p className="text-lg text-muted-foreground text-pretty">
+              We&apos;re finalizing the stories, experience, and vision of our executive team. Check back soon to meet the
+              leaders guiding 79 Ratio.
             </p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {teamMembers.map((leader) => (
-                  <Card key={leader.name} className="border-border bg-card">
-                    <CardHeader className="space-y-3 text-center">
-                      <Image
-                        src={leader.image || "/placeholder.svg"}
-                        alt={`${leader.name} - ${leader.role}`}
-                        width={128}
-                        height={128}
-                        className="w-32 h-32 rounded-full object-cover mx-auto"
-                      />
-                  <div>
-                    <CardTitle className="text-xl text-card-foreground">{leader.name}</CardTitle>
-                    <CardDescription className="text-primary font-medium">{leader.role}</CardDescription>
-                  </div>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  <p className="text-sm text-muted-foreground leading-relaxed">{leader.bio}</p>
-                  <div>
-                    <p className="font-medium text-card-foreground text-sm mb-2">Focus Areas</p>
-                    <div className="flex flex-wrap gap-2">
-                      {leader.specialties.map((specialty) => (
-                        <Badge key={specialty} variant="secondary" className="text-xs">
-                          {specialty}
-                        </Badge>
-                      ))}
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
+
+          <Card className="border-border bg-card">
+            <CardHeader>
+              <CardTitle className="text-2xl text-card-foreground">What to expect</CardTitle>
+              <CardDescription className="text-muted-foreground">
+                Deep dives on expertise, focus areas, and how each leader supports your success.
+              </CardDescription>
+            </CardHeader>
+            <CardContent className="space-y-3 text-left">
+              <p className="text-sm text-muted-foreground">
+                Want to connect now? Our team is available to talk through your goals and pair you with the right executive
+                sponsor.
+              </p>
+              <Button asChild className="w-full sm:w-auto">
+                <Link href="/contact">Talk with us today</Link>
+              </Button>
+            </CardContent>
+          </Card>
         </div>
       </section>
 

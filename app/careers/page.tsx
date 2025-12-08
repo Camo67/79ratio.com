@@ -11,7 +11,7 @@ export default function CareersPage() {
       <Navigation />
 
       <section className="relative overflow-hidden py-20 lg:py-32">
-        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url(/home-bg.png)" }} />
+        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat hero-bg-image" style={{ backgroundImage: "url(/home-bg.png)" }} />
         <div className="absolute inset-0 bg-gradient-to-br from-black/65 via-black/55 to-black/65" />
 
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">

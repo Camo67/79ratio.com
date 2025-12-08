@@ -65,7 +65,7 @@ export default function LawFirmsPage() {
       <section className="relative py-20 lg:py-32 overflow-hidden">
         <div className="absolute inset-0">
           <div
-            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat hero-bg-image"
             style={{ backgroundImage: 'url("/law_firms.jpg")' }}
           />
           <div className="absolute inset-0 bg-gradient-to-br from-black/80 via-black/60 to-black/80" />

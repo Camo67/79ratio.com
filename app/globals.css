@@ -213,6 +213,36 @@
     box-shadow: 0 10px 32px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(8px);
   }
+
+  .hero-bg-image {
+    filter: brightness(1.5);
+  }
+
+  .nav-plain-trigger {
+    background-color: transparent !important;
+    color: var(--foreground) !important;
+    border-color: transparent !important;
+    box-shadow: none !important;
+  }
+
+  .nav-plain-trigger:hover,
+  .nav-plain-trigger:focus-visible,
+  .nav-plain-trigger:active {
+    background-color: transparent !important;
+    color: var(--primary) !important;
+    border-color: transparent !important;
+    box-shadow: none !important;
+  }
+
+  button.nav-plain-trigger,
+  button.nav-plain-trigger:hover,
+  button.nav-plain-trigger:focus-visible,
+  button.nav-plain-trigger:active {
+    background-color: transparent !important;
+    border-color: transparent !important;
+    box-shadow: none !important;
+    color: var(--primary) !important;
+  }
 }
 
 @keyframes slow-drift {

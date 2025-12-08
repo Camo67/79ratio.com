@@ -117,7 +117,7 @@ export function Navigation() {
                 type="button"
                 ref={megaMenuButtonRef}
                 onClick={toggleMegaMenu}
-                className="text-foreground transition-colors flex items-center space-x-1"
+                className="text-foreground transition-colors flex items-center space-x-1 nav-plain-trigger"
                 aria-expanded={isMegaMenuOpen}
                 aria-controls="mega-menu"
               >

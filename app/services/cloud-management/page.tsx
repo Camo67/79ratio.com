@@ -16,10 +16,10 @@ export default function CloudManagementPage() {
       <section className="relative py-20 lg:py-32 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <div
-            className="absolute inset-0 bg-cover bg-center bg-no-repeat animate-slow-drift"
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat animate-slow-drift hero-bg-image"
             style={{
               backgroundImage: 'url("/Image_fx (19).jpg")',
-              filter: "brightness(0.15)",
+              filter: "brightness(0.225)",
             }}
           />
           <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-black/55 to-black/70" />

@@ -12,7 +12,7 @@ export function HeroSection() {
           className="absolute inset-0 bg-cover bg-center bg-no-repeat animate-slow-drift"
           style={{
             backgroundImage: "url(/home-bg.png)",
-            filter: "brightness(0.9)",
+            filter: "brightness(1.35)",
           }}
         />
         <div className="absolute inset-0 bg-gradient-to-br from-black/18 via-black/12 to-black/18" />

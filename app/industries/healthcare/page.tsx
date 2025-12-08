@@ -67,7 +67,7 @@ export default function HealthcarePage() {
       <section className="relative py-20 lg:py-32 overflow-hidden">
         <div className="absolute inset-0">
           <div
-            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat hero-bg-image"
             style={{ backgroundImage: 'url("/healthcare.jpg")' }}
           />
           <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-black/65 to-black/70" />

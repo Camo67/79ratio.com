@@ -115,7 +115,7 @@ export default function ManagedTechnologyCybersecurityPage() {
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-black py-20 lg:py-32 text-foreground">
         <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat hero-bg-image"
           style={{ backgroundImage: "url(/generated-image-2.png)" }}
         />
         <div className="absolute inset-0 bg-gradient-to-br from-black/75 via-black/55 to-black/75" />

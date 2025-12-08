@@ -16,7 +16,7 @@ export default function ScheduleCallPage() {
         {/* Background */}
         <div className="absolute inset-0">
           <div
-            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat hero-bg-image"
             style={{
               backgroundImage: "url('/home-bg.png')",
             }}

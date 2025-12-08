@@ -196,7 +196,7 @@ export default function PrivacyPolicyPage() {
         <div className="absolute inset-0">
           <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat animate-slow-drift"
-            style={{ backgroundImage: "url(/compliance-bg.png)", filter: "brightness(0.25)" }}
+            style={{ backgroundImage: "url(/compliance-bg.png)", filter: "brightness(0.375)" }}
           />
           <div className="absolute inset-0 bg-gradient-to-br from-black/80 via-black/70 to-black/80" />
         </div>

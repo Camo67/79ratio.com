@@ -174,7 +174,7 @@ export default function AboutPage() {
             className="absolute inset-0 bg-cover bg-center bg-no-repeat animate-slow-drift"
             style={{
               backgroundImage: "url(/digital-bg.png)",
-              filter: "brightness(0.2)",
+              filter: "brightness(0.3)",
             }}
           />
           <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-black/55 to-black/70" />
@@ -182,7 +182,7 @@ export default function AboutPage() {
           {/* Floating Elements Animation */}
           <div className="absolute inset-0">
             <div
-              className="absolute inset-0 bg-cover bg-center bg-no-repeat animate-slow-drift opacity-30"
+              className="absolute inset-0 bg-cover bg-center bg-no-repeat animate-slow-drift opacity-30 hero-bg-image"
               style={{
                 backgroundImage: "url(/about-bg.png)",
               }}
