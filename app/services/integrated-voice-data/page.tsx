@@ -55,19 +55,20 @@ const features = [
 
 const differentiators = [
   {
-    stat: "35%",
-    label: "Productivity boost",
-    detail: "Unified workflows slash app-switching time for every employee.",
+    stat: "Workflows that enhance productivity",
+    label: "Unified tools minimize app-switching, helping teams work more efficiently every day.",
+    detail: "",
   },
   {
-    stat: "99.99%",
-    label: "Call uptime",
-    detail: "Redundant carriers and proactive monitoring keep conversations live.",
+    stat: "Consistent, reliable calling",
+    label: "Redundant networks and proactive monitoring keep communication steady and clear.",
+    detail: "",
   },
   {
-    stat: "24/7",
-    label: "Specialist support",
-    detail: "Voice + data NOC keeps law, healthcare, nonprofit, and manufacturing teams connected.",
+    stat: "Support you can depend on",
+    label:
+      "Our voice and data specialists are available around the clock to assist legal, healthcare, nonprofit, and manufacturing teams.",
+    detail: "",
   },
 ]
 
@@ -121,14 +122,14 @@ export default function IntegratedVoiceDataPage() {
             connectivity across every device, all managed by 79 Ratio.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button asChild size="lg" className="text-lg px-8">
+            <Button asChild size="lg" className="text-lg px-8 transition-none">
               <Link href="/contact">Book My Demo</Link>
             </Button>
             <Button
               asChild
               size="lg"
               variant="outline"
-              className="text-lg px-8 border-white/40 text-white bg-transparent hover:bg-white hover:text-black focus-visible:text-black active:text-black"
+              className="text-lg px-8 border-white/40 text-white bg-transparent hover:bg-white hover:text-black focus-visible:text-black active:text-black transition-none"
             >
               <Link href="/schedule-call">Talk to an Expert</Link>
             </Button>
@@ -251,9 +252,9 @@ export default function IntegratedVoiceDataPage() {
             {differentiators.map((item) => (
               <Card key={item.label} className="bg-card border-border text-center">
                 <CardContent className="py-8 px-4 space-y-3">
-                  <p className="text-3xl font-bold text-primary">{item.stat}</p>
-                  <p className="text-sm font-medium text-card-foreground">{item.label}</p>
-                  <p className="text-xs text-muted-foreground">{item.detail}</p>
+                  <p className="text-base font-semibold text-primary">{item.stat}</p>
+                  <p className="text-sm text-card-foreground">{item.label}</p>
+                  {item.detail && <p className="text-xs text-muted-foreground">{item.detail}</p>}
                 </CardContent>
               </Card>
             ))}

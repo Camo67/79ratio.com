@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { CheckCircle, HandHeart, Coins, Users, Target, Globe } from "lucide-react"
+import Image from "next/image"
 import Link from "next/link"
 
 const nonprofitChallenges = [
@@ -96,10 +97,13 @@ export default function NonprofitsPage() {
             </div>
             <div className="relative">
               <div className="aspect-square bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl p-8 flex items-center justify-center">
-                <img
+                <Image
                   src="/professional-it-team-collaborating-in-modern-offic.jpg"
                   alt="Nonprofit team collaborating using modern technology"
+                  width={800}
+                  height={800}
                   className="w-full h-full object-cover rounded-xl"
+                  priority
                 />
               </div>
             </div>
@@ -156,9 +160,11 @@ export default function NonprofitsPage() {
             </ul>
           </div>
           <div className="relative">
-            <img
+            <Image
               src="/technology-consulting-partners.png"
               alt="Consultants reviewing nonprofit technology roadmap"
+              width={1200}
+              height={800}
               className="w-full h-auto rounded-2xl shadow-lg"
             />
           </div>

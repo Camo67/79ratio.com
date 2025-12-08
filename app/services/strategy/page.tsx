@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { CheckCircle, Compass, Layers, Shield, Target, BarChart3, Workflow } from "lucide-react"
+import Image from "next/image"
 import Link from "next/link"
 
 const focusAreas = [
@@ -97,10 +98,13 @@ export default function StrategyServicesPage() {
 
             <div className="relative">
               <div className="aspect-square bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl p-8 flex items-center justify-center">
-                <img
+                <Image
                   src="/it-infrastructure-management-plan.jpg"
                   alt="Consultants collaborating on a technology roadmap"
+                  width={800}
+                  height={800}
                   className="w-full h-full object-cover rounded-xl"
+                  priority
                 />
               </div>
             </div>

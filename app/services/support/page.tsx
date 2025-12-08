@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { CheckCircle, Clock8, HeadphonesIcon, Laptop2, MessageSquare, Users } from "lucide-react"
+import Image from "next/image"
 import Link from "next/link"
 
 const supportChannels = [
@@ -107,10 +108,13 @@ export default function SupportServicesPage() {
             </div>
             <div className="relative">
               <div className="aspect-square bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl p-8 flex items-center justify-center">
-                <img
+                <Image
                   src="/it-helpdesk-services-24-7.jpg"
                   alt="IT help desk team supporting end users"
+                  width={800}
+                  height={800}
                   className="w-full h-full object-cover rounded-xl"
+                  priority
                 />
               </div>
             </div>
@@ -217,4 +221,3 @@ export default function SupportServicesPage() {
     </main>
   )
 }
-

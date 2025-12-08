@@ -6,6 +6,7 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { teamMembers } from "@/lib/team-data"
+import Image from "next/image"
 
 export default function LeadershipPage() {
   return (
@@ -50,14 +51,16 @@ export default function LeadershipPage() {
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {teamMembers.map((leader) => (
-              <Card key={leader.name} className="border-border bg-card">
-                <CardHeader className="space-y-3 text-center">
-                  <img
-                    src={leader.image || "/placeholder.svg"}
-                    alt={`${leader.name} - ${leader.role}`}
-                    className="w-32 h-32 rounded-full object-cover mx-auto"
-                  />
+                {teamMembers.map((leader) => (
+                  <Card key={leader.name} className="border-border bg-card">
+                    <CardHeader className="space-y-3 text-center">
+                      <Image
+                        src={leader.image || "/placeholder.svg"}
+                        alt={`${leader.name} - ${leader.role}`}
+                        width={128}
+                        height={128}
+                        className="w-32 h-32 rounded-full object-cover mx-auto"
+                      />
                   <div>
                     <CardTitle className="text-xl text-card-foreground">{leader.name}</CardTitle>
                     <CardDescription className="text-primary font-medium">{leader.role}</CardDescription>

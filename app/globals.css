@@ -183,28 +183,22 @@
     color: var(--primary-foreground) !important;
   }
 
-  .bg-white,
-  .bg-gray-50,
-  .bg-gray-100 {
-    background-color: var(--card) !important;
+  button,
+  [data-slot="button"],
+  .button {
+    background-color: #000 !important;
+    color: #fff !important;
+    transition: color 0.3s ease, background-color 0.3s ease !important;
   }
 
-  .bg-white\/10 {
-    background-color: color-mix(in srgb, var(--primary) 15%, #000 85%) !important;
-  }
-
-  .bg-white\/20 {
-    background-color: color-mix(in srgb, var(--primary) 25%, #000 75%) !important;
-  }
-
-  .bg-white\/30 {
-    background-color: color-mix(in srgb, var(--primary) 35%, #000 65%) !important;
-  }
-
-  .border-white,
-  .border-white\/40,
-  .border-white\/20 {
-    border-color: var(--border) !important;
+  button:hover,
+  button:focus-visible,
+  [data-slot="button"]:hover,
+  [data-slot="button"]:focus-visible,
+  .button:hover,
+  .button:focus-visible {
+    background-color: #fff !important;
+    color: #000 !important;
   }
 }
 

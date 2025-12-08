@@ -284,10 +284,13 @@ export default function IndustriesPage() {
             </div>
 
             <div className="relative">
-              <img
+              <Image
                 src="/diverse-industries-collage-showing-law-healthcare.jpg"
                 alt="Diverse industries including law, healthcare, nonprofits, and manufacturing"
+                width={1200}
+                height={800}
                 className="w-full h-auto rounded-2xl shadow-lg"
+                priority
               />
             </div>
           </div>

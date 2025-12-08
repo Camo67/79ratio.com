@@ -191,14 +191,14 @@ export default function ServicesPage() {
               Let's discuss your specific needs and create a customized IT solution that drives your business forward.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" variant="secondary" className="text-lg px-8">
+              <Button asChild size="lg" variant="secondary" className="text-lg px-8 transition-none">
                 <Link href="/contact">Get Free Assessment</Link>
               </Button>
               <Button
                 asChild
                 size="lg"
                 variant="outline"
-                className="text-lg px-8 border-black text-white bg-transparent"
+                className="text-lg px-8 border-black text-white bg-transparent transition-none"
               >
                 <Link href="/about">Learn About Us</Link>
               </Button>

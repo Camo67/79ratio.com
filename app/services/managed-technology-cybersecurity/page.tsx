@@ -134,19 +134,19 @@ export default function ManagedTechnologyCybersecurityPage() {
             Protect, streamline, and empower your business with always-on management and advanced digital defense—from
             strategic support to real-time threat protection, 79 Ratio has your back.
           </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button asChild size="lg" className="text-lg px-8">
-              <Link href="/contact">Start Now with a Free Security Assessment</Link>
-            </Button>
-            <Button
-              asChild
-              size="lg"
-              variant="outline"
-              className="text-lg px-8 border-white/40 text-white hover:bg-white hover:text-black bg-transparent"
-            >
-              <Link href="/schedule-call">Talk to an Expert</Link>
-            </Button>
-          </div>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+              <Button asChild size="lg" className="text-lg px-8 transition-none">
+                <Link href="/contact">Start Now with a Free Security Assessment</Link>
+              </Button>
+              <Button
+                asChild
+                size="lg"
+                variant="outline"
+                className="text-lg px-8 border-white/40 text-white hover:bg-white hover:text-black bg-transparent transition-none"
+              >
+                <Link href="/schedule-call">Talk to an Expert</Link>
+              </Button>
+            </div>
         </div>
       </section>
 

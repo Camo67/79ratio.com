@@ -191,7 +191,7 @@ export default function AboutPage() {
                   asChild
                   variant="outline"
                   size="lg"
-                  className="text-lg px-8 bg-transparent border-white text-white hover:bg-white hover:text-black"
+                  className="text-lg px-8 border-[#fff] text-[#fff] bg-[#000] hover:bg-[#fff] hover:text-[#000] focus-visible:text-[#000] active:text-[#000] transition-colors duration-200"
                 >
                   <Link href="/team">Meet Our Team</Link>
                 </Button>
@@ -258,20 +258,24 @@ export default function AboutPage() {
                 }}
               >
                 <div className="absolute -right-10 -bottom-10 h-32 w-32 rounded-full bg-primary/10 blur-2xl" />
-                <div className="flex items-center justify-between mb-3 relative z-10">
-                  <span className="text-xs font-semibold uppercase tracking-wide bg-primary/20 text-primary px-3 py-1 rounded-full">
-                    {moment.badge}
-                  </span>
-                  <span className="text-white/60 text-sm">{moment.year}</span>
-                </div>
-                <div className="relative z-10 space-y-3">
-                  <h3 className="text-lg font-semibold text-white">{moment.title}</h3>
-                  <p className="text-white/70 text-sm leading-relaxed">{moment.description}</p>
-                  <div className="relative mt-4 rounded-lg overflow-hidden border border-primary/20">
+                <div className="relative z-10 space-y-4">
+                  <div className="space-y-3 rounded-lg bg-black/70 p-4 shadow-inner shadow-black/30 border border-white/5">
+                    <div className="flex items-center justify-between text-xs font-semibold uppercase tracking-wide">
+                      <span className="bg-primary/20 text-primary px-3 py-1 rounded-full">{moment.badge}</span>
+                      <span className="text-white/60">{moment.year}</span>
+                    </div>
+                    <div className="space-y-2">
+                      <h3 className="text-lg font-semibold text-white">{moment.title}</h3>
+                      <p className="text-white text-sm leading-relaxed">{moment.description}</p>
+                    </div>
+                  </div>
+                  <div className="relative rounded-lg overflow-hidden border border-primary/20">
                     <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-transparent to-accent/20" />
-                    <img
+                    <Image
                       src={moment.image}
                       alt={`${moment.title} milestone`}
+                      width={480}
+                      height={160}
                       className="w-full h-36 object-cover"
                     />
                   </div>
@@ -298,7 +302,7 @@ export default function AboutPage() {
               return (
                 <Card
                   key={index}
-                  className="text-center border-border bg-card/90 backdrop-blur-sm hover:bg-card transition-all duration-300 hover:scale-105"
+                  className="relative overflow-hidden text-center border border-primary/25 bg-black/70 backdrop-blur-sm hover:bg-black/80 transition-all duration-300 hover:scale-105 shadow-lg shadow-black/20"
                 >
                   <CardHeader className="space-y-4">
                     <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto">
@@ -307,7 +311,7 @@ export default function AboutPage() {
                     <CardTitle className="text-xl text-white">{value.title}</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <CardDescription className="text-white/70">{value.description}</CardDescription>
+                    <CardDescription className="text-white">{value.description}</CardDescription>
                   </CardContent>
                 </Card>
               )
@@ -385,11 +389,11 @@ export default function AboutPage() {
                   return (
                     <div
                       key={stat.label}
-                      className="bg-primary/10 backdrop-blur-sm border border-primary/20 rounded-lg p-4 text-center"
+                      className="relative overflow-hidden bg-black/70 backdrop-blur-sm border border-primary/25 rounded-lg p-4 text-center shadow-lg shadow-black/20"
                     >
                       <IconComponent className="w-8 h-8 text-primary mx-auto mb-2" />
                       <div className="text-white font-semibold">{stat.label}</div>
-                      <div className="text-white/70 text-sm">{stat.detail}</div>
+                      <div className="text-white text-sm">{stat.detail}</div>
                     </div>
                   )
                 })}
@@ -478,7 +482,7 @@ export default function AboutPage() {
               return (
                 <Card
                   key={index}
-                  className="text-center border-border bg-card/90 backdrop-blur-sm hover:bg-card transition-all duration-300"
+                  className="relative overflow-hidden text-center border border-primary/25 bg-black/70 backdrop-blur-sm hover:bg-black/80 transition-all duration-300 shadow-lg shadow-black/20"
                 >
                   <CardHeader className="space-y-4">
                     <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto">
@@ -487,7 +491,7 @@ export default function AboutPage() {
                     <CardTitle className="text-xl text-white">{value.title}</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <CardDescription className="text-white/70">{value.description}</CardDescription>
+                    <CardDescription className="text-white">{value.description}</CardDescription>
                   </CardContent>
                 </Card>
               )
@@ -529,7 +533,7 @@ export default function AboutPage() {
                 asChild
                 size="lg"
                 variant="outline"
-                className="text-lg px-8 border-white text-white hover:bg-white hover:text-black bg-transparent"
+                className="text-lg px-8 border-[#fff] text-[#fff] bg-[#000] hover:bg-[#fff] hover:text-[#000] focus-visible:text-[#000] active:text-[#000] transition-colors duration-200"
               >
                 <Link href="/services">View Our Services</Link>
               </Button>

@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { CheckCircle, Factory, Cpu, ShieldCheck, Gauge } from "lucide-react"
+import Image from "next/image"
 import Link from "next/link"
 
 const manufacturingChallenges = [
@@ -96,10 +97,13 @@ export default function ManufacturingPage() {
             </div>
             <div className="relative">
               <div className="aspect-square bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl p-8 flex items-center justify-center">
-                <img
+                <Image
                   src="/managed-it-services-near-me.jpg"
                   alt="Manufacturing engineers monitoring connected factory systems"
+                  width={800}
+                  height={800}
                   className="w-full h-full object-cover rounded-xl"
+                  priority
                 />
               </div>
             </div>
@@ -155,9 +159,11 @@ export default function ManufacturingPage() {
             </ul>
           </div>
           <div className="relative">
-            <img
+            <Image
               src="/cloud_infustructure.jpg"
               alt="Engineers reviewing manufacturing network topology"
+              width={1200}
+              height={800}
               className="w-full h-auto rounded-2xl shadow-lg"
             />
           </div>

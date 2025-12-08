@@ -4,6 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Monitor, CheckCircle, AlertTriangle, Clock, TrendingUp } from "lucide-react"
+import Image from "next/image"
 import Link from "next/link"
 
 const features = [
@@ -70,10 +71,10 @@ export default function MonitoringPage() {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button asChild size="lg" className="text-lg px-8">
+                <Button asChild size="lg" className="text-lg px-8 transition-none">
                   <Link href="/contact">Contact Us Today</Link>
                 </Button>
-                <Button asChild variant="outline" size="lg" className="text-lg px-8 bg-transparent">
+                <Button asChild variant="outline" size="lg" className="text-lg px-8 bg-transparent transition-none">
                   <Link href="/services">View All Services</Link>
                 </Button>
               </div>
@@ -91,10 +92,13 @@ export default function MonitoringPage() {
             </div>
             <div className="relative">
               <div className="aspect-square bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl p-8 flex items-center justify-center">
-                <img
+                <Image
                   src="/network-monitoring-dashboard-with-real-time-metri.jpg"
                   alt="Network monitoring dashboard showing real-time metrics"
+                  width={800}
+                  height={800}
                   className="w-full h-full object-cover rounded-xl"
+                  priority
                 />
               </div>
             </div>
@@ -157,9 +161,11 @@ export default function MonitoringPage() {
             </div>
 
             <div className="relative">
-              <img
+              <Image
                 src="/it-professional-monitoring-network-security-dashbo.jpg"
                 alt="IT professional monitoring network security dashboard"
+                width={1200}
+                height={800}
                 className="w-full h-auto rounded-2xl shadow-lg"
               />
             </div>

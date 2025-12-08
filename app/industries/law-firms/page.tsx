@@ -4,6 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Scale, CheckCircle, Shield, FileText, Users, Clock } from "lucide-react"
+import Image from "next/image"
 import Link from "next/link"
 
 const legalChallenges = [
@@ -168,9 +169,11 @@ export default function LawFirmsPage() {
             </div>
 
             <div className="relative">
-              <img
+              <Image
                 src="/secure-legal-document-management-system.jpg"
                 alt="Secure legal document management system interface"
+                width={1200}
+                height={800}
                 className="w-full h-auto rounded-2xl shadow-lg"
               />
             </div>

@@ -4,6 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Heart, CheckCircle, Shield, Monitor, Users, FileText } from "lucide-react"
+import Image from "next/image"
 import Link from "next/link"
 
 const healthcareChallenges = [
@@ -172,9 +173,11 @@ export default function HealthcarePage() {
             </div>
 
             <div className="relative">
-              <img
+              <Image
                 src="/hipaa-compliant-healthcare-it-infrastructure.jpg"
                 alt="HIPAA-compliant healthcare IT infrastructure and security systems"
+                width={1200}
+                height={800}
                 className="w-full h-auto rounded-2xl shadow-lg"
               />
             </div>

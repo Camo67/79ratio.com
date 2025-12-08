@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { CheckCircle, CloudUpload, Database, ShieldCheck, Timer, HardDrive } from "lucide-react"
+import Image from "next/image"
 import Link from "next/link"
 
 const features = [
@@ -105,10 +106,13 @@ export default function BackupRecoveryPage() {
 
             <div className="relative">
               <div className="aspect-square bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl p-8 flex items-center justify-center">
-                <img
+                <Image
                   src="/modern-it-infrastructure-and-server-room.jpg"
                   alt="Modern server room with redundant backup appliances"
+                  width={800}
+                  height={800}
                   className="w-full h-full object-cover rounded-xl"
+                  priority
                 />
               </div>
             </div>
