@@ -2,6 +2,7 @@
   "$schema": "./node_modules/wrangler/config-schema.json",
   "name": "79ratio",
   "pages_build_output_dir": ".open-next",
+  "buildCommand": "npm run build:cloudflare",
   "compatibility_flags": [
     "nodejs_compat",
     "nodejs_als"
