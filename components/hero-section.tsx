@@ -12,10 +12,10 @@ export function HeroSection() {
           className="absolute inset-0 bg-cover bg-center bg-no-repeat animate-slow-drift"
           style={{
             backgroundImage: "url(/home-bg.png)",
-            filter: "brightness(0.7)",
+            filter: "brightness(0.9)",
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-black/55 via-black/45 to-black/60" />
+        <div className="absolute inset-0 bg-gradient-to-br from-black/18 via-black/12 to-black/18" />
 
         <div className="absolute inset-0">
           {/* Fibonacci spiral elements */}

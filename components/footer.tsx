@@ -144,7 +144,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-border mt-12 pt-8 text-center text-sm text-muted-foreground space-x-1">
-          <span>&copy; 2024 79 Ratio. All rights reserved. |</span>
+          <span>&copy; {new Date().getFullYear()} 79 Ratio. All rights reserved. |</span>
           <Link href="/privacy-policy" className="hover:text-primary underline-offset-4 hover:underline">
             Privacy Policy
           </Link>

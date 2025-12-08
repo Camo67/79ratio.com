@@ -206,11 +206,11 @@
 
 @layer components {
   .hero-text-panel {
-    background: linear-gradient(145deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.42));
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    background: linear-gradient(145deg, rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.24));
+    border: 1px solid rgba(255, 255, 255, 0.04);
     border-radius: 1.25rem;
     padding: clamp(1.25rem, 3vw, 2rem);
-    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.38);
+    box-shadow: 0 10px 32px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(8px);
   }
 }
