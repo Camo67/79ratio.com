@@ -12,10 +12,10 @@ export function HeroSection() {
           className="absolute inset-0 bg-cover bg-center bg-no-repeat animate-slow-drift"
           style={{
             backgroundImage: "url(/home-bg.png)",
-            filter: "brightness(0.6)",
+            filter: "brightness(0.7)",
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-black/60 to-black/70" />
+        <div className="absolute inset-0 bg-gradient-to-br from-black/55 via-black/45 to-black/60" />
 
         <div className="absolute inset-0">
           {/* Fibonacci spiral elements */}
@@ -63,13 +63,14 @@ export function HeroSection() {
           {/* Hero Content */}
           <div className="space-y-8 max-w-4xl mx-auto hero-text-panel">
             <div className="space-y-4">
-              <h1 className="lg:text-6xl font-bold text-primary leading-tight text-balance text-3xl">
-                Where Technology Evolves with <span className="text-[var(--primary-soft)]">Precision</span>
+              <h1 className="lg:text-6xl font-bold text-primary leading-tight text-balance text-3xl drop-shadow-[0_8px_24px_rgba(0,0,0,0.6)]">
+                Where Technology Evolves with{" "}
+                <span className="text-[var(--primary-soft)] drop-shadow-[0_8px_24px_rgba(0,0,0,0.6)]">Precision</span>
               </h1>
-              <p className="text-[var(--foreground)] leading-relaxed text-pretty text-lg">
+              <p className="text-white leading-relaxed text-pretty text-lg drop-shadow-[0_8px_24px_rgba(0,0,0,0.55)]">
                 Sustainable Excellence • Strategic Innovation • Tailored Management
               </p>
-              <p className="text-white leading-relaxed text-pretty text-base mt-4">
+              <p className="text-white/95 leading-relaxed text-pretty text-base mt-4 drop-shadow-[0_10px_28px_rgba(0,0,0,0.6)]">
                 79 Ratio delivers comprehensive IT solutions tailored for law firms, healthcare providers, nonprofits,
                 and manufacturing companies. Experience proactive support, 24/7 monitoring, and strategic technology
                 guidance.
