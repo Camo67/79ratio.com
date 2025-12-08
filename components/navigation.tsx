@@ -218,7 +218,7 @@ export function Navigation() {
                             </p>
                           </div>
                           <div>
-                            <Button asChild className="w-full">
+                            <Button asChild className="w-full bg-primary text-black hover:bg-primary/90 border-primary">
                               <Link href="/contact" onClick={closeMegaMenu}>
                                 Schedule Consultation
                               </Link>
@@ -257,9 +257,9 @@ export function Navigation() {
               </a>
             </Button>
             <Button
-              variant="outline"
+              variant="default"
               asChild
-              className="text-primary border-primary hover:bg-primary hover:text-black bg-transparent"
+              className="bg-primary text-black border-primary hover:bg-primary/90"
             >
               <Link href="/schedule-call">Schedule a Call</Link>
             </Button>
