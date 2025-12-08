@@ -185,20 +185,20 @@
     color: var(--primary-foreground) !important;
   }
 
-  button,
-  [data-slot="button"],
-  .button {
+  button:not(.nav-plain-trigger),
+  [data-slot="button"]:not(.nav-plain-trigger),
+  .button:not(.nav-plain-trigger) {
     background-color: #000 !important;
     color: #fff !important;
     transition: color 0.3s ease, background-color 0.3s ease !important;
   }
 
-  button:hover,
-  button:focus-visible,
-  [data-slot="button"]:hover,
-  [data-slot="button"]:focus-visible,
-  .button:hover,
-  .button:focus-visible {
+  button:not(.nav-plain-trigger):hover,
+  button:not(.nav-plain-trigger):focus-visible,
+  [data-slot="button"]:not(.nav-plain-trigger):hover,
+  [data-slot="button"]:not(.nav-plain-trigger):focus-visible,
+  .button:not(.nav-plain-trigger):hover,
+  .button:not(.nav-plain-trigger):focus-visible {
     background-color: #fff !important;
     color: #000 !important;
   }
