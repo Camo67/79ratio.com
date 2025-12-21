@@ -215,7 +215,21 @@
   }
 
   .hero-bg-image {
-    filter: brightness(1.5);
+    filter: brightness(1.9);
+  }
+
+  /* Keep tint concentrated behind hero text and fade it toward the edges */
+  .hero-bg-image + div[class*="bg-"] {
+    background: radial-gradient(
+        140% 120% at 40% 50%,
+        rgba(0, 0, 0, 0.55) 0%,
+        rgba(0, 0, 0, 0.35) 32%,
+        rgba(0, 0, 0, 0.12) 60%,
+        rgba(0, 0, 0, 0.05) 78%,
+        rgba(0, 0, 0, 0) 100%
+      )
+      !important;
+    pointer-events: none;
   }
 
   .nav-plain-trigger {

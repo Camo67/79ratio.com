@@ -4,6 +4,7 @@ import { HeroSection } from "@/components/hero-section"
 import { ServicesOverview } from "@/components/services-overview"
 import { IndustriesSection } from "@/components/industries-section"
 import { Footer } from "@/components/footer"
+import { VimeoHeroPlayer } from "@/components/vimeo-hero-player"
 
 function buildFibonacciSpiralPath(points = 220, turns = 2, radiusScale = 2, viewBox = 120): string {
   const phi = (1 + Math.sqrt(5)) / 2
@@ -72,13 +73,7 @@ export default function HomePage() {
           </div>
           <div className="relative p-4 sm:p-6">
             <div className="relative aspect-video overflow-hidden rounded-2xl bg-black/70 ring-1 ring-primary/30 shadow-[0_18px_55px_rgba(0,0,0,0.55)]">
-              <iframe
-                src="https://player.vimeo.com/video/1136121544?h=fad8830f82&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
-                referrerPolicy="strict-origin-when-cross-origin"
-                title="79 Ratio Overview"
-                className="absolute inset-0 h-full w-full"
-              />
+              <VimeoHeroPlayer videoUrl="https://player.vimeo.com/video/1146799101" freezeTimeSeconds={122} />
             </div>
           </div>
         </div>
