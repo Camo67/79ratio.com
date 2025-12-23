@@ -93,7 +93,7 @@ export default function ServicesPage() {
       <section className="relative py-20 lg:py-32 overflow-hidden">
         {/* Background Image */}
         <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat hero-bg-image"
           style={{ backgroundImage: "url(/services-bg.png)" }}
         />
 
@@ -119,7 +119,7 @@ export default function ServicesPage() {
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="space-y-6">
+          <div className="space-y-6 max-w-4xl mx-auto hero-text-panel">
             <h1 className="text-4xl lg:text-6xl font-bold text-white leading-tight text-balance">
               Comprehensive <span className="text-primary">IT Services</span>
             </h1>

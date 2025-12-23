@@ -53,58 +53,27 @@ export default function TeamPage() {
 
       {/* Team Members */}
       <section className="py-20 bg-background">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center space-y-4 mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-foreground text-balance">Leadership Team</h2>
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center space-y-4 mb-10">
+            <h2 className="text-3xl lg:text-4xl font-bold text-foreground text-balance">Our Team</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-pretty">
-              Meet the experienced professionals who lead our commitment to excellence in IT services.
+              We&apos;re finalizing our leadership profiles. Check back soon to meet the people behind 79 Ratio.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {teamMembers.map((member, index) => (
-              <Card key={index} className="group hover:shadow-lg transition-all duration-300 border-border bg-card">
-                <CardHeader className="text-center space-y-4">
-                  <div className="relative mx-auto">
-                    <Image
-                      src={member.image || "/placeholder.svg"}
-                      alt={`${member.name} - ${member.role}`}
-                      width={128}
-                      height={128}
-                      className="w-32 h-32 rounded-full object-cover mx-auto"
-                    />
-                  </div>
-                  <div>
-                    <CardTitle className="text-xl text-card-foreground">{member.name}</CardTitle>
-                    <CardDescription className="text-primary font-medium">{member.role}</CardDescription>
-                  </div>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  <p className="text-muted-foreground text-sm leading-relaxed">{member.bio}</p>
-
-                  <div className="space-y-2">
-                    <h4 className="font-medium text-card-foreground text-sm">Specialties:</h4>
-                    <div className="flex flex-wrap gap-2">
-                      {member.specialties.map((specialty, specialtyIndex) => (
-                        <Badge key={specialtyIndex} variant="secondary" className="text-xs">
-                          {specialty}
-                        </Badge>
-                      ))}
-                    </div>
-                  </div>
-
-                  <div className="flex justify-center space-x-2 pt-2">
-                    <Button size="sm" variant="outline" className="h-8 w-8 p-0 bg-transparent">
-                      <Mail className="w-4 h-4" />
-                    </Button>
-                    <Button size="sm" variant="outline" className="h-8 w-8 p-0 bg-transparent">
-                      <Linkedin className="w-4 h-4" />
-                    </Button>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
+          <Card className="border-dashed border-2 border-primary/40 bg-card">
+            <CardHeader className="text-center space-y-3">
+              <CardTitle className="text-2xl text-card-foreground">Team profiles are coming soon</CardTitle>
+              <CardDescription className="text-muted-foreground">
+                In the meantime, reach out and we&apos;ll connect you with the right leaders for your project.
+              </CardDescription>
+            </CardHeader>
+            <CardContent className="flex justify-center">
+              <Button asChild size="lg">
+                <Link href="/contact">Talk with leadership</Link>
+              </Button>
+            </CardContent>
+          </Card>
         </div>
       </section>
 

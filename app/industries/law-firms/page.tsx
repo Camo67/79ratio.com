@@ -65,7 +65,7 @@ export default function LawFirmsPage() {
       <section className="relative py-20 lg:py-32 overflow-hidden">
         <div className="absolute inset-0">
           <div
-            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat hero-bg-image"
             style={{ backgroundImage: 'url("/law_firms.jpg")' }}
           />
           <div className="absolute inset-0 bg-gradient-to-br from-black/80 via-black/60 to-black/80" />
@@ -76,7 +76,7 @@ export default function LawFirmsPage() {
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-8 text-white">
+            <div className="space-y-8 text-white hero-text-panel">
               <div className="space-y-4">
                 <Badge className="mb-4 text-white border-white/40 bg-white/10">Legal Industry Expertise</Badge>
                 <h1 className="text-4xl lg:text-6xl font-bold leading-tight text-balance">

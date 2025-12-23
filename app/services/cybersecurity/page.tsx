@@ -49,14 +49,14 @@ export default function CybersecurityPage() {
       <section className="relative overflow-hidden py-20 lg:py-32">
         <div className="absolute inset-0">
           <div
-            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat hero-bg-image"
             style={{ backgroundImage: "url(/Image_fx (23).jpg)" }}
           />
           <div className="absolute inset-0 bg-gradient-to-br from-black/55 via-black/35 to-black/55" />
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-8">
+            <div className="space-y-8 hero-text-panel">
               <div className="space-y-4">
                 <Badge className="mb-4 text-white">Cybersecurity Solutions</Badge>
                 <h1 className="text-4xl lg:text-6xl font-bold text-white leading-tight text-balance">

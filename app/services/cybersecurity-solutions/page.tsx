@@ -16,10 +16,10 @@ export default function CybersecurityPage() {
       <section className="relative py-20 lg:py-32 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <div
-            className="absolute inset-0 bg-cover bg-center bg-no-repeat animate-slow-drift"
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat animate-slow-drift hero-bg-image"
             style={{
               backgroundImage: "url(/contact-bg.jpeg)",
-              filter: "brightness(0.15)",
+              filter: "brightness(0.225)",
             }}
           />
           <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-black/55 to-black/70" />
@@ -41,7 +41,7 @@ export default function CybersecurityPage() {
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="space-y-6">
+          <div className="space-y-6 max-w-4xl mx-auto hero-text-panel">
             <Image
               src="/79ratio-logo.webp"
               alt="79 Ratio Logo"

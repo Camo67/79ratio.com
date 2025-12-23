@@ -161,6 +161,7 @@
   .text-gray-200,
   .text-gray-300 {
     color: #fff !important;
+    text-shadow: 0 12px 36px rgba(0, 0, 0, 0.55), 0 4px 14px rgba(0, 0, 0, 0.85);
   }
 
   h1.text-white,
@@ -177,28 +178,84 @@
   .text-gray-500,
   .text-gray-600 {
     color: #fff !important;
+    text-shadow: 0 10px 32px rgba(0, 0, 0, 0.5), 0 4px 12px rgba(0, 0, 0, 0.75);
   }
 
   .text-black {
     color: var(--primary-foreground) !important;
   }
 
-  button,
-  [data-slot="button"],
-  .button {
+  button:not(.nav-plain-trigger),
+  [data-slot="button"]:not(.nav-plain-trigger),
+  .button:not(.nav-plain-trigger) {
     background-color: #000 !important;
     color: #fff !important;
     transition: color 0.3s ease, background-color 0.3s ease !important;
   }
 
-  button:hover,
-  button:focus-visible,
-  [data-slot="button"]:hover,
-  [data-slot="button"]:focus-visible,
-  .button:hover,
-  .button:focus-visible {
+  button:not(.nav-plain-trigger):hover,
+  button:not(.nav-plain-trigger):focus-visible,
+  [data-slot="button"]:not(.nav-plain-trigger):hover,
+  [data-slot="button"]:not(.nav-plain-trigger):focus-visible,
+  .button:not(.nav-plain-trigger):hover,
+  .button:not(.nav-plain-trigger):focus-visible {
     background-color: #fff !important;
     color: #000 !important;
+  }
+}
+
+@layer components {
+  .hero-text-panel {
+    background: linear-gradient(145deg, rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.24));
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    border-radius: 1.25rem;
+    padding: clamp(1.25rem, 3vw, 2rem);
+    box-shadow: 0 10px 32px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(8px);
+  }
+
+  .hero-bg-image {
+    filter: brightness(1.9);
+  }
+
+  /* Keep tint concentrated behind hero text and fade it toward the edges */
+  .hero-bg-image + div[class*="bg-"] {
+    background: radial-gradient(
+        140% 120% at 40% 50%,
+        rgba(0, 0, 0, 0.55) 0%,
+        rgba(0, 0, 0, 0.35) 32%,
+        rgba(0, 0, 0, 0.12) 60%,
+        rgba(0, 0, 0, 0.05) 78%,
+        rgba(0, 0, 0, 0) 100%
+      )
+      !important;
+    pointer-events: none;
+  }
+
+  .nav-plain-trigger {
+    background-color: transparent !important;
+    color: var(--foreground) !important;
+    border-color: transparent !important;
+    box-shadow: none !important;
+  }
+
+  .nav-plain-trigger:hover,
+  .nav-plain-trigger:focus-visible,
+  .nav-plain-trigger:active {
+    background-color: transparent !important;
+    color: var(--primary) !important;
+    border-color: transparent !important;
+    box-shadow: none !important;
+  }
+
+  button.nav-plain-trigger,
+  button.nav-plain-trigger:hover,
+  button.nav-plain-trigger:focus-visible,
+  button.nav-plain-trigger:active {
+    background-color: transparent !important;
+    border-color: transparent !important;
+    box-shadow: none !important;
+    color: var(--primary) !important;
   }
 }
 

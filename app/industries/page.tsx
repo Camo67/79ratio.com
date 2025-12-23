@@ -120,7 +120,7 @@ export default function IndustriesPage() {
       <section className="relative py-20 lg:py-32 overflow-hidden">
         {/* Background Image */}
         <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat animate-slow-drift"
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat animate-slow-drift hero-bg-image"
           style={{ backgroundImage: "url(/business-it-solutions-overview.jpg)" }}
         />
 
@@ -152,7 +152,7 @@ export default function IndustriesPage() {
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="space-y-6">
+          <div className="space-y-6 max-w-4xl mx-auto hero-text-panel">
             <h1 className="text-4xl lg:text-6xl font-bold text-white leading-tight text-balance">
               Industry-Specific <span className="text-primary">IT Expertise</span>
             </h1>

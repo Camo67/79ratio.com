@@ -67,7 +67,7 @@ export default function HealthcarePage() {
       <section className="relative py-20 lg:py-32 overflow-hidden">
         <div className="absolute inset-0">
           <div
-            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat hero-bg-image"
             style={{ backgroundImage: 'url("/healthcare.jpg")' }}
           />
           <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-black/65 to-black/70" />
@@ -78,7 +78,7 @@ export default function HealthcarePage() {
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-8">
+            <div className="space-y-8 hero-text-panel">
               <div className="space-y-4">
                 <Badge className="mb-4 text-white border-white/40 bg-white/10">Healthcare IT Expertise</Badge>
                 <h1 className="text-4xl lg:text-6xl font-bold text-white leading-tight text-balance">

@@ -29,7 +29,7 @@ export default function BlogPage() {
       <section className="relative py-20 lg:py-32 overflow-hidden">
         {/* Background Image */}
         <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat animate-slow-drift"
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat animate-slow-drift hero-bg-image"
           style={{ backgroundImage: "url(/it-helpdesk-services-24-7.jpg)" }}
         />
 
@@ -61,7 +61,7 @@ export default function BlogPage() {
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center space-y-6">
+          <div className="text-center space-y-6 max-w-4xl mx-auto hero-text-panel">
             <Badge className="mb-4 bg-primary/20 text-white border-primary/30">IT Insights & Resources</Badge>
             <h1 className="text-4xl lg:text-6xl font-bold text-white leading-tight text-balance">
               Insights, Trends, and Tips from 79 Ratio’s Technology Experts

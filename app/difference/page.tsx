@@ -39,7 +39,7 @@ export default function DifferencePage() {
       <section className="relative overflow-hidden py-20 lg:py-32 bg-black text-foreground">
         <div className="absolute inset-0">
           <div
-            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat hero-bg-image"
             style={{ backgroundImage: 'url("/Image_fx%20(18).jpg")' }}
           />
           <div className="absolute inset-0 bg-gradient-to-br from-primary/35 via-primary/20 to-accent/25 mix-blend-multiply" />

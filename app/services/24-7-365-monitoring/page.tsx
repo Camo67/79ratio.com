@@ -16,10 +16,10 @@ export default function MonitoringPage() {
       <section className="relative py-20 lg:py-32 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <div
-            className="absolute inset-0 bg-cover bg-center bg-no-repeat animate-slow-drift"
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat animate-slow-drift hero-bg-image"
             style={{
               backgroundImage: "url(/Image_fx (24).jpg)",
-              filter: "brightness(0.2)",
+              filter: "brightness(0.3)",
             }}
           />
           <div className="absolute inset-0 bg-gradient-to-br from-black/55 via-black/35 to-black/55" />
@@ -41,7 +41,7 @@ export default function MonitoringPage() {
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="space-y-6">
+          <div className="space-y-6 max-w-4xl mx-auto hero-text-panel">
             <Image
               src="/79ratio-logo.webp"
               alt="79 Ratio Logo"

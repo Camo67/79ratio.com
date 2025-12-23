@@ -52,7 +52,7 @@ export default function ContactPage() {
       <section className="relative py-20 lg:py-32 overflow-hidden">
         {/* Background Image */}
         <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat animate-slow-drift"
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat animate-slow-drift hero-bg-image"
           style={{ backgroundImage: "url('/Image_fx (29).jpg')" }}
         />
 
@@ -84,7 +84,7 @@ export default function ContactPage() {
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="space-y-6">
+          <div className="space-y-6 max-w-4xl mx-auto hero-text-panel">
             <Badge className="mb-4 bg-primary/20 text-white border-primary/30">Get In Touch</Badge>
             <h1 className="text-4xl lg:text-6xl font-bold text-white leading-tight text-balance">
               Let's Discuss Your <span className="text-primary">IT Needs</span>
