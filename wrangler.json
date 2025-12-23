@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/wrangler/config-schema.json",
-  "name": "79ratiocom.helpdesk-bf2.workers.dev",
+  "name": "79ratiocom",
   "pages_build_output_dir": ".open-next",
   "compatibility_flags": [
     "nodejs_compat",
