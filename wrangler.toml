@@ -1,6 +1,6 @@
 name = "79ratiocom-helpdesk-bf2"
 account_id = "bf241569986e9ef744f582991632dc5e"
-compatibility_date = "2024-09-23"
+compatibility_date = "2024-09-26"
 main = ".open-next/worker.js"
 compatibility_flags = ["nodejs_compat", "nodejs_als"]
 
